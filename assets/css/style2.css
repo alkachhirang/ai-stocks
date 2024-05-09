@@ -1,13 +1,14 @@
 @import url(../css/style.css);
 :root {
-  /* fs */
   --fs_2md: 21.13px;
   /* color */
   --off-black: #0b0e10;
-  --off-black2: #0b0f12;
+  --off-black2: #0b0f11;
   --off-black3: #020507;
   --off-black4: #010101;
+  --off-black5: #15171a;
   --gray: #4d4f51;
+  --green: #00ffe1;
 }
 .fs_2md {
   font-size: var(--fs_2md);
@@ -24,6 +25,9 @@
 }
 .gray {
   color: var(--gray);
+}
+.green {
+  color: var(--green);
 }
 .font-gradient {
   background: linear-gradient(100.62deg, #00ffe1 31.2%, #6e5df6 48.95%);
@@ -48,12 +52,12 @@
   width: 215px;
   height: 215px;
   flex-shrink: 0;
-  fill: #00ffe1;
+  fill: var(--green);
   filter: blur(224px);
-  bottom: 8%;
-  right: -65%;
+  bottom: 24%;
+  right: -75%;
   z-index: 0;
-  background: linear-gradient(100.62deg, #6e5df6 31.2%, #00ffe1 48.95%);
+  background: linear-gradient(100.62deg, #00ffe1 31.2%, #6e5df6 48.95%);
 }
 .section_bg {
   background-image: url("../images/png/background-image.png");
@@ -63,6 +67,9 @@
 }
 .mw_733 {
   max-width: 733px;
+}
+.mw_974 {
+  max-width: 974px;
 }
 .mb-27 {
   margin-bottom: 27px;
@@ -88,20 +95,17 @@
   padding: 16px 14px 16px 14px;
   background: #0b0e10;
   border-radius: 4px;
+  margin-bottom: 15px;
 }
-.mb-32 {
-  margin-bottom: 32px;
-}
+
 .z-5 {
   z-index: 5;
 }
+.benifit_card:hover .icons_card {
+  background: var(--off-black5);
+}
 .benifit_card:hover {
-  border: 1px solid transparent;
-  background-image: linear-gradient(#fff, #fff),
-    linear-gradient(151.6deg, #00ffe1 1.85%, #6e5df6 98.12%);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-
+  border: 1px solid var(--green);
   border-radius: 12px;
   background: var(--off-black2);
 }
@@ -145,14 +149,21 @@
 .mw_946 {
   max-width: 946px;
 }
+.italic {
+  font-style: italic;
+}
+.style_normal {
+  font-style: normal;
+}
 .man_img {
   width: 72px;
   height: 72px;
 }
+
 .trade_img {
   border-radius: 15px;
   max-width: 471px;
-  transform: translateY(-5%);
+  transform: translateY(-4%);
 }
 .maximize_btn:hover {
   --tw-shadow: -4px 0 12px -2px #6e5df6, 4px 0 12px -2px #00ffe1;
@@ -179,6 +190,9 @@
   }
 }
 @media (min-width: 991.8px) {
+    .icons_card{
+        margin-bottom: 32px;
+    }
   .ellipse_1 {
     width: 415px;
     height: 415px;
@@ -191,7 +205,6 @@
     transform: translateY(-15%);
   }
   .benifit_card {
-    transition: all 0.4s linear;
     padding: 20px 20.5px 20px 20.5px;
     min-height: 240px;
   }
