@@ -21,7 +21,7 @@
     --fs-8xl: 48px;
     --fs-xxl: 52px;
     --fs-2xxl: 70px;
-    
+
     /*=============line-height============= */
     --lh-xsm: 24px;
     --lh-sm: 25px;
@@ -37,9 +37,10 @@
     --lh-5xl: 46px;
     --lh-6xl: 47px;
     --lh-7xl: 60px;
-    --lh-8xl: 62px;
-    --lh-9xl: 75px;
-    --lh-10xl: 87px;
+    --lh-8xl: 65px;
+    --lh-9xl: 62px;
+    --lh-10xl: 75px;
+    --lh-11xl: 87px;
 
     /*==========colors=========*/
     --clr-black: #010101;
@@ -94,70 +95,94 @@
 }
 
 /*=================line-heght================= */
-.lh-xsm {
+.lh_xsm {
     line-height: var(--lh-xsm);
 }
 
-.lh-sm {
+.lh_sm {
     line-height: var(--lh-sm);
 }
 
-.lh-md {
+.lh_md {
     line-height: var(--lh-md);
 }
 
-.lh-2md {
+.lh_2md {
     line-height: var(--lh-2md);
 }
 
-.lh-lg {
+.lh_lg {
     line-height: var(--lh-lg);
 }
 
-.lh-2lg {
+.lh_2lg {
     line-height: var(--lh-2lg);
 }
 
-.lh-xl {
+.lh_xl {
     line-height: var(--lh-xl);
 }
 
-.lh-xxl {
+.lh_xxl {
     line-height: var(--lh-xxl);
 }
 
-.lh-2xl {
+.lh_2xl {
     line-height: var(--lh-2xl);
 }
 
-.lh-3xl {
+.lh_3xl {
     line-height: var(--lh-3xl);
 }
 
-.lh-4xl {
+.lh_4xl {
     line-height: var(--lh-4xl);
 }
 
-.lh-5xl {
+.lh_5xl {
     line-height: var(--lh-5xl);
 }
 
-.lh-6xl {
+.lh_6xl {
     line-height: var(--lh-6xl);
 }
 
-.lh-7xl {
+.lh_7xl {
     line-height: var(--lh-7xl);
 }
 
-.lh-8xl {
+.lh_8xl {
     line-height: var(--lh-8xl);
 }
 
-.lh-9xl {
+.lh_9xl {
     line-height: var(--lh-9xl);
 }
 
-.lh-10xl {
+.lh_10xl {
     line-height: var(--lh-10xl);
+}
+
+.lh_11xl {
+    line-height: var(--lh-11xl);
+}
+
+/*--============Average-Earnings==============--> */
+
+.slider_container {
+    max-width: calc(100vw-1384px);
+    margin-right: auto;
+}
+
+.mb_12 {
+    margin-bottom: 12px;
+}
+
+.br_8 {
+    border-radius: 8px;
+}
+
+.px_6 {
+    padding-right: 6px;
+    padding-bottom: 6px;
 }
