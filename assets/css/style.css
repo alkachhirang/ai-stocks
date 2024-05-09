@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
+    padding: 0;
+    margin: 0;
     list-style-type: none !important;
     text-decoration: none !important;
     scroll-behavior: smooth !important;
+    box-sizing: border-box;
 }
 
 body,
@@ -16,7 +19,10 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
 
+.bg_body {
+    background-color: #010101 !important;
 }
 
 .ff_opensans {
@@ -36,6 +42,7 @@ body {
     --fs-xs: 16px;
     --fs-sm: 18px;
     --fs-md: 20px;
+    --fs_2md: 21.13px;
     --fs-4md: 24px;
     --fs-8md: 28px;
     --fs-lg: 32px;
@@ -68,6 +75,16 @@ body {
     --lh-12xl: 103px;
     /*==========colors=========*/
     --clr-black: #010101;
+    --c-gray: #CCCECF;
+    --c-black-100: #010101;
+}
+
+.c-gray {
+    color: var(--c-gray);
+}
+
+.c-black-100 {
+    color: var(--c-black-100);
 }
 
 .text_black {
@@ -84,6 +101,10 @@ body {
 
 .fs_md {
     font-size: var(--fs-md);
+}
+
+.fs_2md {
+    font-size: var(--fs_2md);
 }
 
 .fs_4md {
@@ -198,6 +219,263 @@ body {
 .lh_12xl {
     line-height: var(--lh-12xl);
 }
+
+/*=====================Header-section===================*/
+.bg-hero-img {
+    background-image: url(../images/png/Heroimg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.py-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.nav-button {
+    padding: 12px 24px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid white;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.box-time {
+    max-width: 128px;
+    padding: 14px 18px;
+    background: #ffffff01;
+    backdrop-filter: blur(20px);
+}
+
+.nav-button::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(107.02deg, #00FFE1 12.76%, #6E5DF6 91.81%);
+    opacity: 1;
+}
+
+.max-w-388 {
+    max-width: 388px;
+}
+
+.nav-background {
+    background-color: #ffffff17;
+}
+
+.linner-layer-bottom {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(195.67deg, #00FFE1 83.47%, #6E5DF6 102.11%);
+    filter: blur(13px);
+}
+
+.header-text-gradiant {
+    background: linear-gradient(177.45deg, #00FFE1 6.58%, #6E5DF6 39.18%);
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.px_2 {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.max-w-665 {
+    max-width: 665px;
+}
+
+
+.vedio {
+    max-width: 632px;
+    max-height: 359px;
+    padding: 1.84px;
+    margin: 0 12px;
+    border-radius: 7.2px;
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+}
+
+.vedio video {
+    border-radius: 7.2px;
+}
+
+.px-12P {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.max-w-654 {
+    max-width: 654px;
+}
+
+.mt-39 {
+    margin-top: 39px !important;
+}
+
+.box-email {
+    padding: 20px;
+    backdrop-filter: blur(20px);
+}
+
+.ellipes-card-email {
+    width: 88px;
+    height: 88px;
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+    filter: blur(89px);
+    position: absolute;
+    top: -2%;
+    right: -6%;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.ellipes2-card-email {
+    width: 88px;
+    height: 88px;
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+    filter: blur(89px);
+    position: absolute;
+    top: 13%;
+    left: -4%;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.gradient-border-mask3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    border-radius: 7px;
+    border: 2px solid transparent;
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%) border-box;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.gradient-border-mask3 {
+    position: relative;
+    z-index: 1;
+    border-radius: 7px;
+}
+
+.email-input-style-header {
+    padding: 16px;
+    width: 100%;
+    background-color: white;
+    border-radius: 4px;
+    border: 0;
+    outline: 0;
+}
+
+.email-input-style-header::placeholder {
+    color: var(--c-black-100);
+}
+
+.bg-number {
+    background-color: #EBECF0;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.mt-14 {
+    margin-top: 14px;
+}
+
+.vedio-tag {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overflow-x-clip {
+    overflow-x: clip;
+}
+
+.ellipes1headerleft-top {
+    position: absolute;
+    z-index: -1;
+    top: 2%;
+    left: -15%;
+    width: 197px;
+    height: 197px;
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+    filter: blur(75px);
+}
+
+
+.ellipes2headerleft-topdown {
+    position: absolute;
+    z-index: -1;
+    top: 41%;
+    left: -11%;
+    width: 197px;
+    height: 197px;
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+    filter: blur(107px);
+}
+
+.ellipes3headerleft-bottom {
+    position: absolute;
+    z-index: -1;
+    bottom: 2%;
+    left: -10%;
+    width: 197px;
+    height: 197px;
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+    filter: blur(140px);
+}
+
+.ellipes4headerright-top {
+    position: absolute;
+    z-index: -1;
+    top: 26%;
+    right: -8%;
+    width: 197px;
+    height: 197px;
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+    filter: blur(108px);
+}
+
+.ellipes5headerright-bottom {
+    position: absolute;
+    z-index: -3;
+    bottom: 6%;
+    right: -10%;
+    width: 197px;
+    height: 197px;
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+    filter: blur(128px);
+}
+
+.pb-58 {
+    padding-bottom: 58px;
+}
+
 
 /*==================Statistics=================== */
 .pt_Statistics {
@@ -405,41 +683,73 @@ body {
 
 }
 
+@media (min-width:768px) {
+    .px-88 {
+        padding-left: 88px;
+        padding-right: 88px;
+    }
+
+    .box-time {
+        max-width: 128px;
+        padding: 27px 34px;
+        background: #ffffff01;
+        backdrop-filter: blur(20px);
+    }
+
+    .px-44 {
+        padding-left: 44px;
+        padding-right: 44px;
+    }
+
+    .bg-hero-img {
+        background-image: url(../images/png/Heroimg.webp);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width:1400px) or (max-width:1600px) {
+    .container {
+        max-width: 1164px !important;
+    }
+}
+
 @media (max-width:576px) {
     :root {
         /*=========font-size========*/
-        --fs-xs: 16px;
-        --fs-sm: 18px;
-        --fs-md: 20px;
+        --fs-xs: 14px !important;
+        --fs-sm: 16px !important;
+        --fs-md: 20px !important;
+        --fs_2md: 21.13px;
         --fs-4md: 24px;
-        --fs-8md: 28px;
-        --fs-lg: 32px;
+        --fs-8md: 20px;
+        --fs-lg: 26px !important;
         --fs-6lg: 20px !important;
         --fs-xl: 40px;
-        --fs-8xl: 28px !important;
-        --fs-xxl: 52px;
+        --fs-8xl: 20px !important;
+        --fs-xxl: 32px !important;
         --fs-2xxl: 70px;
         --fs-3xxl: 88.24px;
 
         /*=============line-height=========== */
 
-        --lh-xsm: 24px;
-        --lh-sm: 25px;
+        --lh-xsm: 22px !important;
+        --lh-sm: 22px !important;
         --lh-md: 25.6px;
-        --lh-2md: 26px;
+        --lh-2md: 25px !important;
         --lh-lg: 27.24px;
         --lh-2lg: 28px;
         --lh-xl: 29px;
         --lh-xxl: 30px;
-        --lh-2xl: 33px;
+        --lh-2xl: 28px !important;
         --lh-3xl: 34px;
         --lh-4xl: 44px;
         --lh-5xl: 46px;
         --lh-6xl: 47px;
         --lh-7xl: 38px !important;
-        --lh-8xl: 65px;
-        --lh-9xl: 62px;
-        --lh-10xl: 75px;
+        --lh-8xl: 20px !important;
+        --lh-9xl: 40px !important;
+        --lh-10xl: 48px !important;
         --lh-11xl: 87px;
         --lh-12xl: 103px;
     }
