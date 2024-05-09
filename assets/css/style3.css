@@ -49,6 +49,7 @@
     border: 1px solid white;
     position: relative;
     z-index: 1;
+    transition: all .3s linear;
     overflow: hidden;
 }
 
@@ -83,6 +84,14 @@
     z-index: -1;
     background: linear-gradient(107.02deg, #00FFE1 12.76%, #6E5DF6 91.81%);
     opacity: 1;
+    transition: all .3s linear;
+}
+
+.nav-button:hover {
+    background-color: white;
+}
+.nav-button:hover::after {
+    opacity: 0;
 }
 
 .max-w-388 {
@@ -325,6 +334,7 @@
     animation-duration: 70s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    /* transform: translateX(-1272px); */
     animation-delay: -70s;
 }
 
