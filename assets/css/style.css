@@ -416,7 +416,7 @@ body {
         --fs-md: 20px !important;
         --fs-4md: 24px;
         --fs-8md: 20px;
-        --fs-lg: 32px;
+        --fs-lg: 26px !important;
         --fs-6lg: 20px !important;
         --fs-xl: 40px;
         --fs-8xl: 20px !important;
