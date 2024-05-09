@@ -325,7 +325,6 @@
     animation-duration: 70s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    /* transform: translateX(-1272px); */
     animation-delay: -70s;
 }
 

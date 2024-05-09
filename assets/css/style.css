@@ -282,9 +282,22 @@ body {
 
 .box-time {
     max-width: 128px;
+    position: relative;
+    z-index: 1;
     padding: 14px 18px;
     background: #ffffff01;
     backdrop-filter: blur(20px);
+}
+
+.box-time::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #04090E;
 }
 
 .nav-button::after {
@@ -312,7 +325,7 @@ body {
     height: 3px;
     width: 100%;
     background: linear-gradient(195.67deg, #00FFE1 83.47%, #6E5DF6 102.11%);
-    filter: blur(13px);
+    filter: blur(9px);
 }
 
 .header-text-gradiant {
@@ -439,6 +452,10 @@ body {
     margin-top: 14px;
 }
 
+.pb_2 {
+    padding-bottom: 2px;
+}
+
 .vedio-tag {
     position: absolute;
     left: 50%;
@@ -454,13 +471,12 @@ body {
     position: absolute;
     z-index: -1;
     top: 2%;
-    left: -15%;
+    left: -10%;
     width: 197px;
     height: 197px;
     background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
-    filter: blur(75px);
+    filter: blur(104px);
 }
-
 
 .ellipes2headerleft-topdown {
     position: absolute;
@@ -476,12 +492,17 @@ body {
 .ellipes3headerleft-bottom {
     position: absolute;
     z-index: -1;
-    bottom: 2%;
-    left: -10%;
+    bottom: 3%;
+    left: -13%;
     width: 197px;
+    fill: #00ffe1;
     height: 197px;
     background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
-    filter: blur(140px);
+    filter: blur(112px);
+}
+
+.mb-100 {
+    margin-bottom: 100px;
 }
 
 .ellipes4headerright-top {
@@ -508,6 +529,53 @@ body {
 
 .pb-58 {
     padding-bottom: 58px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+
+.man-profile-card {
+    padding: 20px;
+    min-width: 367px;
+    width: 100%;
+    background: linear-gradient(90.19deg, rgba(255, 255, 255, 0.04) -76.18%, rgba(153, 153, 153, 0.0056) 88.54%);
+    border-radius: 8px;
+}
+
+.brand_slider_parent {
+    animation-name: sliderScroll;
+    animation-duration: 70s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: -70s;
+}
+
+.brand_slider_parent2 {
+    animation-name: sliderScroll;
+    animation-delay: -35s;
+    animation-duration: 70s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.mt-44 {
+    margin-top: 44px;
+}
+
+@keyframes sliderScroll {
+    0% {
+        transform: translateX(1772px);
+        -webkit-transform: translateX(1772px);
+        -moz-transform: translateX(1772px);
+        -ms-transform: translateX(1772px);
+        -o-transform: translateX(1772px);
+    }
+
+    100% {
+        transform: translateX(-1272px);
+    }
 }
 
 /* benifit-section */
@@ -794,13 +862,10 @@ body {
     transition: all .3s linear !important;
 }
 
-
 .common_btn:hover {
     background: white !important;
     color: #020507 !important;
 }
-
-
 
 @media (min-width:1200px) {
     .mw_1164 {
@@ -951,12 +1016,6 @@ body {
     }
 }
 
-@media (min-width:1400px) or (max-width:1600px) {
-    .container {
-        max-width: 1164px !important;
-    }
-}
-
 @media (max-width:576px) {
     :root {
         /*=========font-size========*/
@@ -1016,5 +1075,11 @@ body {
         top: 12%;
         max-width: 461px;
         height: 421px;
+    }
+}
+
+@media (min-width:1400px) or (max-width:1600px) {
+    .container {
+        max-width: 1164px !important;
     }
 }
