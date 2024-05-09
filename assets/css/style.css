@@ -16,7 +16,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-
+    background-color: 010101 !important;
 }
 
 .ff_opensans {
