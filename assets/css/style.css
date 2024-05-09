@@ -311,7 +311,7 @@ body {
 }
 
 .nav-button:hover {
-    background-color: white;
+    background-color: white !important;
 }
 
 .nav-button:hover::after {
@@ -906,10 +906,9 @@ body {
     .mw_750 {
         max-width: 750px !important;
     }
-
-    .max-w-654 {
-        max-width: 654px;
-    }
+        .max-w-654 {
+            max-width: 654px;
+        }
 
     .icons_card {
         margin-bottom: 32px;
