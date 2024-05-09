@@ -16,6 +16,9 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+.bg_body {
     background-color: #010101 !important;
 }
 
