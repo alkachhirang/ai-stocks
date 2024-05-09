@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.ff_opensans {
+    font-family: "Open Sans", sans-serif;
+}
+
+.ff_montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    /*=========font-size========*/
+    --fs-xs: 16px;
+    --fs-sm: 18px;
+    --fs-md: 20px;
+    --fs-4md: 24px;
+    --fs-8md: 28px;
+    --fs-lg: 32px;
+    --fs-6lg: 36px;
+    --fs-xl: 40px;
+    --fs-8xl: 48px;
+    --fs-xxl: 52px;
+    --fs-2xxl: 70px;
+    /*==========colors=========*/
+    --clr-black: #010101;
+}
+
+.text_black {
+    color: var(--clr-black);
+}
+
+.fs_xs {
+    font-size: var(--fs-xs);
+}
+
+.fs_sm {
+    font-size: var(--fs-sm);
+}
+
+.fs_md {
+    font-size: var(--fs-md);
+}
+
+.fs_4md {
+    font-size: var(--fs-4md);
+}
+
+.fs_8md {
+    font-size: var(--fs-8md);
+}
+
+.fs_lg {
+    font-size: var(--fs-lg);
+}
+
+.fs_6lg {
+    font-size: var(--fs-6lg);
+}
+
+.fs_xl {
+    font-size: var(--fs-xl);
+}
+
+.fs_8xl {
+    font-size: var(--fs-8xl);
+}
+
+.fs_xxl {
+    font-size: var(--fs-xxl);
+}
+
+.fs_2xxl {
+    font-size: var(--fs-2xxl);
+}
