@@ -21,6 +21,26 @@
     --fs-8xl: 48px;
     --fs-xxl: 52px;
     --fs-2xxl: 70px;
+    
+    /*=============line-height============= */
+    --lh-xsm: 24px;
+    --lh-sm: 25px;
+    --lh-md: 25.6px;
+    --lh-2md: 26px;
+    --lh-lg: 27.24px;
+    --lh-2lg: 28px;
+    --lh-xl: 29px;
+    --lh-xxl: 30px;
+    --lh-2xl: 33px;
+    --lh-3xl: 34px;
+    --lh-4xl: 44px;
+    --lh-5xl: 46px;
+    --lh-6xl: 47px;
+    --lh-7xl: 60px;
+    --lh-8xl: 62px;
+    --lh-9xl: 75px;
+    --lh-10xl: 87px;
+
     /*==========colors=========*/
     --clr-black: #010101;
 }
@@ -71,4 +91,73 @@
 
 .fs_2xxl {
     font-size: var(--fs-2xxl);
+}
+
+/*=================line-heght================= */
+.lh-xsm {
+    line-height: var(--lh-xsm);
+}
+
+.lh-sm {
+    line-height: var(--lh-sm);
+}
+
+.lh-md {
+    line-height: var(--lh-md);
+}
+
+.lh-2md {
+    line-height: var(--lh-2md);
+}
+
+.lh-lg {
+    line-height: var(--lh-lg);
+}
+
+.lh-2lg {
+    line-height: var(--lh-2lg);
+}
+
+.lh-xl {
+    line-height: var(--lh-xl);
+}
+
+.lh-xxl {
+    line-height: var(--lh-xxl);
+}
+
+.lh-2xl {
+    line-height: var(--lh-2xl);
+}
+
+.lh-3xl {
+    line-height: var(--lh-3xl);
+}
+
+.lh-4xl {
+    line-height: var(--lh-4xl);
+}
+
+.lh-5xl {
+    line-height: var(--lh-5xl);
+}
+
+.lh-6xl {
+    line-height: var(--lh-6xl);
+}
+
+.lh-7xl {
+    line-height: var(--lh-7xl);
+}
+
+.lh-8xl {
+    line-height: var(--lh-8xl);
+}
+
+.lh-9xl {
+    line-height: var(--lh-9xl);
+}
+
+.lh-10xl {
+    line-height: var(--lh-10xl);
 }
