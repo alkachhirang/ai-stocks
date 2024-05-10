@@ -9,10 +9,11 @@
     box-sizing: border-box;
 }
 
+/* 
 body,
 html {
     overflow-x: hidden !important;
-}
+} */
 
 body {
     background-image: url("/assets/images/png/bg-img-body.png") !important;
@@ -1071,7 +1072,7 @@ body {
         --fs-lg: 20px !important;
         --fs-6lg: 20px !important;
         --fs-xl: 40px;
-        --fs-8xl: 20px !important;
+        --fs-8xl: 28px !important;
         --fs-xxl: 32px !important;
         --fs-2xxl: 70px;
         --fs-3xxl: 88.24px;
