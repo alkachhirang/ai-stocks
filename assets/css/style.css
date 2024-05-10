@@ -746,6 +746,7 @@ body {
 
 .benifit_card {
     transition: all 0.4s linear;
+    border: 1px transparent;
     padding: 30px 10.5px 30px 10.5px;
     min-height: 180px;
 }
