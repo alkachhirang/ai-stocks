@@ -10,10 +10,10 @@
 }
 
 body {
-    background-image: url("/assets/images/png/bg-img-body.png") !important;
+    background-image: url("/assets/images/webp/background-image.webp") !important;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 .z_5 {
@@ -123,6 +123,7 @@ body {
 .gray {
     color: var(--gray);
 }
+
 .gray2 {
     color: var(--gray2);
 }
@@ -1453,6 +1454,13 @@ button:not(:disabled) {
 
     .pt_Statistics {
         padding-top: 151px;
+    }
+
+    body {
+        background-image: url("/assets/images/webp/background-image.webp") !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
     }
 }
 
