@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 * {
     padding: 0;
     margin: 0;
@@ -51,7 +50,6 @@ body {
     --fs-xxl: 52px;
     --fs-2xxl: 70px;
     --fs-3xxl: 88.24px;
-
     /*=============line-height============= */
     --lh-xsm: 24px;
     --lh-sm: 25px;
@@ -92,6 +90,17 @@ body {
     --greenlight: #00FFE1;
     --gray: #B2B5B6;
     --black-gray: #0F1B22;
+    /* new add */
+    --cc-gray: #CCCCCC;
+    --cd-gray: #CCCDCD;
+}
+
+.cc-gray {
+    color: var(--cc-gray);
+}
+
+.cd-gray {
+    color: var(--cd-gray);
 }
 
 .c-gray {
@@ -211,7 +220,9 @@ body {
     font-size: var(--fs-3xxl);
 }
 
+
 /*=================line-heght================= */
+
 .lh_xsm {
     line-height: var(--lh-xsm);
 }
@@ -287,6 +298,7 @@ body {
 .lh_12xl {
     line-height: var(--lh-12xl);
 }
+
 
 /*=====================Header-section===================*/
 
@@ -389,7 +401,6 @@ body {
     max-width: 665px;
 }
 
-
 .vedio {
     max-width: 632px;
     max-height: 359px;
@@ -452,11 +463,8 @@ body {
     border-radius: 7px;
     border: 2px solid transparent;
     background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%) border-box;
-    -webkit-mask:
-        linear-gradient(#fff 0 0) padding-box,
-        linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) padding-box,
-        linear-gradient(#fff 0 0);
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
 }
@@ -632,13 +640,14 @@ body {
         -ms-transform: translateX(1772px);
         -o-transform: translateX(1772px);
     }
-
     100% {
         transform: translateX(-1272px);
     }
 }
 
+
 /*===============preloader================ */
+
 .overflow_hidden {
     overflow: hidden;
 }
@@ -664,7 +673,9 @@ body {
     }
 }
 
+
 /* benifit-section */
+
 .ellipse_1 {
     width: 215px;
     height: 215px;
@@ -785,7 +796,9 @@ body {
     max-width: 990px !important;
 }
 
+
 /* back to top */
+
 .d_none {
     display: none;
 }
@@ -807,6 +820,24 @@ body {
     border: 1px solid transparent;
     border-radius: 50px;
     transition: all linear 0.3s !important;
+    /* new add class */
+    background: var(--black);
+    animation: backToTop 2s linear infinite;
+}
+
+
+/* new add class  */
+
+@keyframes backToTop {
+    0% {
+        transform: translatey(0) scale(.998);
+    }
+    50% {
+        transform: translatey(-7px) scale(1.1023);
+    }
+    100% {
+        transform: translatey(0) scale(.998);
+    }
 }
 
 .back_top_btn::before {
@@ -834,7 +865,9 @@ body {
     }
 }
 
+
 /* understanding-section */
+
 .understanding_card {
     border-radius: 15px;
     width: 524px;
@@ -867,7 +900,9 @@ body {
     transform: translateY(-4%);
 }
 
+
 /*==================Statistics=================== */
+
 .Statistics_ellips1 {
     position: absolute;
     z-index: -1;
@@ -929,6 +964,7 @@ body {
     border: 1px solid;
     background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
 }
+
 
 /*--============Average-Earnings==============--> */
 
@@ -1011,7 +1047,6 @@ body {
         -ms-transform: translateX(1403px);
         -o-transform: translateX(1403px);
     }
-
     100% {
         transform: translateX(-1200px);
     }
@@ -1025,7 +1060,6 @@ body {
         -ms-transform: translateX(-1403px);
         -o-transform: translateX(-1403px);
     }
-
     100% {
         transform: translateX(1200px);
     }
@@ -1077,8 +1111,8 @@ body {
 }
 
 .FooterBottomPadding {
-    padding-top: 27px;
-    padding-bottom: 27px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .footerPadding {
@@ -1097,6 +1131,7 @@ body {
     gap: 13px;
 }
 
+
 /* ---------------faq--------------- */
 
 .accordion {
@@ -1105,7 +1140,7 @@ body {
     --bs-accordion-active-color: none !important;
     --bs-accordion-active-bg: none !important;
     --bs-accordion-btn-focus-box-shadow: none !important;
-    --bs-accordion-btn-icon-width: 32px !important;
+    --bs-accordion-btn-icon-width: 22px !important;
 }
 
 .accordion-item {
@@ -1122,7 +1157,7 @@ body {
 
 .accordion-button {
     display: flex;
-    align-items: flex-start;
+    align-items: start !important;
     padding: 9px 3px !important;
 }
 
@@ -1133,7 +1168,7 @@ body {
     background-size: none !important;
 }
 
-button:not(:disabled) {
+.faqSection button:not(:disabled) {
     cursor: pointer;
     background-color: transparent !important;
     color: white;
@@ -1148,11 +1183,11 @@ button:not(:disabled) {
 }
 
 .accordion-body {
-    opacity: 80%;
-    max-width: 603px;
-    padding: 6px 3px !important;
+    color: var(--cd-gray);
+    padding: 6px 25px 0px 3px !important;
     padding-top: 0px !important;
 }
+
 
 /* -------------Ai stock trading section------------- */
 
@@ -1183,20 +1218,30 @@ button:not(:disabled) {
     color: white;
     outline: none;
     border: 1px solid var(--gray);
-    border-radius: 8px;
-    padding: 16px;
+    border-radius: 4px;
+    padding: 12px;
 }
 
 .AiStockInputPhone {
     background-color: transparent;
     color: white;
-    outline: none;
-    border-radius: 8px;
-    padding: 16px;
+    outline: 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+.backdrop {
+    backdrop-filter: blur(8px) contrast(120%);
 }
 
 .borderInput {
     border: 1px solid var(--gray);
+}
+
+.border_red {
+    border-radius: 4px;
+    border-bottom: 1px solid red;
 }
 
 .place::placeholder {
@@ -1216,6 +1261,74 @@ button:not(:disabled) {
 .btnSignup:hover {
     background: var(--white) !important;
 }
+
+
+/* code */
+
+
+/* .bg_color {
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+} */
+
+
+/* .hexagon {
+    position: relative;
+    margin: 5px;
+    width: 160px;
+    height: 207px;
+    background-color: var(--white);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transform: rotate(180deg);
+}
+
+.hexagon::before,
+.hexagon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+}
+
+.hexagon::before {
+    top: -28.87px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 50%, 50% 25%, 0% 50%, 0% 25%);
+}
+
+.hexagon::after {
+    bottom: -28.87px;
+    clip-path: polygon(50% 50%, 100% 75%, 100% 100%, 50% 75%, 0% 100%, 0% 75%);
+}
+
+.hexagonTwo {
+    padding: 2px;
+    position: relative;
+    width: 160px;
+    height: 207px;
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transform: rotate(90deg);
+}
+
+.hexagonTwo::before,
+.hexagonTwo::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+}
+
+.hexagonTwo::before {
+    top: -28.87px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 50%, 50% 25%, 0% 50%, 0% 25%);
+}
+
+.hexagonTwo::after {
+    bottom: -28.87px;
+    clip-path: polygon(50% 50%, 100% 75%, 100% 100%, 50% 75%, 0% 100%, 0% 75%);
+} */
+
 
 /* ----------------footer-section---------------- */
 
@@ -1380,36 +1493,28 @@ button:not(:disabled) {
     .mw_1164 {
         max-width: 1164px;
     }
-
     .mw_262 {
         max-width: 262px;
     }
-
     .mw_309 {
         max-width: 309px;
     }
-
     .mw_327 {
         max-width: 327px;
     }
-
     .mw_518 {
         max-width: 518px;
     }
-
     .py_average {
         padding-top: 150px;
         padding-bottom: 150px;
     }
-
     .mw_1200 {
         max-width: 1200px !important;
     }
-
     .pt_Statistics {
         padding-top: 151px;
     }
-
     body {
         background-image: url("/assets/images/webp/background-image.webp") !important;
         background-position: center;
@@ -1422,39 +1527,31 @@ button:not(:disabled) {
     .mw_750 {
         max-width: 750px !important;
     }
-
     .icons_card {
         margin-bottom: 32px;
     }
-
     .ellipse_1 {
         width: 415px;
         height: 415px;
     }
-
     .ellipse_2 {
         width: 415px;
         height: 415px;
     }
-
     .trade_img {
         transform: translateY(-15%);
     }
-
     .benifit_card {
         padding: 20px 20.5px 20px 20.5px;
         min-height: 240px;
     }
-
     .mobile_back_ellp {
         left: 5%;
         top: 12%;
     }
-
     .pt_Statistics {
         padding-top: 80px;
     }
-
 }
 
 @media (min-width:1400px) {
@@ -1464,7 +1561,7 @@ button:not(:disabled) {
 }
 
 @media (max-width:1200px) {
-    :root {
+     :root {
         /*=========font-size========*/
         --fs-6lg: 30px !important;
         --fs-8xl: 35px !important;
@@ -1472,14 +1569,12 @@ button:not(:disabled) {
 }
 
 @media (max-width:768px) {
-    :root {
+     :root {
         --lh-7xl: 47px !important;
     }
-
     .pt_Statistics {
         padding-top: 70px;
     }
-
 }
 
 @media (min-width:768px) {
@@ -1487,50 +1582,46 @@ button:not(:disabled) {
         padding-left: 88px;
         padding-right: 88px;
     }
-
     .box-time {
         max-width: 128px;
         padding: 27px 34px;
         background: #ffffff01;
         backdrop-filter: blur(20px);
     }
-
     .px-44 {
         padding-left: 44px;
         padding-right: 44px;
     }
-
     .bg-hero-img {
         background-size: 100% 100%;
     }
-
     .mobile_wh {
         width: 314px;
         height: 614px;
     }
-
     .mobile_back_ellp {
         left: 30%;
         top: 12%;
     }
-
     .pt_Statistics {
         padding-top: 70px;
     }
 }
 
 @media (max-width:576px) {
-    :root {
+     :root {
         /*=========font-size========*/
         --fs-xs: 14px !important;
         --fs-sm: 16px !important;
         --fs-md: 20px !important;
+        /* new add class */
+        --fs-4md: 22px;
+        /*  */
         --fs-lg: 20px !important;
         --fs-6lg: 20px !important;
         --fs-xl: 32px !important;
         --fs-8xl: 28px !important;
         --fs-xxl: 32px !important;
-
         /*=============line-height=========== */
         --lh-xsm: 22px !important;
         --lh-sm: 22px !important;
@@ -1542,11 +1633,9 @@ button:not(:disabled) {
         --lh-9xl: 40px !important;
         --lh-10xl: 48px !important;
     }
-
     .statistics_circle {
         width: 254px;
         height: 254px;
-
         border: 8px solid white;
         border-radius: 100%;
     }
@@ -1554,66 +1643,73 @@ button:not(:disabled) {
 
 @media (min-width:575.5px) {
     .accordion-body {
-        padding: 14px 3px 0px 3px !important;
+        max-width: 680px;
+        padding: 14px 30px 0px 3px !important;
     }
-
     .accordion-button {
         padding: 20px 3px 0px 3px !important;
     }
-
     .accordion-item {
         padding-bottom: 20px !important;
     }
-
     /* aispote */
     .AiStockCard {
         padding: 24px;
     }
-
     .imgAi {
         max-width: 207px;
         height: 176px;
     }
-
     /* footer */
     .footerPadding {
         padding-top: 10px;
     }
-
     .FaqLeftEllips {
         width: 220px;
         height: 200px;
     }
-
     .FaqRightEllips {
         width: 150px;
         height: 200px;
     }
-
     .FaqBottomEllips {
         width: 160px;
         height: 200px;
     }
-
     .Ai_stackLeftEllips {
         width: 200px;
         height: 200px;
     }
-
     .Ai_stackRightEllips {
         width: 200px;
         height: 200px;
     }
-
     .footerLeft {
         width: 200px;
         height: 200px;
         filter: blur(160px);
     }
-
     .footerRight {
         width: 200px;
         height: 100px;
+    }
+    /* new add class */
+    .back {
+        width: 35px;
+        height: 35px;
+    }
+    .FooterBottomPadding {
+        padding-top: 27px;
+        padding-bottom: 27px;
+    }
+    .AiStockInput {
+        padding: 16px;
+    }
+    .AiStockInputPhone {
+        padding: 16px;
+    }
+    .accordion {
+        --bs-accordion-btn-icon-width: 28px !important;
     }
 }
 
@@ -1621,7 +1717,6 @@ button:not(:disabled) {
     .understanding_card {
         padding: 25px 50px 0px 25px;
     }
-
     .mobile_back_ellp {
         left: 5%;
         top: 12%;
