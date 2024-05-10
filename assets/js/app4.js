@@ -1,53 +1,61 @@
-const name = document.getElementById("name");
-const errorname = document.getElementById("errorname");
-const lastname = document.getElementById("lastname");
-const errorlastname = document.getElementById("errorlastname");
-const number = document.getElementById("number");
-const errornumber = document.getElementById("errornumber");
-const email = document.getElementById("email");
-const erroremail = document.getElementById("erroremail");
-const submit = document.getElementById("submit");
+const FirstName = document.getElementById("firstName");
+const errorFirstName = document.getElementById("errorFirstName");
+const lastName = document.getElementById("lastName");
+const errorLastName = document.getElementById("errorLastName");
+const PNumber = document.getElementById("Number");
+const errorNumber = document.getElementById("errorNumber");
+const Email = document.getElementById("Email");
+const errorEmail = document.getElementById("errorEmail");
+const Submit = document.getElementById("Submit");
+
 const regex = {
-  Name: /^[a-zA-Z\s]+$/,
-  LastName: /^[a-zA-Z\s]+$/,
-  Number: /^\d{10}$/,
-  Email: /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,})$/,
-  Password: /^(?=.[A-Za-z])(?=.\d)(?=.[@$!%#?&])[A-Za-z\d@$!%*#?&]{8,}$/,
+  firstName: /^[a-zA-Z\s]+$/,
+  lastName: /^[a-zA-Z\s]+$/,
+  number: /^\d{10}$/,
+  email: /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/,
 };
 
-submit.addEventListener("click", function (event) {
+Submit.addEventListener("click", function (event) {
   event.preventDefault();
-  if (!regex.Name.test(name.value)) {
-    errorname.innerHTML = "invalid name";
+
+  if (!regex.firstName.test(FirstName.value)) {
+    errorFirstName.innerHTML = "Invalid first name";
   } else {
-    errorname.innerHTML = "";
+    errorFirstName.innerHTML = "";
   }
-  if (!regex.LastName.test(lastname.value)) {
-    errorlastname.innerHTML = "invalid last name";
+
+  if (!regex.lastName.test(lastName.value)) {
+    errorLastName.innerHTML = "Invalid last name";
   } else {
-    errorlastname.innerHTML = "";
+    errorLastName.innerHTML = "";
   }
-  if (!regex.Number.test(number.value)) {
-    errornumber.innerHTML = "invalid number";
+
+  if (!regex.number.test(PNumber.value)) {
+    errorNumber.innerHTML = "Invalid number";
   } else {
-    errornumber.innerHTML = "";
+    errorNumber.innerHTML = "";
   }
-  if (!regex.Email.test(email.value)) {
-    erroremail.innerHTML = "invalid email";
+
+  if (!regex.email.test(Email.value)) {
+    errorEmail.innerHTML = "Invalid email";
   } else {
-    erroremail.innerHTML = "";
+    errorEmail.innerHTML = "";
   }
 
   if (
-    regex.Name.test(name.value) &&
-    regex.Number.test(number.value) &&
-    regex.Email.test(email.value) &&
-    regex.LastName.test(lastname.value)
+    regex.firstName.test(FirstName.value) &&
+    regex.lastName.test(lastName.value) &&
+    regex.number.test(PNumber.value) &&
+    regex.email.test(Email.value)
   ) {
-    alert(" from submit successfully");
-    name.value = "";
-    number.value = "";
-    email.value = "";
-    lastname.value = "";
+    alert("Form submitted successfully");
+    FirstName.value = "";
+    lastName.value = "";
+    PNumber.value = "";
+    Email.value = "";
   }
 });
+// year function
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
+document.getElementById("currentYear").textContent = currentYear;
