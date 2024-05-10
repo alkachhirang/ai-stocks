@@ -274,6 +274,7 @@ body {
     position: relative;
     z-index: 1;
     overflow: hidden;
+    transition: all .3s linear;
 }
 
 .mt-20 {
@@ -309,8 +310,12 @@ body {
     opacity: 1;
 }
 
-.max-w-388 {
-    max-width: 388px;
+.nav-button:hover {
+    background-color: white !important;
+}
+
+.nav-button:hover::after {
+    opacity: 0;
 }
 
 .nav-background {
@@ -362,10 +367,6 @@ body {
 .px-12P {
     padding-left: 12px;
     padding-right: 12px;
-}
-
-.max-w-654 {
-    max-width: 654px;
 }
 
 .mt-39 {
@@ -535,7 +536,6 @@ body {
     gap: 20px;
 }
 
-
 .man-profile-card {
     padding: 20px;
     min-width: 367px;
@@ -610,8 +610,12 @@ body {
     background-size: cover;
 }
 
+.mw_946 {
+    max-width: 946px;
+}
+
 .mw_733 {
-    max-width: 733px;
+    max-width: 733px
 }
 
 .mw_974 {
@@ -748,10 +752,6 @@ body {
 }
 
 /*==================Statistics=================== */
-.pt_Statistics {
-    padding-top: 151px;
-}
-
 .Statistics_ellips1 {
     position: absolute;
     z-index: -1;
@@ -896,12 +896,19 @@ body {
     .mw_1200 {
         max-width: 1200px !important;
     }
+
+    .pt_Statistics {
+        padding-top: 151px;
+    }
 }
 
 @media (min-width:992px) {
     .mw_750 {
         max-width: 750px !important;
     }
+        .max-w-654 {
+            max-width: 654px;
+        }
 
     .icons_card {
         margin-bottom: 32px;
@@ -929,6 +936,14 @@ body {
     .mobile_back_ellp {
         left: 5%;
         top: 12%;
+    }
+
+    .pt_Statistics {
+        padding-top: 80px;
+    }
+
+    .max-w-388 {
+        max-width: 388px;
     }
 }
 
@@ -979,6 +994,10 @@ body {
         --lh-12xl: 103px;
     }
 
+    .pt_Statistics {
+        padding-top: 70px;
+    }
+
 }
 
 @media (min-width:768px) {
@@ -1014,6 +1033,10 @@ body {
         left: 30%;
         top: 12%;
     }
+
+    .pt_Statistics {
+        padding-top: 70px;
+    }
 }
 
 @media (max-width:576px) {
@@ -1025,7 +1048,7 @@ body {
         --fs_2md: 21.13px;
         --fs-4md: 24px;
         --fs-8md: 20px;
-        --fs-lg: 26px !important;
+        --fs-lg: 20px !important;
         --fs-6lg: 20px !important;
         --fs-xl: 40px;
         --fs-8xl: 20px !important;
@@ -1045,10 +1068,10 @@ body {
         --lh-xxl: 30px;
         --lh-2xl: 28px !important;
         --lh-3xl: 34px;
-        --lh-4xl: 44px;
+        --lh-4xl: 31px !important;
         --lh-5xl: 46px;
         --lh-6xl: 47px;
-        --lh-7xl: 38px !important;
+        --lh-7xl: 33px !important;
         --lh-8xl: 20px !important;
         --lh-9xl: 40px !important;
         --lh-10xl: 48px !important;
