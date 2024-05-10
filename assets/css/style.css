@@ -908,6 +908,79 @@ body {
     color: #020507 !important;
 }
 
+.company-dimension {
+    max-width: 210px;
+    max-height: 109px;
+}
+
+.brand_slider_parent3 {
+    animation-name: sliderScroll2;
+    animation-duration: 70s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: -70s;
+}
+
+.brand_slider_parent4 {
+    animation-name: sliderScroll2;
+    animation-delay: -35s;
+    animation-duration: 70s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.brand_slider_parentalternate3 {
+    animation-name: sliderScrollalternate2;
+    animation-duration: 70s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: -70s;
+}
+
+.brand_slider_parentalternate4 {
+    animation-name: sliderScrollalternate2;
+    animation-delay: -35s;
+    animation-duration: 70s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.gap-12 {
+    gap: 12px;
+}
+
+@keyframes sliderScroll2 {
+    0% {
+        transform: translateX(1403px);
+        -webkit-transform: translateX(1403px);
+        -moz-transform: translateX(1403px);
+        -ms-transform: translateX(1403px);
+        -o-transform: translateX(1403px);
+    }
+
+    100% {
+        transform: translateX(-1200px);
+    }
+}
+
+@keyframes sliderScrollalternate2 {
+    0% {
+        transform: translateX(-1403px);
+        -webkit-transform: translateX(-1403px);
+        -moz-transform: translateX(-1403px);
+        -ms-transform: translateX(-1403px);
+        -o-transform: translateX(-1403px);
+    }
+
+    100% {
+        transform: translateX(1200px);
+    }
+}
+
+.mt-12 {
+    margin-top: 12px;
+}
+
 /* --------------common-class-------------- */
 
 .blueGraident {
