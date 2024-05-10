@@ -82,7 +82,7 @@ body {
     --off-black3: #020507;
     --off-black4: #010101;
     --off-black5: #15171a;
-    --gray: #4d4f51;
+    --gray2: #4d4f51;
     --green: #00ffe1;
     --c-gray: #CCCECF;
     --c-black-100: #010101;
@@ -122,6 +122,9 @@ body {
 
 .gray {
     color: var(--gray);
+}
+.gray2 {
+    color: var(--gray2);
 }
 
 .green {
