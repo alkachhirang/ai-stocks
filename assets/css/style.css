@@ -948,31 +948,9 @@ body {
 
 /*--============Average-Earnings==============--> */
 
-.custom_container {
-    max-width: calc(100vw-1184px) !important;
-    margin-right: auto;
-}
-
 .py_average {
     padding-top: 91px;
     padding-bottom: 70px;
-}
-
-.mb_12 {
-    margin-bottom: 12px;
-}
-
-.br_8 {
-    border-radius: 8px;
-}
-
-.px_6 {
-    padding-right: 6px;
-    padding-bottom: 6px;
-}
-
-.mw_210 {
-    max-width: 210px;
 }
 
 .mw_450 {
@@ -1072,8 +1050,6 @@ body {
     margin-top: 12px;
 }
 
-/* --------------common-class-------------- */
-
 .blueGraident {
     background: linear-gradient(93.4deg, #00FFE1 38.61%, #6E5DF6 92.96%);
 }
@@ -1091,8 +1067,6 @@ body {
     opacity: 80%;
 }
 
-/* ---------------------------max-width--------------------------- */
-
 .max_w_Faq {
     max-width: 716px;
 }
@@ -1108,8 +1082,6 @@ body {
 .min_h {
     min-height: 534px;
 }
-
-/* padding */
 
 .pt_12 {
     padding-top: 12px;
@@ -1128,8 +1100,6 @@ body {
     padding-top: 20px;
 }
 
-/* margin */
-
 .mt_12 {
     margin-top: 12px;
 }
@@ -1137,8 +1107,6 @@ body {
 .mb_12 {
     margin-bottom: 12px;
 }
-
-/* gap  */
 
 .gapFooterLink {
     gap: 13px;
