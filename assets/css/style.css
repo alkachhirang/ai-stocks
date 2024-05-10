@@ -279,6 +279,10 @@ body {
     background-repeat: no-repeat;
 }
 
+.max-w-388 {
+    max-width: 388px;
+}
+
 .py-12 {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -580,6 +584,10 @@ body {
 
 .mt-44 {
     margin-top: 44px;
+}
+
+.max-w-654 {
+    max-width: 654px;
 }
 
 @keyframes sliderScroll {
@@ -925,10 +933,6 @@ body {
         max-width: 750px !important;
     }
 
-    .max-w-654 {
-        max-width: 654px;
-    }
-
     .icons_card {
         margin-bottom: 32px;
     }
@@ -961,9 +965,6 @@ body {
         padding-top: 80px;
     }
 
-    .max-w-388 {
-        max-width: 388px;
-    }
 }
 
 @media (min-width:1400px) {
