@@ -99,7 +99,7 @@ body {
 }
 
 .c-black-100 {
-    color: var(--c-black-100);
+    color: var(--c-black-100) !important;
 }
 
 .c-light-green {
