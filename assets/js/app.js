@@ -188,3 +188,10 @@ window.addEventListener("scroll", function () {
         backtotop.style.display = "none";
     }
 });
+
+// preloader
+const preloader = document.getElementById("preloader");
+setTimeout(() => {
+    document.getElementById("preloder").classList.add("d-none");
+    document.body.classList.remove("overflow_hidden");
+}, 3500);

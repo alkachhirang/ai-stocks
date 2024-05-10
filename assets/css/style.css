@@ -9,12 +9,6 @@
     box-sizing: border-box;
 }
 
-/* 
-body,
-html {
-    overflow-x: hidden !important;
-} */
-
 body {
     background-image: url("/assets/images/png/bg-img-body.png") !important;
     background-position: center;
@@ -631,6 +625,32 @@ body {
     }
 }
 
+/*===============preloader================ */
+.overflow_hidden {
+    overflow: hidden;
+}
+
+#preloder {
+    z-index: 5;
+}
+
+.ciclre {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border-top: 5px solid var(--white);
+    border-bottom: 5px solid var(--greenlight);
+    border-left: 5px solid var(--white);
+    border-right: 5px solid var(--greenlight);
+    animation: preloder_one 2s linear infinite;
+}
+
+@keyframes preloder_one {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /* benifit-section */
 .ellipse_1 {
     width: 215px;
@@ -754,6 +774,7 @@ body {
 .mw_990 {
     max-width: 990px !important;
 }
+
 /* back to top */
 .d_none {
     display: none;
@@ -802,6 +823,7 @@ body {
         box-shadow: 0 0 #02CDCF;
     }
 }
+
 /* understanding-section */
 .understanding_card {
     border-radius: 15px;
