@@ -48,6 +48,18 @@ setInterval(function () {
     document.querySelector(
         "#seconds"
     ).innerHTML = ` ${remainingTime.seconds}`;
+    document.querySelector(
+        "#day"
+    ).innerHTML = ` ${remainingTime.days}`;
+    document.querySelector(
+        "#hour"
+    ).innerHTML = `  ${remainingTime.hours}`;
+    document.querySelector(
+        "#minuet"
+    ).innerHTML = ` ${remainingTime.minutes}`;
+    document.querySelector(
+        "#second"
+    ).innerHTML = ` ${remainingTime.seconds}`;
 }, 1000);
 const name = document.getElementById('name')
 const errorname = document.getElementById('errorname')
