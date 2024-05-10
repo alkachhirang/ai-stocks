@@ -579,6 +579,18 @@ body {
     width: 100%;
     background: linear-gradient(90.19deg, rgba(255, 255, 255, 0.04) -76.18%, rgba(153, 153, 153, 0.0056) 88.54%);
     border-radius: 8px;
+    cursor: pointer;
+}
+
+.border-3-gradiant::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    opacity: 4%;
+    background: linear-gradient(195.67deg, #00FFE1 83.47%, #6E5DF6 102.11%);
 }
 
 .brand_slider_parent {
@@ -742,7 +754,54 @@ body {
 .mw_990 {
     max-width: 990px !important;
 }
+/* back to top */
+.d_none {
+    display: none;
+}
 
+.back {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back_top_btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: var(--white);
+    border: 1px solid transparent;
+    border-radius: 50px;
+    transition: all linear 0.3s !important;
+}
+
+.back_top_btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    padding: 2px;
+    background: linear-gradient(180.4deg, #00FFE1 38.61%, #6E5DF6 92.96%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+.back_top_btn:hover {
+    color: var(--white);
+    animation: pulse 1s linear;
+    box-shadow: 0 0 0 0.7em transparent;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 #02CDCF;
+    }
+}
 /* understanding-section */
 .understanding_card {
     border-radius: 15px;
