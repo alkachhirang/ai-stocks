@@ -1391,6 +1391,10 @@ button:not(:disabled) {
     z-index: -1;
 }
 
+.mw_210 {
+    max-width: 210px;
+}
+
 @media (min-width:1400px) {
     .mw_800 {
         max-width: 800px !important;
@@ -1451,7 +1455,7 @@ button:not(:disabled) {
         --lh-4xl: 44px;
         --lh-5xl: 46px;
         --lh-6xl: 40px !important;
-        --lh-7xl: 60px;
+        --lh-7xl: 50px !important;
         --lh-8xl: 65px;
         --lh-9xl: 62px;
         --lh-10xl: 75px;
@@ -1460,11 +1464,28 @@ button:not(:disabled) {
         --lh-6xxl: 54.47px;
 
     }
+
+    .mw_750 {
+        max-width: 750px !important;
+    }
+}
+
+@media (min-width: 1023.8px) {
+    .understanding_card {
+        padding: 25px 50px 0px 25px;
+    }
+
+    .mobile_back_ellp {
+        left: 5%;
+        top: 12%;
+        max-width: 461px;
+        height: 421px;
+    }
 }
 
 @media (min-width:992px) {
-    .mw_750 {
-        max-width: 750px !important;
+    .average_hidden {
+        overflow: hidden !important;
     }
 
     .mw_262 {
@@ -1516,6 +1537,10 @@ button:not(:disabled) {
 
         /*---------line-height----------*/
         --lh-7xl: 53px !important;
+    }
+
+    .mw_750 {
+        max-width: unset !important;
     }
 }
 
