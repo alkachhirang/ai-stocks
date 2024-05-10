@@ -84,6 +84,23 @@ body {
     --off-black5: #15171a;
     --gray: #4d4f51;
     --green: #00ffe1;
+    --c-gray: #CCCECF;
+    --c-black-100: #010101;
+    --c-light-green: #23CAE7;
+}
+
+.c-gray {
+    color: var(--c-gray);
+}
+
+.c-black-100 {
+    color: var(--c-black-100);
+}
+
+.c-light-green {
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+    color: transparent;
+    background-clip: text;
 }
 
 .off-black {
@@ -255,6 +272,7 @@ body {
 }
 
 /*=====================Header-section===================*/
+
 .bg-hero-img {
     background-image: url(../images/png/Heroimg.webp);
     background-size: cover;
@@ -906,9 +924,10 @@ body {
     .mw_750 {
         max-width: 750px !important;
     }
-        .max-w-654 {
-            max-width: 654px;
-        }
+
+    .max-w-654 {
+        max-width: 654px;
+    }
 
     .icons_card {
         margin-bottom: 32px;
