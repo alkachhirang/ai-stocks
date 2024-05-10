@@ -1176,7 +1176,7 @@ body {
 
 button:not(:disabled) {
     cursor: pointer;
-    background-color: #000000;
+    background-color: transparent;
     color: white;
 }
 
