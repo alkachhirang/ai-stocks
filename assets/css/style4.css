@@ -59,6 +59,10 @@
     .max_w_AiStock {
         max-width: 575px;
     }
+    
+    .min_h {
+        min-height: 534px;
+    }
     /* padding */
     
     .pt_12 {
@@ -151,10 +155,11 @@
     
     .AiStockCard {
         max-width: 558px;
-        padding: 24px;
+        padding: 12px;
         border-radius: 8px;
         background-color: var(--black);
         position: relative;
+        z-index: 1;
     }
     
     .AiStockCard::before {
@@ -167,6 +172,7 @@
         -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
         -webkit-mask-composite: xor;
         mask-composite: exclude;
+        z-index: -1;
     }
     
     .AiStockInput {
@@ -202,6 +208,8 @@
         padding-top: 12px;
         border-radius: 8px;
     }
+    
+    .btnSignup:hover {}
     /* ----------------footer-section---------------- */
     
     .opacity {
@@ -326,10 +334,6 @@
         z-index: -1;
     }
     
-    .min_h {
-        min-height: 534px;
-    }
-    
     .imgAIshot {
         position: absolute;
         top: 40%;
@@ -391,6 +395,9 @@
             padding-bottom: 20px !important;
         }
         /* aispote */
+        .AiStockCard {
+            padding: 24px;
+        }
         .imgAi {
             max-width: 207px;
             height: 176px;
