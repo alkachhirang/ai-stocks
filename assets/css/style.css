@@ -867,22 +867,6 @@ body {
     transform: translateY(-4%);
 }
 
-.maximize_btn:hover {
-    --tw-shadow: -4px 0 12px -2px #6e5df6, 4px 0 12px -2px #00ffe1;
-    --tw-shadow-colored: -4px 0 12px -2px var(--tw-shadow-color),
-        4px 0 12px -2px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.maximize_btn {
-    transition: all 400ms linear;
-    padding: 12px 24px 12px 24px;
-    border: 1px solid white;
-    border-radius: 4px;
-    background: linear-gradient(107.02deg, #00ffe1 12.76%, #6e5df6 91.81%);
-}
-
 /*==================Statistics=================== */
 .Statistics_ellips1 {
     position: absolute;
