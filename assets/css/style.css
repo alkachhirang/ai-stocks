@@ -1033,8 +1033,8 @@ body::-webkit-scrollbar-thumb {
 .border_Statistics {
     border-radius: 100%;
     background: #FFFFFF0D;
-    width: 270px;
-    height: 270px;
+    width: 220px;
+    height: 220px;
     backdrop-filter: blur(31.478700637817383px);
     position: relative;
     padding: 8px;
@@ -1605,6 +1605,11 @@ button:not(:disabled) {
 
     .pt_Statistics {
         padding-top: 80px;
+    }
+
+    .border_Statistics {
+        width: 270px;
+        height: 270px;
     }
 
 }
