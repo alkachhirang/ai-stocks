@@ -684,13 +684,6 @@ body {
     background: linear-gradient(100.62deg, #00ffe1 31.2%, #6e5df6 48.95%);
 }
 
-.section_bg {
-    background-image: url("../images/png/background-image.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .mw_946 {
     max-width: 946px;
 }
