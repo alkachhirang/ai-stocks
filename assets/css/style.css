@@ -735,11 +735,7 @@ body {
   z-index: 5;
 }
 
-.benifit_gradient:hover {
-  border-radius: 12px;
-  padding: 1px;
-  background: linear-gradient(171.68deg, #00ffe1 39.97%, #6e5df6 107.69%);
-}
+
 
 .benifit_card:hover .icons_card {
   background: var(--off-black5);
