@@ -525,69 +525,9 @@ body::-webkit-scrollbar-thumb {
     overflow-x: clip;
 }
 
-.ellipes1headerleft-top {
-    position: absolute;
-    z-index: -1;
-    top: 2%;
-    left: -10%;
-    width: 197px;
-    height: 197px;
-    pointer-events: none;
-    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
-    filter: blur(95px);
-}
-
-.ellipes2headerleft-topdown {
-    position: absolute;
-    z-index: -1;
-    top: 41%;
-    left: -11%;
-    width: 197px;
-    height: 197px;
-    pointer-events: none;
-    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
-    filter: blur(115px);
-}
-
-.ellipes3headerleft-bottom {
-    position: absolute;
-    z-index: -1;
-    bottom: 3%;
-    left: -15%;
-    width: 197px;
-    fill: #00ffe1;
-    height: 197px;
-    pointer-events: none;
-    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
-    filter: blur(105px);
-}
 
 .mb-100 {
     margin-bottom: 100px;
-}
-
-.ellipes4headerright-top {
-    position: absolute;
-    z-index: -1;
-    top: 26%;
-    right: -8%;
-    width: 197px;
-    height: 197px;
-    pointer-events: none;
-    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
-    filter: blur(89px);
-}
-
-.ellipes5headerright-bottom {
-    position: absolute;
-    z-index: -3;
-    bottom: 6%;
-    right: -10%;
-    width: 197px;
-    height: 197px;
-    pointer-events: none;
-    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
-    filter: blur(115px);
 }
 
 .pb-58 {
@@ -1445,6 +1385,10 @@ button:not(:disabled) {
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
+
+    .mb-xl-100 {
+        margin-bottom: 100px;
+    }
 }
 
 @media (max-width:1200px) {
@@ -1541,6 +1485,18 @@ button:not(:disabled) {
         height: 270px;
     }
 
+    .max-w-lg-388 {
+        max-width: 388px;
+    }
+
+    .vedio {
+        margin: 0 12px;
+    }
+
+    .mt_0 {
+        margin-top: 0;
+    }
+
 }
 
 @media (max-width:992px) {
@@ -1605,6 +1561,18 @@ button:not(:disabled) {
 
     .mw_209 {
         max-width: 209px;
+    }
+
+    .mt-md-40 {
+        margin-top: 40px;
+    }
+
+    .mb-md-64 {
+        margin-bottom: 64px;
+    }
+
+    .email-input-style-header {
+        padding: 16px;
     }
 }
 
@@ -1671,6 +1639,10 @@ button:not(:disabled) {
         width: 200px;
         height: 100px;
     }
+
+    .box-timenumber::after {
+        height: 4px;
+    }
 }
 
 @media (max-width:576px) {
@@ -1705,6 +1677,10 @@ button:not(:disabled) {
 
         border: 8px solid white;
         border-radius: 100%;
+    }
+
+    .nav-small-screen {
+        padding: 6px 16px !important;
     }
 }
 
