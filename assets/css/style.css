@@ -16,6 +16,10 @@ body {
     background-size: 100% 100%;
 }
 
+.z_5 {
+    z-index: 5 !important;
+}
+
 .bg_body {
     background-color: #010101 !important;
 }
