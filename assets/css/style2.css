@@ -45,8 +45,6 @@
 .ellipse_1 {
   width: 215px;
   height: 215px;
-  flex-shrink: 0;
-  fill: #00ffe1;
   filter: blur(224px);
   top: 1%;
   left: -55%;
@@ -56,11 +54,9 @@
 .ellipse_2 {
   width: 215px;
   height: 215px;
-  flex-shrink: 0;
-  fill: var(--green);
   filter: blur(224px);
   bottom: 24%;
-  right: -75%;
+  right: -50%;
   z-index: 0;
   background: linear-gradient(100.62deg, #00ffe1 31.2%, #6e5df6 48.95%);
 }
