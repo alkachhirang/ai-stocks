@@ -918,9 +918,9 @@ body::-webkit-scrollbar-thumb {
 
 .border_Statistics {
     border-radius: 100%;
-    background: #FFFFFF0D;
-    width: 270px;
-    height: 270px;
+    background: transparent;
+    width: 220px;
+    height: 220px;
     backdrop-filter: blur(31.478700637817383px);
     position: relative;
     padding: 8px;
@@ -1402,14 +1402,6 @@ button:not(:disabled) {
         max-width: 1164px;
     }
 
-    .mw_262 {
-        max-width: 262px;
-    }
-
-    .mw_309 {
-        max-width: 309px;
-    }
-
     .mw_327 {
         max-width: 327px;
     }
@@ -1442,14 +1434,41 @@ button:not(:disabled) {
 @media (max-width:1200px) {
     :root {
         /*=========font-size========*/
-        --fs-6lg: 30px !important;
+        --fs-6lg: 26px !important;
         --fs-8xl: 35px !important;
+
+        /*------------line-height-----------*/
+        --lh-xsm: 24px;
+        --lh-sm: 25px;
+        --lh-md: 25.6px;
+        --lh-2md: 26px;
+        --lh-lg: 27.24px;
+        --lh-2lg: 28px;
+        --lh-xl: 29px;
+        --lh-xxl: 30px;
+        --lh-2xl: 33px;
+        --lh-3xl: 34px;
+        --lh-4xl: 44px;
+        --lh-5xl: 46px;
+        --lh-6xl: 40px !important;
+        --lh-7xl: 60px;
+        --lh-8xl: 65px;
+        --lh-9xl: 62px;
+        --lh-10xl: 75px;
+        --lh-11xl: 87px;
+        --lh-12xl: 103px;
+        --lh-6xxl: 54.47px;
+
     }
 }
 
 @media (min-width:992px) {
     .mw_750 {
         max-width: 750px !important;
+    }
+
+    .mw_262 {
+        max-width: 262px;
     }
 
     .icons_card {
@@ -1484,6 +1503,20 @@ button:not(:disabled) {
         padding-top: 80px;
     }
 
+    .border_Statistics {
+        width: 270px;
+        height: 270px;
+    }
+
+}
+
+@media (max-width:992px) {
+    :root {
+        --fs-3xxl: 77.24px !important;
+
+        /*---------line-height----------*/
+        --lh-7xl: 53px !important;
+    }
 }
 
 @media (max-width:768px) {
@@ -1531,6 +1564,10 @@ button:not(:disabled) {
 
     .pt_Statistics {
         padding-top: 70px;
+    }
+
+    .mw_209 {
+        max-width: 209px;
     }
 }
 
@@ -1617,6 +1654,8 @@ button:not(:disabled) {
         --lh-2md: 25px !important;
         --lh-2xl: 28px !important;
         --lh-4xl: 31px !important;
+        --lh-5xl: 34px !important;
+        --lh-6xl: 32px !important;
         --lh-7xl: 33px !important;
         --lh-8xl: 20px !important;
         --lh-9xl: 40px !important;
