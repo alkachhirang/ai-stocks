@@ -1,19 +1,24 @@
 @import url(../css/style.css);
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
 :root {
   --fs_2md: 21.13px;
   /* color */
   --off-black: #0b0e10;
   --off-black2: #0b0f11;
   --off-black3: #020507;
-  --off-black4: #010101;
-  --off-black5: #15171a;
+  --off-gray: #15171a;
   --gray: #4d4f51;
   --green: #00ffe1;
 }
 .fs_2md {
   font-size: var(--fs_2md);
 }
-
 .off-black {
   color: var(--off-black);
 }
@@ -102,17 +107,23 @@
   z-index: 5;
 }
 .benifit_card:hover .icons_card {
-  background: var(--off-black5);
+  background: var(--off-gray);
 }
 .benifit_card:hover {
-  border: 1px solid var(--green);
   border-radius: 12px;
-  background: var(--off-black2);
+  border: 1px solid transparent;
+  background: var(--off-black2) !important;
+}
+.benifit_gradient:hover {
+  border-radius: 12px;
+  min-height: 180px;
+  padding: 1px;
+  background: linear-gradient(171.68deg, #00ffe1 39.97%, #6e5df6 107.69%);
 }
 .benifit_card {
-  transition: all 0.4s linear;
   padding: 30px 10.5px 30px 10.5px;
   min-height: 180px;
+  border: 1px solid transparent !important;
 }
 .mt_10 {
   margin-top: -10px;
@@ -166,11 +177,7 @@
   transform: translateY(-4%);
 }
 .maximize_btn:hover {
-  --tw-shadow: -4px 0 12px -2px #6e5df6, 4px 0 12px -2px #00ffe1;
-  --tw-shadow-colored: -4px 0 12px -2px var(--tw-shadow-color),
-    4px 0 12px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+ background: white;
 }
 .maximize_btn {
   transition: all 400ms linear;
@@ -190,9 +197,9 @@
   }
 }
 @media (min-width: 991.8px) {
-    .icons_card{
-        margin-bottom: 32px;
-    }
+  .icons_card {
+    margin-bottom: 32px;
+  }
   .ellipse_1 {
     width: 415px;
     height: 415px;
@@ -214,7 +221,7 @@
   }
 }
 
-@media (min-width: 1023.8px) {
+@media (min-width: 1024px) {
   .understanding_card {
     padding: 25px 50px 0px 25px;
   }
@@ -225,7 +232,7 @@
     height: 421px;
   }
 }
-@media (min-width: 1200.8px) {
+@media (min-width: 1200px) {
   .mw_1200 {
     max-width: 1200px !important;
   }
