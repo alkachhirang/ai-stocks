@@ -753,6 +753,7 @@ body {
     border: 1px transparent;
     padding: 30px 10.5px 30px 10.5px;
     min-height: 180px;
+    border-radius: 12px;
 }
 
 .mt_10 {
