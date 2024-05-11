@@ -148,12 +148,7 @@ body {
   background-color: var(--black-gray);
 }
 
-.font-gradient {
-  background: linear-gradient(100.62deg, #00ffe1 31.2%, #6e5df6 48.95%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 
 .fs_xs {
   font-size: var(--fs-xs);
