@@ -648,6 +648,11 @@ body::-webkit-scrollbar-thumb {
     gap: 20px;
 }
 
+.py_2 {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
 .man-profile-card {
     padding: 20px;
     min-width: 367px;
@@ -934,6 +939,10 @@ body::-webkit-scrollbar-thumb {
 
 .trade_img {
     border-radius: 10px;
+}
+
+.mt_24 {
+    margin-top: 24px;
 }
 
 .mt_10 {
