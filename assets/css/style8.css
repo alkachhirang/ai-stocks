@@ -965,6 +965,7 @@
                 -webkit-background-clip: text;
                 color: transparent;
             }
+            /* footer */
             
             .common_btn {
                 background: linear-gradient(107.02deg, #00FFE1 12.76%, #6E5DF6 91.81%) !important;
@@ -978,73 +979,6 @@
             .common_btn:hover {
                 background: white !important;
                 color: #020507 !important;
-            }
-            
-            .company-dimension {
-                max-width: 210px;
-                max-height: 109px;
-            }
-            
-            .brand_slider_parent3 {
-                animation-name: sliderScroll2;
-                animation-duration: 70s;
-                animation-timing-function: linear;
-                animation-iteration-count: infinite;
-                animation-delay: -70s;
-            }
-            
-            .brand_slider_parent4 {
-                animation-name: sliderScroll2;
-                animation-delay: -35s;
-                animation-duration: 70s;
-                animation-timing-function: linear;
-                animation-iteration-count: infinite;
-            }
-            
-            .brand_slider_parentalternate3 {
-                animation-name: sliderScrollalternate2;
-                animation-duration: 70s;
-                animation-timing-function: linear;
-                animation-iteration-count: infinite;
-                animation-delay: -70s;
-            }
-            
-            .brand_slider_parentalternate4 {
-                animation-name: sliderScrollalternate2;
-                animation-delay: -35s;
-                animation-duration: 70s;
-                animation-timing-function: linear;
-                animation-iteration-count: infinite;
-            }
-            
-            .gap-12 {
-                gap: 12px;
-            }
-            
-            @keyframes sliderScroll2 {
-                0% {
-                    transform: translateX(1403px);
-                    -webkit-transform: translateX(1403px);
-                    -moz-transform: translateX(1403px);
-                    -ms-transform: translateX(1403px);
-                    -o-transform: translateX(1403px);
-                }
-                100% {
-                    transform: translateX(-1200px);
-                }
-            }
-            
-            @keyframes sliderScrollalternate2 {
-                0% {
-                    transform: translateX(-1403px);
-                    -webkit-transform: translateX(-1403px);
-                    -moz-transform: translateX(-1403px);
-                    -ms-transform: translateX(-1403px);
-                    -o-transform: translateX(-1403px);
-                }
-                100% {
-                    transform: translateX(1200px);
-                }
             }
             
             .mt-12 {
@@ -1063,10 +997,9 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
-            
-            .opacity-80 {
+            /* .opacity-80 {
                 opacity: 80%;
-            }
+            } */
             
             .max_w_Faq {
                 max-width: 716px;
@@ -1342,25 +1275,32 @@
                 z-index: -1;
             }
             
-            .imgAIshot {
-                position: absolute;
-                top: 40%;
-                left: 10%;
-                transform: translate(50% -50%);
-            }
-            
             .max_Width {
                 max-width: 153px;
             }
             
             .brandGroupwidth {
                 max-width: 518px;
+                animation: groupimg all linear 50s infinite;
+            }
+            
+            @keyframes groupimg {
+                0% {
+                    transform: rotate(180deg);
+                }
             }
             
             .imgAi {
                 max-width: 140px;
                 height: 170px;
                 transition: all linear 300ms;
+                animation: groupBrand all linear 50s infinite;
+            }
+            
+            @keyframes groupBrand {
+                0% {
+                    transform: rotate(360deg);
+                }
             }
             
             .imgAi:hover {
@@ -1408,6 +1348,10 @@
                 right: 32%;
                 bottom: 0;
             }
+            /* #Submit {
+                pointer-events: none;
+                cursor: no-drop;
+            } */
             
             @media (min-width:575.5px) {
                 .accordion-body {
