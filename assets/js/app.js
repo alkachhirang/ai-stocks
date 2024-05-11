@@ -1,3 +1,4 @@
+//================header-timeout===============
 function countdown(endDate) {
   //  current date and time
   const now = new Date().getTime();
@@ -11,7 +12,6 @@ function countdown(endDate) {
   );
   let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
   let seconds = Math.floor((difference % (1000 * 60)) / 1000);
-  let milliseconds = difference % 1000;
   if (days < 10) {
     days = `0${days}`;
   }
@@ -29,7 +29,6 @@ function countdown(endDate) {
     hours,
     minutes,
     seconds,
-    milliseconds,
   };
 }
 
@@ -45,6 +44,8 @@ setInterval(function () {
   document.querySelector("#minuet").innerHTML = ` ${remainingTime.minutes}`;
   document.querySelector("#second").innerHTML = ` ${remainingTime.seconds}`;
 }, 1000);
+
+//=============header-form===============
 const name = document.getElementById("name");
 const errorname = document.getElementById("errorname");
 const lastname = document.getElementById("lastname");
@@ -99,6 +100,7 @@ submit.addEventListener("click", function (event) {
   }
 });
 
+//===================Trading-section==================
 const FirstName = document.getElementById("firstName");
 const errorFirstName = document.getElementById("errorFirstName");
 const lastName = document.getElementById("lastName");
@@ -113,38 +115,35 @@ const tradingregex = {
   firstName: /^[a-zA-Z\s]+$/,
   lastName: /^[a-zA-Z\s]+$/,
   number: /^\d{10}$/,
-  email: /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/,
+  email: /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,})$/,
 };
 
 Submit.addEventListener("click", function (event) {
   event.preventDefault();
 
   if (!tradingregex.firstName.test(FirstName.value)) {
-    errorFirstName.classList.add("border_red");
+    FirstName.classList.add("border_red");
   } else {
-    errorFirstName.classList.remove("border_red");
-    errorFirstName.innerHTML = "";
+    FirstName.classList.remove("border_red");
   }
 
   if (!tradingregex.lastName.test(lastName.value)) {
-    errorLastName.classList.add("border_red");
+    lastName.classList.add("border_red");
   } else {
-    errorLastName.classList.remove("border_red");
-    errorLastName.innerHTML = "";
+    lastName.classList.remove("border_red");
   }
 
   if (!tradingregex.number.test(PNumber.value)) {
-    errorNumber.classList.add("border_red");
+    PNumber.classList.add("border_red");
   } else {
-    errorNumber.classList.remove("border_red");
-    errorNumber.innerHTML = "";
+    PNumber.classList.remove("border_red");
   }
 
   if (!tradingregex.email.test(Email.value)) {
-    errorEmail.classList.add("border_red");
+    Email.classList.add("border_red");
   } else {
-    errorEmail.classList.remove("border_red");
-    errorEmail.innerHTML = "";
+    Email.classList.remove("border_red");
+
   }
 
   if (
@@ -160,6 +159,7 @@ Submit.addEventListener("click", function (event) {
     Email.value = "";
   }
 });
+
 // year function
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
@@ -178,8 +178,8 @@ window.addEventListener("scroll", function () {
 });
 
 // preloader;
-// const preloader = document.getElementById("preloader");
-// setTimeout(() => {
-//   document.getElementById("preloder").classList.add("d-none");
-//   document.body.classList.remove("overflow_hidden");
-// }, 1500);
+const preloader = document.getElementById("preloader");
+setTimeout(() => {
+  document.getElementById("preloder").classList.add("d-none");
+  document.body.classList.remove("overflow_hidden");
+}, 1700);
