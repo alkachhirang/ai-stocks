@@ -389,6 +389,68 @@ body::-webkit-scrollbar-thumb {
     background-color: #ffffff17;
 }
 
+
+.ellipes1headerleft-top {
+    position: absolute;
+    z-index: -1;
+    top: 2%;
+    left: -10%;
+    width: 197px;
+    height: 197px;
+    pointer-events: none;
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+    filter: blur(95px);
+}
+
+.ellipes2headerleft-topdown {
+    position: absolute;
+    z-index: -1;
+    top: 41%;
+    left: -11%;
+    width: 197px;
+    height: 197px;
+    pointer-events: none;
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+    filter: blur(115px);
+}
+
+.ellipes3headerleft-bottom {
+    position: absolute;
+    z-index: -1;
+    bottom: 3%;
+    left: -15%;
+    width: 197px;
+    fill: #00ffe1;
+    height: 197px;
+    pointer-events: none;
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+    filter: blur(105px);
+}
+
+.ellipes4headerright-top {
+    position: absolute;
+    z-index: -1;
+    top: 26%;
+    right: -8%;
+    width: 197px;
+    height: 197px;
+    pointer-events: none;
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+    filter: blur(89px);
+}
+
+.ellipes5headerright-bottom {
+    position: absolute;
+    z-index: -3;
+    bottom: 6%;
+    right: -10%;
+    width: 197px;
+    height: 197px;
+    pointer-events: none;
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+    filter: blur(115px);
+}
+
 .linner-layer-bottom {
     position: absolute;
     z-index: -1;
@@ -398,14 +460,6 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     background: linear-gradient(195.67deg, #00ffe1 83.47%, #6e5df6 102.11%);
     filter: blur(9px);
-}
-
-.header-text-gradiant {
-    background: linear-gradient(177.45deg, #00ffe1 6.58%, #6e5df6 39.18%);
-    color: transparent;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
 }
 
 .px_2 {
@@ -418,10 +472,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .vedio {
-    max-width: 632px;
-    max-height: 359px;
     padding: 1.84px;
-    margin: 0 12px;
+    margin: 0;
     border-radius: 7.2px;
     background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
 }
@@ -468,6 +520,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 50%;
 }
 
+
 .gradient-border-mask3::before {
     content: "";
     position: absolute;
@@ -492,7 +545,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .email-input-style-header {
-    padding: 16px;
+    padding: 12px;
     width: 100%;
     background-color: white;
     border-radius: 4px;
@@ -1040,6 +1093,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*--============Average-Earnings==============--> */
+.average_img {
+    transition: all 300ms linear;
+}
+
+.average_img:hover {
+    transform: scale(0.9);
+}
 
 .custom_container {
     max-width: calc(100vw-1184px) !important;
@@ -1508,119 +1568,6 @@ button:not(:disabled) {
     z-index: -1;
 }
 
-@media (min-width:1200px) {
-    .mw_1164 {
-        max-width: 1164px;
-    }
-
-    .mw_262 {
-        max-width: 262px;
-    }
-
-
-    .mw_327 {
-        max-width: 327px;
-    }
-
-    .mw_518 {
-        max-width: 518px;
-    }
-
-    .py_average {
-        padding-top: 150px;
-        padding-bottom: 150px;
-    }
-
-    .mw_1200 {
-        max-width: 1200px !important;
-    }
-
-    .pt_Statistics {
-        padding-top: 151px;
-    }
-
-    .mw_averageimg {
-        max-width: 234px !important;
-    }
-}
-
-@media (min-width:992px) {
-
-    .mw_lg_629 {
-        max-width: 629px !important;
-    }
-
-    .accounts_card {
-        transform: translateY(-15%);
-    }
-
-    .icons_card {
-        margin-bottom: 32px;
-    }
-
-    .ellipse_1 {
-        width: 415px;
-        height: 415px;
-    }
-
-    .ellipse_2 {
-        width: 415px;
-        height: 415px;
-    }
-
-    .trade_img {
-        transform: translateY(-15%);
-    }
-
-    .benifit_card {
-        padding: 20px 20.5px 20px 20.5px;
-        min-height: 240px;
-    }
-
-    .mobile_back_ellp {
-        left: 5%;
-        top: 12%;
-    }
-
-    .pt_Statistics {
-        padding-top: 80px;
-    }
-
-    .border_Statistics {
-        width: 270px;
-        height: 270px;
-    }
-
-    .max-w-lg-388 {
-        max-width: 388px;
-    }
-
-    .vedio {
-        margin: 0 12px;
-    }
-
-    .mt_0 {
-        margin-top: 0;
-    }
-
-    .mw_averageimg {
-        max-width: 198px;
-    }
-
-}
-
-
-@media (min-width:1400px) {
-    .mw_xxl_800 {
-        max-width: 800px !important;
-    }
-
-    .mw_averageimg {
-        max-width: 260px !important;
-    }
-}
-
-
 @media (max-width:1200px) {
     :root {
         /*=========font-size========*/
@@ -1663,51 +1610,6 @@ button:not(:disabled) {
     }
 }
 
-@media (min-width:768px) {
-    .px-88 {
-        padding-left: 88px;
-        padding-right: 88px;
-    }
-
-    .accounts_card {
-        max-width: 471px;
-    }
-
-    .mw_209 {
-        max-width: 209px;
-    }
-
-    .box-time {
-        max-width: 128px;
-        padding: 27px 34px;
-        background: #ffffff01;
-        backdrop-filter: blur(20px);
-    }
-
-    .px-44 {
-        padding-left: 44px;
-        padding-right: 44px;
-    }
-
-    .bg-hero-img {
-        background-size: 100% 100%;
-    }
-
-    .mobile_wh {
-        width: 314px;
-        height: 614px;
-    }
-
-    .mobile_back_ellp {
-        left: 30%;
-        top: 12%;
-    }
-
-    .pt_Statistics {
-        padding-top: 70px;
-    }
-}
-
 @media (max-width: 576px) {
     :root {
         /*=========font-size========*/
@@ -1743,6 +1645,18 @@ button:not(:disabled) {
 
     .nav-small-screen {
         padding: 6px 16px !important;
+    }
+}
+
+@media (min-width: 1400px) or (max-width: 1600px) {
+    .container {
+        max-width: 1164px !important;
+    }
+}
+
+@media (min-width:1200) or (max-width:1265px) {
+    .mw_averageimg {
+        max-width: 210px !important;
     }
 }
 
@@ -1837,6 +1751,116 @@ button:not(:disabled) {
     }
 }
 
+@media (min-width:768px) {
+    .px-88 {
+        padding-left: 88px;
+        padding-right: 88px;
+    }
+
+    .accounts_card {
+        max-width: 471px;
+    }
+
+    .mw_209 {
+        max-width: 209px;
+    }
+
+    .box-time {
+        max-width: 128px;
+        padding: 27px 34px;
+        background: #ffffff01;
+        backdrop-filter: blur(20px);
+    }
+
+    .px-44 {
+        padding-left: 44px;
+        padding-right: 44px;
+    }
+
+    .bg-hero-img {
+        background-size: 100% 100%;
+    }
+
+    .mobile_wh {
+        width: 314px;
+        height: 614px;
+    }
+
+    .mobile_back_ellp {
+        left: 30%;
+        top: 12%;
+    }
+
+    .pt_Statistics {
+        padding-top: 70px;
+    }
+}
+
+@media (min-width:992px) {
+
+    .mw_lg_629 {
+        max-width: 629px !important;
+    }
+
+    .accounts_card {
+        transform: translateY(-15%);
+    }
+
+    .icons_card {
+        margin-bottom: 32px;
+    }
+
+    .ellipse_1 {
+        width: 415px;
+        height: 415px;
+    }
+
+    .ellipse_2 {
+        width: 415px;
+        height: 415px;
+    }
+
+    .trade_img {
+        transform: translateY(-15%);
+    }
+
+    .benifit_card {
+        padding: 20px 20.5px 20px 20.5px;
+        min-height: 240px;
+    }
+
+    .mobile_back_ellp {
+        left: 5%;
+        top: 12%;
+    }
+
+    .pt_Statistics {
+        padding-top: 80px;
+    }
+
+    .border_Statistics {
+        width: 270px;
+        height: 270px;
+    }
+
+    .max-w-lg-388 {
+        max-width: 388px;
+    }
+
+    .vedio {
+        margin: 0 12px;
+    }
+
+    .mt_0 {
+        margin-top: 0;
+    }
+
+    .mw_averageimg {
+        max-width: 198px;
+    }
+
+}
+
 @media (min-width: 1023.8px) {
     .understanding_card {
         padding: 25px 50px 0px 25px;
@@ -1851,6 +1875,16 @@ button:not(:disabled) {
 
     .mb-lg-80 {
         margin-bottom: 80px;
+    }
+}
+
+@media (min-width:1400px) {
+    .mw_xxl_800 {
+        max-width: 800px !important;
+    }
+
+    .mw_averageimg {
+        max-width: 260px !important;
     }
 }
 
@@ -1889,23 +1923,5 @@ button:not(:disabled) {
 
     .mb-xl-100 {
         margin-bottom: 100px;
-    }
-}
-
-@media (min-width:1400px) {
-    .mw_800 {
-        max-width: 800px !important;
-    }
-}
-
-@media (min-width: 1400px) or (max-width: 1600px) {
-    .container {
-        max-width: 1164px !important;
-    }
-}
-
-@media (min-width:1200) or (max-width:1265px) {
-    .mw_averageimg {
-        max-width: 210px !important;
     }
 }
