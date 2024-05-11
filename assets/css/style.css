@@ -1129,8 +1129,8 @@ body::-webkit-scrollbar-thumb {
 .border_Statistics {
     border-radius: 100%;
     background: transparent !important;
-    width: 220px;
-    height: 220px;
+    width: 150px;
+    height: 150px;
     backdrop-filter: blur(31.478700637817383px);
     position: relative;
     padding: 8px;
@@ -1163,10 +1163,6 @@ body::-webkit-scrollbar-thumb {
     width: calc(360px * 4);
     -webkit-animation: scroll 20s linear infinite;
     animation: scroll 10s linear infinite;
-}
-
-.gap_32 {
-    gap: 32px;
 }
 
 @-webkit-keyframes scroll {
@@ -1218,8 +1214,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .py_average {
-    padding-top: 91px;
-    padding-bottom: 70px;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .mb_12 {
@@ -1233,14 +1229,6 @@ body::-webkit-scrollbar-thumb {
 .px_6 {
     padding-right: 6px;
     padding-bottom: 6px;
-}
-
-.mw_averageimg {
-    max-width: 198px;
-}
-
-.mw_450 {
-    max-width: 450px;
 }
 
 .gradient_text {
@@ -1679,33 +1667,35 @@ numberinput-header .numberinput-header[type=number] {
     :root {
         /*=========font-size========*/
         --fs-6lg: 30px !important;
-        --fs-8xl: 36px !important;
-        --fs-3xxl: 77.24px !important;
+        --fs-8xl: 40px !important;
+        --fs-3xxl: 60.24px !important;
 
-        --lh-7xl: 44px !important;
+        --lh-7xl: 50px !important;
     }
 }
 
-@media (max-width:992px) {
+@media (max-width:991.5px) {
     :root {
         --fs-6lg: 25px !important;
         --fs-xxl: 46px !important;
+        --fs-8xl: 30px !important;
         /*==========line-height============*/
         --lh-5xl: 38px !important;
         --lh-6xl: 38px !important;
+        --lh-7xl: 42px !important;
         --lh-9xl: 57px !important;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.99px) {
     :root {
-        --lh-7xl: 47px !important;
+        --lh-7xl: 42px !important;
         --lh-9xl: 40px !important;
         --fs-xxl: 38px !important;
     }
 
     .pt_Statistics {
-        padding-top: 70px;
+        padding-top: 64px;
     }
 }
 
@@ -1721,6 +1711,7 @@ numberinput-header .numberinput-header[type=number] {
         --fs-xl: 32px !important;
         --fs-8xl: 28px !important;
         --fs-xxl: 32px !important;
+        --fs-3xxl: 51.24px !important;
 
         /*=============line-height=========== */
         --lh-xsm: 22px !important;
@@ -1728,10 +1719,14 @@ numberinput-header .numberinput-header[type=number] {
         --lh-2md: 25px !important;
         --lh-2xl: 28px !important;
         --lh-4xl: 31px !important;
-        --lh-7xl: 33px !important;
+        --lh-7xl: 37px !important;
         --lh-8xl: 20px !important;
         --lh-9xl: 40px !important;
         --lh-10xl: 48px !important;
+    }
+
+    .pt_Statistics {
+        padding-top: 48px;
     }
 
     .statistics_circle {
@@ -1867,14 +1862,14 @@ numberinput-header .numberinput-header[type=number] {
     }
 }
 
-@media (min-width:1200) or (max-width:1265px) {
-    .mw_averageimg {
-        max-width: 210px !important;
-    }
-}
-
 @media (min-width: 575.5px) {
-    .accounts_card {
+
+    .border_Statistics {
+        width: 190px;
+        height: 190px;
+    }
+
+    s .accounts_card {
         max-width: 471px;
     }
 
@@ -2005,9 +2000,26 @@ numberinput-header .numberinput-header[type=number] {
 }
 
 @media (min-width:768px) {
+    .mw_300 {
+        max-width: 300px;
+    }
+
+    .social_img {
+        max-width: 150px;
+    }
+
+    .mw_814 {
+        max-width: 814px;
+    }
+
     .px-88 {
         padding-left: 88px;
         padding-right: 88px;
+    }
+
+    .py_average {
+        padding-top: 64px;
+        padding-bottom: 64px;
     }
 
     .mt-md-40 {
@@ -2024,10 +2036,6 @@ numberinput-header .numberinput-header[type=number] {
 
     .accounts_card {
         max-width: 471px;
-    }
-
-    .mw_209 {
-        max-width: 209px;
     }
 
     .mt-md-40 {
@@ -2071,17 +2079,24 @@ numberinput-header .numberinput-header[type=number] {
     .pt_Statistics {
         padding-top: 70px;
     }
-
-
 }
 
 @media (min-width:992px) {
-    .mw_814 {
-        max-width: 814px;
+    .social_img {
+        max-width: 210px;
     }
 
-    .mw_lg_629 {
-        max-width: 629px !important;
+    .gap_32 {
+        gap: 32px !important;
+    }
+
+    .border_Statistics {
+        width: 220px;
+        height: 220px;
+    }
+
+    .mw_lg_397 {
+        max-width: 397px;
     }
 
     .accounts_card {
@@ -2135,10 +2150,6 @@ numberinput-header .numberinput-header[type=number] {
 
     .mt_0 {
         margin-top: 0;
-    }
-
-    .mw_averageimg {
-        max-width: 198px;
     }
 
     .imgAi {
@@ -2198,10 +2209,6 @@ numberinput-header .numberinput-header[type=number] {
         max-width: 1164px;
     }
 
-    .mw_327 {
-        max-width: 327px;
-    }
-
     .mw_518 {
         max-width: 518px;
     }
@@ -2252,16 +2259,6 @@ numberinput-header .numberinput-header[type=number] {
         position: absolute;
         right: 32%;
         top: 2%;
-    }
-}
-
-@media (min-width:1400px) {
-    .mw_xxl_800 {
-        max-width: 800px !important;
-    }
-
-    .mw_averageimg {
-        max-width: 260px !important;
     }
 }
 
