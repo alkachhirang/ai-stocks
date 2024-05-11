@@ -27,7 +27,7 @@
     <meta property="twitter:image" content="https://i.ibb.co/LzLxZsH/127-0-0-1-5500-index3-html.png" />
 </head>
 
-<body class="bg_body">
+<body class="bg_body overflow_hidden">
     <!-- preloader -->
     <div id="preloder"
         class="min-vh-100 bg-black d-flex justify-content-center align-items-center  position-fixed top-0 start-0 w-100 z_15">
@@ -148,16 +148,16 @@
                                     of
                                     minutes, one of our AI mentors will contact you, No Experience Required!
                                 </p>
-                                <form id="headerfrom">
-                                    <input required onchange="inputfill()" id="name" type="text"
+                                <form class="from">
+                                    <input required  id="name" type="text"
                                         placeholder="First Name"
                                         class="email-input-style-header mt-4 ff_opensans fw-normal  fs-xs lh_xsm c-black-100 ">
                                     <p class=" mb-0 text-white " id="errorname"></p>
-                                    <input required onchange="inputfill()" id="lastname" type="text"
+                                    <input required  id="lastname" type="text"
                                         placeholder="Last Name"
                                         class="email-input-style-header mt-3 ff_opensans fw-normal  fs-xs lh_xsm c-black-100 ">
                                     <p class=" mb-0 text-white " id="errorlastname"></p>
-                                    <input requiredonchange="inputfill()" id="email" type="email" placeholder="Email"
+                                    <input required id="email" type="email" placeholder="Email"
                                         class="email-input-style-header mt-3 ff_opensans fw-normal  fs-xs lh_xsm c-black-100 ">
                                     <p class=" mb-0 text-white " id="erroremail"></p>
                                     <div
@@ -168,14 +168,14 @@
                                                 <path d="M4 6L0.535898 0H7.4641L4 6Z" fill="#010101" />
                                             </svg>
                                         </div>
-                                        <input required onchange="inputfill()" pattern="/^-?\d+\.?\d*$/"
+                                        <input required  pattern="/^-?\d+\.?\d*$/"
                                             onKeyPress="if(this.value.length==10) return false;" id="number"
                                             type="number" placeholder="Phone Number"
                                             class="email-input-style-header numberinput-header  ff_opensans fw-normal   fs-xs lh_xsm c-black-100 ">
                                     </div>
                                     <p class=" mb-0 text-white " id="errornumber"></p>
                                     <button aria-label="fromsubmit" id="submit" type="submit"
-                                        class=" mt-32 text-decoration-none w-100 ff_opensans c-black-100 fw-bold fs_xs lh_xsm main-button  ">Get
+                                        class=" mt-32 text-decoration-none submit w-100 ff_opensans c-black-100 fw-bold fs_xs lh_xsm main-button  ">Get
                                         Started</button>
                                 </form>
                             </div>
@@ -238,96 +238,394 @@
             <span class=" ellipes5headerright-bottom d-none d-lg-block"></span>
         </header>
         <!-- silder by  keyframes  -->
-        <section class="position-relative d-flex gap-20 overflow-x-clip mx-auto mb-5">
-            <div class="d-flex align-items-center gap-20 brand_slider_parent position-relative  start-0 top-0 h-100">
-                <div class="man-profile-card  d-flex  align-items-center  gap-3">
-                    <span><img src="./assets/images/svg/girl.svg" alt="girl"></span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Esther Howard</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$2,208</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,361</p>
+        <div class="overflow-hidden mb-0">
+            <div class="d-flex align-items-center logo_gap slide_container">
+
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span><img src="./assets/images/svg/girl.svg" alt="girl"></span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Esther Howard</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$2,208</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,361</p>
+                        </div>
                     </div>
                 </div>
-                <div class="man-profile-card  d-flex  align-items-center  gap-3">
-                    <span>
-                        <img src="./assets/images/svg/lognhariman.svg" alt="longhairman">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Theresa Webb</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$3,302</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $1,625</p>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span>
+                            <img src="./assets/images/svg/lognhariman.svg" alt="longhairman">
+                        </span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Theresa Webb</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$3,302</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $1,625</p>
+                        </div>
                     </div>
                 </div>
-                <div class="man-profile-card  d-flex  align-items-center  gap-3">
-                    <span>
-                        <img src="./assets/images/svg/orangetshirtman.svg" alt="orangetshirtman">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Devon Lane</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$5,265</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $3,489</p>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span>
+                            <img src="./assets/images/svg/orangetshirtman.svg" alt="orangetshirtman">
+                        </span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Devon Lane</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$5,265</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $3,489</p>
+                        </div>
                     </div>
                 </div>
-                <div class="man-profile-card  d-flex  align-items-center  gap-3">
-                    <span>
-                        <img src="./assets/images/svg/girlface.svg" alt="girlface">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Ralph Edwards</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$4,654</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,584</p>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span>
+                            <img src="./assets/images/svg/girlface.svg" alt="girlface">
+                        </span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Ralph Edwards</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$4,654</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,584</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span><img src="./assets/images/svg/girl.svg" alt="girl"></span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Esther Howard</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$2,208</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,361</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span>
+                            <img src="./assets/images/svg/lognhariman.svg" alt="longhairman">
+                        </span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Theresa Webb</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$3,302</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $1,625</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span>
+                            <img src="./assets/images/svg/orangetshirtman.svg" alt="orangetshirtman">
+                        </span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Devon Lane</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$5,265</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $3,489</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span>
+                            <img src="./assets/images/svg/girlface.svg" alt="girlface">
+                        </span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Ralph Edwards</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$4,654</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,584</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span><img src="./assets/images/svg/girl.svg" alt="girl"></span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Esther Howard</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$2,208</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,361</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span>
+                            <img src="./assets/images/svg/lognhariman.svg" alt="longhairman">
+                        </span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Theresa Webb</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$3,302</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $1,625</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span>
+                            <img src="./assets/images/svg/orangetshirtman.svg" alt="orangetshirtman">
+                        </span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Devon Lane</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$5,265</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $3,489</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span>
+                            <img src="./assets/images/svg/girlface.svg" alt="girlface">
+                        </span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Ralph Edwards</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$4,654</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,584</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span><img src="./assets/images/svg/girl.svg" alt="girl"></span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Esther Howard</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$2,208</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,361</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span>
+                            <img src="./assets/images/svg/lognhariman.svg" alt="longhairman">
+                        </span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Theresa Webb</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$3,302</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $1,625</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span>
+                            <img src="./assets/images/svg/orangetshirtman.svg" alt="orangetshirtman">
+                        </span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Devon Lane</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$5,265</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $3,489</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span>
+                            <img src="./assets/images/svg/girlface.svg" alt="girlface">
+                        </span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Ralph Edwards</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$4,654</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,584</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span><img src="./assets/images/svg/girl.svg" alt="girl"></span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Esther Howard</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$2,208</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,361</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span>
+                            <img src="./assets/images/svg/lognhariman.svg" alt="longhairman">
+                        </span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Theresa Webb</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$3,302</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $1,625</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span>
+                            <img src="./assets/images/svg/orangetshirtman.svg" alt="orangetshirtman">
+                        </span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Devon Lane</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$5,265</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $3,489</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span>
+                            <img src="./assets/images/svg/girlface.svg" alt="girlface">
+                        </span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Ralph Edwards</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$4,654</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,584</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span><img src="./assets/images/svg/girl.svg" alt="girl"></span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Esther Howard</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$2,208</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,361</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span>
+                            <img src="./assets/images/svg/lognhariman.svg" alt="longhairman">
+                        </span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Theresa Webb</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$3,302</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $1,625</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span>
+                            <img src="./assets/images/svg/orangetshirtman.svg" alt="orangetshirtman">
+                        </span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Devon Lane</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$5,265</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $3,489</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span>
+                            <img src="./assets/images/svg/girlface.svg" alt="girlface">
+                        </span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Ralph Edwards</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$4,654</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,584</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span><img src="./assets/images/svg/girl.svg" alt="girl"></span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Esther Howard</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$2,208</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,361</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span>
+                            <img src="./assets/images/svg/lognhariman.svg" alt="longhairman">
+                        </span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Theresa Webb</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$3,302</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $1,625</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span>
+                            <img src="./assets/images/svg/orangetshirtman.svg" alt="orangetshirtman">
+                        </span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Devon Lane</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$5,265</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $3,489</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span>
+                            <img src="./assets/images/svg/girlface.svg" alt="girlface">
+                        </span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Ralph Edwards</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$4,654</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,584</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span>
+                            <img src="./assets/images/svg/lognhariman.svg" alt="longhairman">
+                        </span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Theresa Webb</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$3,302</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $1,625</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_size">
+                    <div class="man-profile-card  d-flex  align-items-center  gap-3">
+                        <span>
+                            <img src="./assets/images/svg/orangetshirtman.svg" alt="orangetshirtman">
+                        </span>
+                        <div>
+                            <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Devon Lane</h2>
+                            <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                                    class='c-light-green'>$5,265</span></p>
+                            <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $3,489</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="d-flex align-items-center gap-20 brand_slider_parent2 position-absolute left-0 top-0 h-100">
-                <div class="man-profile-card  d-flex  align-items-center  gap-3">
-                    <span><img src="./assets/images/svg/girl.svg" alt="girl"></span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Esther Howard</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$2,208</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,361</p>
-                    </div>
-                </div>
-                <div class="man-profile-card  d-flex  align-items-center  gap-3">
-                    <span>
-                        <img src="./assets/images/svg/lognhariman.svg" alt="longhairman">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Theresa Webb</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$3,302</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $1,625</p>
-                    </div>
-                </div>
-                <div class="man-profile-card  d-flex  align-items-center  gap-3">
-                    <span>
-                        <img src="./assets/images/svg/orangetshirtman.svg" alt="orangetshirtman">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Devon Lane</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$5,265</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $3,489</p>
-                    </div>
-                </div>
-                <div class="man-profile-card  d-flex  align-items-center  gap-3">
-                    <span>
-                        <img src="./assets/images/svg/girlface.svg" alt="girlface">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Ralph Edwards</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$4,654</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,584</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
         <!--------------------------------------------------- uderstanding-section --------------------------------------------------->
         <div class="section_bg pt-md-4 mt_10">
             <div class="container mw_1200 pt-lg-5 mt-1">
@@ -536,7 +834,112 @@
 
             </div>
         </section>
-      
+        <!-- faq -->
+        <section class="position-relative z-1">
+            <span class="FaqLeftEllips d-block">
+            </span>
+            <span class="FaqRightEllips d-block">
+            </span>
+            <span class="FaqBottomEllips d-block">
+            </span>
+            <div class="container py-4 py-md-5">
+                <div class="max_w_Faq mx-auto">
+                    <h2 class="ff_opensans fw-bold fs_8xl text-white lh_7xl text-center mb-0">Frequently Asked
+                        <span class="blueGraident textBg">Questions</span>
+                    </h2>
+                    <div class="pt-4 mt-3">
+                        <div class="accordion faqSection" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button ff_opensans fw-bold fs_xs lh-md gap-3 gap-lg-1"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        <span class="d-none d-sm-flex gap-1">1. </span> Do I need trading experience to
+                                        invest in AI
+                                        Stocks?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body ff_opensans fw-normal fs_xs lh_md">
+                                        Not at all! Our platform is user-friendly and suitable for traders of all
+                                        levels, from
+                                        complete beginners to experienced professionals. The AI handles the complex
+                                        analysis, so
+                                        you dont need to have prior experience.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed ff_opensans fw-bold fs_xs lh_md gap-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        <span class="d-none d-sm-block">2. </span> How does AI improve my trading
+                                        results?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body ff_opensans fw-normal fs_xs lh_md">
+                                        AI enhances your trading results by processing data at incredible speeds, making
+                                        precise
+                                        decisions, adapting to market changes, and automating tasks for optimal
+                                        efficiency and
+                                        risk management.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed ff_opensans fw-bold fs_xs lh_md gap-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
+                                        <span class="max_w_heading d-sm-flex gap-2"> <span class="d-none d-sm-block">3.
+                                            </span>
+                                            How much does it cost to use the AI Trading Platform, and are there any
+                                            discounts
+                                            available?</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body ff_opensans fw-normal fs_xs lh_md">
+                                        The standard cost for our AI Trading Platform is $500, but with a limited-time
+                                        50%
+                                        discount, you can begin your trading journey for as low as $250. Moreover, you
+                                        have the
+                                        flexibility to start with any amount between $250 and $10,000
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed ff_opensans fw-bold fs_xs lh_md  gap-2 gap-lg-1"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseFour">
+                                        <span class="max_w_heading d-sm-flex gap-2"><span class="d-none d-sm-block">4.
+                                            </span>
+                                            How can i start using the trading platform?</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body ff_opensans fw-normal fs_xs lh_md">
+                                        The standard cost for our AI Trading Platform is $500, but with a limited-time
+                                        50%
+                                        discount, you can begin your trading journey for as low as $250. Moreover, you
+                                        have the
+                                        flexibility to start with any amount between $250 and $10,000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--------------------------------------------------- benifit-section --------------------------------------------------->
         <div class="position-relative pt-md-4">
             <span class="ellipse_1 position-absolute"></span>
@@ -720,108 +1123,6 @@
                 </p>
             </div>
         </div>
-        <!-- faq -->
-        <section class="position-relative z-1">
-            <span class="FaqLeftEllips d-block">
-            </span>
-            <span class="FaqRightEllips d-block">
-            </span>
-            <span class="FaqBottomEllips d-block">
-            </span>
-            <div class="container py-4 py-md-5">
-                <div class="max_w_Faq mx-auto">
-                    <h2 class="ff_opensans fw-bold fs_8xl text-white lh_7xl text-center mb-0">Frequently Asked
-                        <span class="blueGraident textBg">Questions</span>
-                    </h2>
-                    <div class="pt-4 mt-3">
-                        <div class="accordion faqSection" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button ff_opensans fw-bold fs_xs lh-md gap-3 gap-lg-1"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                        aria-expanded="true" aria-controls="collapseOne">
-                                        <span class="d-none d-sm-flex gap-1">1. </span> Do I need trading experience to
-                                        invest in AI
-                                        Stocks?
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body ff_opensans fw-normal fs_xs lh_md">
-                                        Not at all! Our platform is user-friendly and suitable for traders of all
-                                        levels, from
-                                        complete beginners to experienced professionals. The AI handles the complex
-                                        analysis, so
-                                        you dont need to have prior experience.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed ff_opensans fw-bold fs_xs lh_md gap-2"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                        aria-expanded="false" aria-controls="collapseTwo">
-                                        <span class="d-none d-sm-block">2. </span> How does AI improve my trading
-                                        results?
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body ff_opensans fw-normal fs_xs lh_md">
-                                        AI enhances your trading results by processing data at incredible speeds, making
-                                        precise
-                                        decisions, adapting to market changes, and automating tasks for optimal
-                                        efficiency and
-                                        risk management.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed ff_opensans fw-bold fs_xs lh_md gap-2"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                        aria-expanded="false" aria-controls="collapseThree">
-                                        <span class="max_w_heading d-sm-flex gap-2"> <span class="d-none d-sm-block">3.
-                                            </span>
-                                            How much does it cost to use the AI Trading Platform, and are there any
-                                            discounts
-                                            available?</span>
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body ff_opensans fw-normal fs_xs lh_md">
-                                        The standard cost for our AI Trading Platform is $500, but with a limited-time
-                                        50%
-                                        discount, you can begin your trading journey for as low as $250. Moreover, you
-                                        have the
-                                        flexibility to start with any amount between $250 and $10,000
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed ff_opensans fw-bold fs_xs lh_md  gap-2 gap-lg-1"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                        aria-expanded="false" aria-controls="collapseFour">
-                                        <span class="max_w_heading d-sm-flex gap-2"><span class="d-none d-sm-block">4.
-                                            </span>
-                                            How can i start using the trading platform?</span>
-                                    </button>
-                                </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body ff_opensans fw-normal fs_xs lh_md">
-                                        The standard cost for our AI Trading Platform is $500, but with a limited-time
-                                        50%
-                                        discount, you can begin your trading journey for as low as $250. Moreover, you
-                                        have the
-                                        flexibility to start with any amount between $250 and $10,000
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- Trading-section -->
         <div class="py-5 position-relative z-1">
             <span class="d-block Ai_stackLeftEllips"></span>
@@ -840,9 +1141,9 @@
                         <div class="AiStockCard mx-auto">
                             <h3 class="ff_opensans fw-semibold fs_4md white text-center">Start Trading with AI Stocks !
                             </h3>
-                            <form class="pt-4 mt-sm-2">
+                            <form  class="pt-4 mt-sm-2 from2">
                                 <div class="d-sm-flex align-items-center gap-2">
-                                    <div class="w-100 w-sm-50"> <input id="firstName" type="text"
+                                    <div class="w-100 w-sm-50"> <input required id="firstName" type="text"
                                             placeholder="First Name"
                                             class="ff_opensans fw-normal fs-xs lh_xsm white AiStockInput place w-100 w-sm-50 ">
                                         <p class="mb-0" id="errorFirstName"></p>
@@ -852,7 +1153,7 @@
                                         <p class="mb-0" id="errorLastName"></p>
                                     </div>
                                 </div>
-                                <input id="Email" type="email" placeholder="Email"
+                                <input required id="Email" type="email" placeholder="Email"
                                     class="mt-3 ff_opensans fw-normal fs-xs lh_xsm AiStockInput place w-100">
                                 <p class="mb-0" id="errorEmail"></p>
                                 <div class="d-flex align-items-center rounded-1 overflow-hidden mt-3 borderInput">
@@ -862,12 +1163,13 @@
                                             <path d="M4 6L0.535898 0H7.4641L4 6Z" fill="#D9D9D9" />
                                         </svg>
                                     </div>
-                                    <input id="Number" type="number" placeholder="Phone Number"
-                                        class=" bg-gray ff_opensans fw-normal fs-xs lh_xsm place AiStockInputPhone w-100">
+                                    <input required id="Number" type="number" pattern="/^-?\d+\.?\d*$/"
+                                            onKeyPress="if(this.value.length==10) return false;" placeholder="Phone Number"
+                                        class=" bg-gray ff_opensans numberinput-header fw-normal fs-xs lh_xsm place AiStockInputPhone w-100">
                                 </div>
                                 <p class="mb-0" id="errorNumber"></p>
                                 <button aria-label="signups" id="Submit" type="submit"
-                                    class="mt-32 text-decoration-none w-100 ff_opensans text-black main-button fw-bold fs_xs lh_xsm">Sign
+                                    class="mt-32 text-decoration-none w-100 submit ff_opensans text-black main-button fw-bold fs_xs lh_xsm">Sign
                                     Up</button>
                             </form>
                         </div>
@@ -940,7 +1242,8 @@
                                 class="circle d-flex justify-content-center align-items-center">
                                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <mask id="mask0_1743_218" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="16" height="17">
+                                    <mask id="mask0_1743_218" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2"
+                                        y="2" width="16" height="17">
                                         <path
                                             d="M3.75065 5.5013C4.67113 5.5013 5.41732 4.75511 5.41732 3.83464C5.41732 2.91416 4.67113 2.16797 3.75065 2.16797C2.83018 2.16797 2.08398 2.91416 2.08398 3.83464C2.08398 4.75511 2.83018 5.5013 3.75065 5.5013Z"
                                             fill="white" />

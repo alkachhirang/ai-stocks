@@ -614,9 +614,6 @@ body::-webkit-scrollbar-thumb {
     overflow-x: clip;
 }
 
-
-
-
 .mb-100 {
     margin-bottom: 100px;
 }
@@ -661,12 +658,14 @@ body::-webkit-scrollbar-thumb {
     transition: all 300ms linear !important;
 }
 
-#submit {
+.from .submit,
+.from2 .submit {
     pointer-events: none;
     cursor: no-drop;
 }
 
-#headerfrom:valid #submit {
+.from:valid .submit,
+.from2:valid .submit {
     pointer-events: auto;
     cursor: pointer;
 }
@@ -686,22 +685,6 @@ body::-webkit-scrollbar-thumb {
     background: linear-gradient(195.67deg, #00ffe1 83.47%, #6e5df6 102.11%);
 }
 
-.brand_slider_parent {
-    animation-name: sliderScroll;
-    animation-duration: 70s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-delay: -70s;
-}
-
-.brand_slider_parent2 {
-    animation-name: sliderScroll;
-    animation-delay: -35s;
-    animation-duration: 70s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
 .mt-44 {
     margin-top: 44px;
 }
@@ -710,18 +693,32 @@ body::-webkit-scrollbar-thumb {
     max-width: 654px;
 }
 
-@keyframes sliderScroll {
+/*=================keyframe-slider=============== */
+.slide_container {
+    width: calc(389px * 12);
+    -webkit-animation: scroll 30s linear infinite;
+    animation: scroll 15s linear infinite;
+}
+
+.logo_gap {
+    gap: 20px;
+}
+
+@-webkit-keyframes scroll {
     0% {
-        transform: translateX(1772px);
-        -webkit-transform: translateX(1772px);
-        -moz-transform: translateX(1772px);
-        -ms-transform: translateX(1772px);
-        -o-transform: translateX(1772px);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
     }
 
     100% {
-        transform: translateX(-1272px);
+        -webkit-transform: translateX(calc(-244px * 6));
+        transform: translateX(calc(-244px * 6));
     }
+}
+
+.logo_size {
+    width: 367px;
+    height: 126px !important;
 }
 
 /*===============preloader================ */
@@ -1238,34 +1235,6 @@ body::-webkit-scrollbar-thumb {
     gap: 12px;
 }
 
-@keyframes sliderScroll2 {
-    0% {
-        transform: translateX(1403px);
-        -webkit-transform: translateX(1403px);
-        -moz-transform: translateX(1403px);
-        -ms-transform: translateX(1403px);
-        -o-transform: translateX(1403px);
-    }
-
-    100% {
-        transform: translateX(-1200px);
-    }
-}
-
-@keyframes sliderScrollalternate2 {
-    0% {
-        transform: translateX(-1403px);
-        -webkit-transform: translateX(-1403px);
-        -moz-transform: translateX(-1403px);
-        -ms-transform: translateX(-1403px);
-        -o-transform: translateX(-1403px);
-    }
-
-    100% {
-        transform: translateX(1200px);
-    }
-}
-
 .mt-12 {
     margin-top: 12px;
 }
@@ -1519,6 +1488,15 @@ body::-webkit-scrollbar-thumb {
     z-index: -1;
 }
 
+.numberinput-header .numberinput-header::-webkit-outer-spin-button,
+.numberinput-header::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+numberinput-header .numberinput-header[type=number] {
+    -moz-appearance: textfield;
+}
+
 .Ai_stackLeftEllips {
     position: absolute;
     bottom: 20%;
@@ -1606,6 +1584,10 @@ body::-webkit-scrollbar-thumb {
     top: 18.3%;
 }
 
+.border_red {
+    border-bottom-color: red;
+}
+
 .imgPostion4 {
     position: absolute;
     right: 2%;
@@ -1661,18 +1643,6 @@ body::-webkit-scrollbar-thumb {
 
     .pt_Statistics {
         padding-top: 70px;
-    }
-
-    .mt-md-40 {
-        margin-top: 40px;
-    }
-
-    .mb-md-64 {
-        margin-bottom: 64px;
-    }
-
-    .email-input-style-header {
-        padding: 16px;
     }
 }
 
@@ -1960,8 +1930,8 @@ body::-webkit-scrollbar-thumb {
 
     .imgPostion5 {
         position: absolute;
-        right: 33%;
-        bottom: 33.33%;
+        right: 32%;
+        bottom: 32%;
     }
 
     .imgPostion7 {
@@ -1975,6 +1945,18 @@ body::-webkit-scrollbar-thumb {
     .px-88 {
         padding-left: 88px;
         padding-right: 88px;
+    }
+
+    .mt-md-40 {
+        margin-top: 40px;
+    }
+
+    .mb-md-64 {
+        margin-bottom: 64px;
+    }
+
+    .email-input-style-header {
+        padding: 16px;
     }
 
     .accounts_card {
@@ -2214,5 +2196,13 @@ body::-webkit-scrollbar-thumb {
 
     .mw_averageimg {
         max-width: 260px !important;
+    }
+}
+
+@media (min-width:1526px) {
+    .slide_container {
+        width: calc(244px * 12);
+        -webkit-animation: scroll 15s linear infinite;
+        animation: scroll 30s linear infinite;
     }
 }
