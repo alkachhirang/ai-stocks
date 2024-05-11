@@ -892,6 +892,7 @@ body::-webkit-scrollbar-thumb {
 
 .benifit_gradient {
     padding: 1px;
+    border-radius: 12px;
     transition: all 300ms linear;
 }
 
