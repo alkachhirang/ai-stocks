@@ -10,7 +10,7 @@
 }
 
 body {
-    background-image: url("/assets/images/png/bg-img-body.png") !important;
+    background-image: url("/assets/images/webp/background-image.webp") !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -651,16 +651,27 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: 2px;
 }
 
+.gap-6 {
+    gap: 6px;
+}
+
 .man-profile-card {
     padding: 20px;
-    min-width: 367px;
+    min-width: 293px;
     width: 100%;
-    background: linear-gradient(90.19deg,
-            rgba(255, 255, 255, 0.04) -76.18%,
-            rgba(153, 153, 153, 0.0056) 88.54%);
+    background: linear-gradient(90.19deg, rgba(255, 255, 255, 0.04) -76.18%, rgba(153, 153, 153, 0.0056) 88.54%);
     border-radius: 8px;
     cursor: pointer;
     transition: all 300ms linear !important;
+}
+
+.max-w-500 {
+    max-width: 500px;
+}
+
+.box-email {
+    padding: 16px;
+    backdrop-filter: blur(20px);
 }
 
 .from .submit,
@@ -1697,13 +1708,15 @@ numberinput-header .numberinput-header[type="number"] {
 }
 
 
-@media (max-width:992px) {
+@media (max-width:991.5px) {
     :root {
         --fs-6lg: 25px !important;
-        --fs-xxl: 46px !important;
         --fs-3xxl: 60.24px !important;
         --fs-8xl: 30px !important;
+        --fs-xxl: 38px !important;
+
         /*==========line-height============*/
+        --lh-9xl: 50px !important;
         --lh-5xl: 38px !important;
         --lh-6xl: 38px !important;
         --lh-9xl: 57px !important;
@@ -1729,12 +1742,17 @@ numberinput-header .numberinput-header[type="number"] {
         --fs-sm: 16px !important;
         --fs-md: 20px !important;
         --fs-4md: 22px !important;
+        --fs-8md: 20px !important;
         --fs-lg: 20px !important;
         --fs-6lg: 20px !important;
         --fs-xl: 32px !important;
+        --fs-xxl: 32px !important;
         --fs-8xl: 28px !important;
         --fs-xxl: 32px !important;
         --fs-3xxl: 51px !important;
+
+
+
 
         /*=============line-height=========== */
         --lh-xsm: 22px !important;
@@ -2031,12 +2049,25 @@ numberinput-header .numberinput-header[type="number"] {
         max-width: 361px !important;
         height: 321px !important;
     }
+
+    .box-email {
+        padding: 20px;
+        backdrop-filter: blur(20px);
+    }
 }
 
 @media (min-width:768px) {
     .icons_card {
         padding: 16px 14px 16px 14px;
         margin-bottom: 10px;
+    }
+
+    .man-profile-card {
+        min-width: 367px;
+    }
+
+    .gap_md_20 {
+        gap: 20px;
     }
 
     .mobile_wh {
@@ -2123,6 +2154,11 @@ numberinput-header .numberinput-header[type="number"] {
 @media (min-width:992px) {
     .accounts_card {
         transform: translateY(-16%) !important;
+    }
+
+    .px-lg-72 {
+        padding-left: 72px;
+        padding-right: 72px;
     }
 
     .gap_32 {
@@ -2246,7 +2282,6 @@ numberinput-header .numberinput-header[type="number"] {
     max-width: 180px;
     height: 176px;
 }
-}
 
 @media (min-width:1200px) {
     .social_img {
@@ -2319,5 +2354,11 @@ numberinput-header .numberinput-header[type="number"] {
         width: calc(244px * 12);
         -webkit-animation: scroll 15s linear infinite;
         animation: scroll 30s linear infinite;
+    }
+}
+
+@media (max-width: 1099.5px) {
+    :root {
+        --fs-xxl: 44px !important;
     }
 }
