@@ -802,6 +802,12 @@ body::-webkit-scrollbar-thumb {
     color: var(--green-2d);
 }
 
+.font-gradient {
+    background: linear-gradient(180.02deg, #00ffe1 12.76%, #6e5df6 91.81%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .ellipse_1 {
     width: 300px;
@@ -810,7 +816,7 @@ body::-webkit-scrollbar-thumb {
     filter: blur(144px);
     z-index: -1;
     top: 8%;
-    left: -13%;
+    left: -13% !important;
 }
 
 .ellipse_2 {
@@ -820,7 +826,7 @@ body::-webkit-scrollbar-thumb {
     filter: blur(130px);
     z-index: -1;
     bottom: 24%;
-    right: -10%;
+    right: -25% !important;
 }
 
 .ellipse_3 {
@@ -830,7 +836,7 @@ body::-webkit-scrollbar-thumb {
     filter: blur(130px);
     z-index: -1;
     top: 11%;
-    right: -10%;
+    right: -10% !important;
 }
 
 .trade_btn {
@@ -845,18 +851,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 .benifit_card {
-    transition: all 0.4s linear;
     padding: 30px 10.5px 30px 10.5px;
     height: 200px !important;
     max-height: 100%;
     max-width: 250px;
 }
 
+.benifit_gradient {
+    padding: 1px;
+}
+
 .benifit_gradient:hover {
     border-radius: 12px;
-    padding: 1px;
     max-width: 250px;
-
     background: linear-gradient(171.68deg, #00ffe1 39.97%, #6e5df6 107.69%);
 }
 
@@ -871,16 +878,28 @@ body::-webkit-scrollbar-thumb {
     width: 524px;
     max-width: 100%;
     min-height: 260px;
-    padding: 20px 20px 50px 20px;
+    padding: 20px 20px 60px 20px !important;
     background: linear-gradient(82.41deg, #00ffe1 -12.77%, #6e5df6 93.08%);
 }
 
 .accounts_card {
     padding: 20px;
     background: white;
-    max-width: 250px;
+    max-width: 310px;
     border-radius: 15px;
     transform: translateY(-10%);
+}
+
+.trade_img {
+    border-radius: 10px;
+}
+
+.benifit_gradient:hover {
+    border-radius: 12px;
+    padding: 1px;
+    max-width: 250px;
+
+    background: linear-gradient(171.68deg, #00ffe1 39.97%, #6e5df6 107.69%);
 }
 
 .trade_img {
@@ -1660,6 +1679,10 @@ button:not(:disabled) {
 }
 
 @media (min-width: 575.5px) {
+    .accounts_card {
+        max-width: 471px;
+    }
+
     .accordion-body {
         padding: 14px 3px 0px 3px !important;
     }
