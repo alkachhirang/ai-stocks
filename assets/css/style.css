@@ -1765,6 +1765,7 @@ numberinput-header .numberinput-header[type="number"] {
         --lh-7xl: 33px !important;
         --lh-8xl: 20px !important;
         --lh-9xl: 40px !important;
+        --lh-xxl: 23px !important;
         --lh-10xl: 48px !important;
     }
 
