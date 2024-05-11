@@ -1719,6 +1719,7 @@ numberinput-header .numberinput-header[type="number"] {
 @media (max-width:991.5px) {
     :root {
         --fs-6lg: 25px !important;
+        --fs-md: 16px !important;
         --fs-3xxl: 60.24px !important;
         --fs-8xl: 30px !important;
         --fs-xxl: 38px !important;
