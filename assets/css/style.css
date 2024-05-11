@@ -1198,7 +1198,7 @@ body::-webkit-scrollbar-thumb {
 
 .slide_container2 {
     width: calc(360px * 8);
-    -webkit-animation: scroll 20s linear infinite;
+    -webkit-animation: scroll 30s linear infinite;
     animation: scrolltwo 6s linear infinite;
 }
 
