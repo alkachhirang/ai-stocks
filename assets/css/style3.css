@@ -1,272 +1,92 @@
-::-webkit-scrollbar-track {
-    border-radius: 12px;
+body {
+    background-image: url("/assets/images/webp/background-image.webp") !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-body::-webkit-scrollbar {
-    width: 5px;
-    height: 4px;
-    background: black;
-}
-
-body::-webkit-scrollbar-thumb {
-    background: var(--c-light-green);
-    border-radius: 12px;
-    outline: unset;
+.py_2 {
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .mt_24 {
     margin-top: 24px;
 }
 
-#submit {
-    pointer-events: none;
-    cursor: no-drop;
+.gap-6 {
+    gap: 6px;
 }
 
 .man-profile-card {
-    transition: all .3s linear;
-}
-
-.man-profile-card:hover {
-    box-shadow: 0 0 3px 3px var(--c-light-green);
-}
-
-#headerfrom:valid #submit {
-    pointer-events: auto;
-    cursor: pointer;
-}
-
-.box-timenumber::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    height: 2px;
+    padding: 20px;
+    min-width: 293px;
     width: 100%;
-    top: 50%;
+    background: linear-gradient(90.19deg, rgba(255, 255, 255, 0.04) -76.18%, rgba(153, 153, 153, 0.0056) 88.54%);
     border-radius: 8px;
-    transform: translateY(-50%);
-    background-color: #04090E;
+    cursor: pointer;
+    transition: all 300ms linear !important;
 }
 
-.p-12 {
-    padding: 12px;
+.max-w-500 {
+    max-width: 500px;
 }
 
-.email-input-style-header {
-    padding: 12px;
-    width: 100%;
-    background-color: white;
-    border-radius: 4px;
-    border: 0;
-    outline: 0;
+.box-email {
+    padding: 16px;
+    backdrop-filter: blur(20px);
 }
 
-.vedio {
-    padding: 1.84px;
-    margin: 0;
-    border-radius: 7.2px;
-    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
-}
-.ellipes1headerleft-top {
-    position: absolute;
-    z-index: -1;
-    top: 2%;
-    left: -10%;
-    width: 197px;
-    height: 197px;
-    pointer-events: none;
-    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
-    filter: blur(95px);
-}
-
-.ellipes2headerleft-topdown {
-    position: absolute;
-    z-index: -1;
-    top: 41%;
-    left: -11%;
-    width: 197px;
-    height: 197px;
-    pointer-events: none;
-    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
-    filter: blur(115px);
-}
-
-.ellipes3headerleft-bottom {
-    position: absolute;
-    z-index: -1;
-    bottom: 3%;
-    left: -15%;
-    width: 197px;
-    fill: #00ffe1;
-    height: 197px;
-    pointer-events: none;
-    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
-    filter: blur(105px);
-}
-
-.ellipes4headerright-top {
-    position: absolute;
-    z-index: -1;
-    top: 26%;
-    right: -8%;
-    width: 197px;
-    height: 197px;
-    pointer-events: none;
-    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
-    filter: blur(89px);
-}
-
-.main-button {
-    padding: 12px 24px;
-    background-color: transparent;
-    border-radius: 4px;
-    border: 1px solid white;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    transition: all 0.3s linear;
-}
-
-.main-button::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    background: linear-gradient(107.02deg, #00ffe1 12.76%, #6e5df6 91.81%);
-    opacity: 1;
-}
-
-.main-button::before {
-    content: "";
-    height: 100%;
-    width: 10px;
-    position: absolute;
-    left: -25%;
-    top: 0;
-    transform: skew(10deg);
-    z-index: 0;
-    filter: blur(5px);
-    background: white;
-    opacity: 1;
-    transition: all .3s linear;
-}
-
-.main-button:hover::before {
-    left: 125% !important;
-
-}
-
-.main-button:hover::after {
-    background: linear-gradient(107.02deg, #6e5df6 12.76%, #00ffe1 91.81%);
-}
-
-.mb-45 {
-    margin-bottom: 45px;
-}
-
-.ellipes5headerright-bottom {
-    position: absolute;
-    z-index: -3;
-    bottom: 6%;
-    right: -10%;
-    width: 197px;
-    height: 197px;
-    pointer-events: none;
-    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
-    filter: blur(115px);
-}
-
-.slide_container {
-    width: calc(389px * 12);
-    -webkit-animation: scroll 15s linear infinite;
-    animation: scroll 15s linear infinite;
-}
-
-.logo_gap {
-    gap: 20px;
-}
-
-@-webkit-keyframes scroll {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-
-    100% {
-        -webkit-transform: translateX(calc(-244px * 6));
-        transform: translateX(calc(-244px * 6));
+@media (max-width: 1099.5px) {
+    :root {
+        --fs-xxl: 44px !important;
     }
 }
 
-.logo_size {
-    width: 367px;
-    height: 126px !important;
-}
-
-@media (min-width:1526px) {
-    .slide_container {
-        width: calc(244px * 12);
-        -webkit-animation: scroll 15s linear infinite;
-        animation: scroll 15s linear infinite;
+@media (max-width: 991.5px) {
+    :root {
+        --fs-xxl: 38px !important;
+        /* line height  */
+        --lh-9xl: 50px !important;
     }
 }
 
-@media (max-width:576px) {
-    .nav-small-screen {
-        padding: 6px 16px !important;
+@media (max-width: 576px) {
+    :root {
+        --fs-xs: 14px !important;
+        --fs-8md: 20px !important;
+        --fs-xxl: 32px !important;
     }
-
 }
 
-@media (min-width:575.5px) {
-    .box-timenumber::after {
-        height: 4px;
+@media (min-width:576px) {
+    .box-email {
+        padding: 20px;
+        backdrop-filter: blur(20px);
     }
 }
 
 @media (min-width:768px) {
-    .mt-md-40 {
-        margin-top: 40px;
+    .man-profile-card {
+        min-width: 367px;
     }
 
-    .mb-md-64 {
-        margin-bottom: 64px;
-    }
-
-    .email-input-style-header {
-        padding: 16px;
+    .gap_md_20 {
+        gap: 20px;
     }
 }
 
 @media (min-width:992px) {
-    .vedio {
-        margin: 0 12px;
-    }
-
-    .max-w-lg-626 {
-        max-width: 626px;
-    }
-
-    .mt_0 {
-        margin-top: 0;
+    .px-lg-72 {
+        padding-left: 72px;
+        padding-right: 72px;
     }
 }
 
+
 @media (min-width:1200px) {
-    .mb-xl-100 {
-        margin-bottom: 100px;
-    }
-
-    .max-w-xl-388 {
-        max-width: 388px;
-    }
-
-    .px-xl-44 {
-        padding-left: 44px;
-        padding-right: 44px;
-    }
-
-    .max-w-xl-654 {
-        max-width: 654px;
+    .px-xl-88 {
+        padding-left: 88px;
+        padding-right: 88px;
     }
 }
