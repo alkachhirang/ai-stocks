@@ -96,6 +96,7 @@ body {
     --gray-4e: #4e5051;
     --black-gray: #0f1b22;
     --black-45: #353739;
+    --green-2d: #2db964;
 }
 
 ::-webkit-scrollbar-track {
@@ -162,6 +163,10 @@ body::-webkit-scrollbar-thumb {
 
 .text_black {
     color: var(--clr-black);
+}
+
+.green-2d {
+    color: var(--green-2d);
 }
 
 .white {
