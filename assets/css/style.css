@@ -1179,10 +1179,6 @@ body::-webkit-scrollbar-thumb {
     animation: scroll 10s linear infinite;
 }
 
-.gap_32 {
-    gap: 32px;
-}
-
 @-webkit-keyframes scroll {
     0% {
         -webkit-transform: translateX(0);
@@ -1692,8 +1688,8 @@ numberinput-header .numberinput-header[type="number"] {
     bottom: 0;
 }
 
-.gap_10 {
-    gap: 10px !important;
+.average_gap {
+    gap: 8px !important;
 }
 
 @media (max-width:1200px) {
@@ -1709,6 +1705,7 @@ numberinput-header .numberinput-header[type="number"] {
 
 
 @media (max-width:991.5px) {
+
     :root {
         --fs-6lg: 25px !important;
         --fs-3xxl: 60.24px !important;
@@ -1729,10 +1726,6 @@ numberinput-header .numberinput-header[type="number"] {
         --lh-9xl: 40px !important;
         --fs-xxl: 38px !important;
     }
-
-    .gap_24 {
-        gap: 24px !important;
-    }
 }
 
 @media (max-width: 576px) {
@@ -1751,12 +1744,10 @@ numberinput-header .numberinput-header[type="number"] {
         --fs-xxl: 32px !important;
         --fs-3xxl: 51px !important;
 
-
-
-
         /*=============line-height=========== */
         --lh-xsm: 22px !important;
         --lh-sm: 22px !important;
+        --lh-md: 22px !important;
         --lh-2md: 25px !important;
         --lh-2xl: 28px !important;
         --lh-4xl: 31px !important;
@@ -2149,9 +2140,17 @@ numberinput-header .numberinput-header[type="number"] {
         padding-top: 64px;
     }
 
+    .average_gap {
+        gap: 24px !important;
+    }
+
 }
 
 @media (min-width:992px) {
+    .average_gap {
+        gap: 32px !important;
+    }
+
     .accounts_card {
         transform: translateY(-16%) !important;
     }
@@ -2261,26 +2260,26 @@ numberinput-header .numberinput-header[type="number"] {
         max-width: 461px !important;
         height: 421px !important;
     }
-}
 
-.icons_card {
-    padding: 13px 11px 13px 11px;
-    background: #0b0e10;
-    border-radius: 4px;
-    margin-bottom: 15px;
-}
+    .mb-lg-80 {
+        margin-bottom: 80px;
+    }
 
-.understanding_card {
-    padding: 25px 50px 0px 25px;
-}
+    .icons_card {
+        padding: 13px 11px 13px 11px;
+        background: #0b0e10;
+        border-radius: 4px;
+        margin-bottom: 15px;
+    }
 
-.mb-lg-80 {
-    margin-bottom: 80px;
-}
+    .understanding_card {
+        padding: 25px 50px 0px 25px;
+    }
 
-.imgAi {
-    max-width: 180px;
-    height: 176px;
+    .imgAi {
+        max-width: 180px;
+        height: 176px;
+    }
 }
 
 @media (min-width:1200px) {
