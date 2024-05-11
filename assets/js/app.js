@@ -143,7 +143,6 @@ Submit.addEventListener("click", function (event) {
     Email.classList.add("border_red");
   } else {
     Email.classList.remove("border_red");
-
   }
 
   if (
