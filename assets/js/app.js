@@ -120,50 +120,30 @@ Submit.addEventListener("click", function (event) {
   event.preventDefault();
 
   if (!tradingregex.firstName.test(FirstName.value)) {
-<<<<<<< HEAD
-    errorFirstName.innerHTML = "Invalid first name";
-  } else {
-=======
     errorFirstName.classList.add("border_red");
   } else {
     errorFirstName.classList.remove("border_red");
->>>>>>> 8282e1fea316dca9f80145060af1609ad06bf460
     errorFirstName.innerHTML = "";
   }
 
   if (!tradingregex.lastName.test(lastName.value)) {
-<<<<<<< HEAD
-    errorLastName.innerHTML = "Invalid last name";
-  } else {
-=======
     errorLastName.classList.add("border_red");
   } else {
     errorLastName.classList.remove("border_red");
->>>>>>> 8282e1fea316dca9f80145060af1609ad06bf460
     errorLastName.innerHTML = "";
   }
 
   if (!tradingregex.number.test(PNumber.value)) {
-<<<<<<< HEAD
-    errorNumber.innerHTML = "Invalid number";
-  } else {
-=======
     errorNumber.classList.add("border_red");
   } else {
     errorNumber.classList.remove("border_red");
->>>>>>> 8282e1fea316dca9f80145060af1609ad06bf460
     errorNumber.innerHTML = "";
   }
 
   if (!tradingregex.email.test(Email.value)) {
-<<<<<<< HEAD
-    errorEmail.innerHTML = "Invalid email";
-  } else {
-=======
     errorEmail.classList.add("border_red");
   } else {
     errorEmail.classList.remove("border_red");
->>>>>>> 8282e1fea316dca9f80145060af1609ad06bf460
     errorEmail.innerHTML = "";
   }
 
@@ -202,11 +182,8 @@ window.addEventListener("scroll", function () {
 // setTimeout(() => {
 //     document.getElementById("preloder").classList.add("d-none");
 //     document.body.classList.remove("overflow_hidden");
-<<<<<<< HEAD
 // }, 1700);
 //   document.getElementById("preloder").classList.add("d-none");
 //   document.body.classList.remove("overflow_hidden");
 // }, 30);
-=======
 // }, 3500);
->>>>>>> 8282e1fea316dca9f80145060af1609ad06bf460
