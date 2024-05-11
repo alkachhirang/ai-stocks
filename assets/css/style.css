@@ -1079,54 +1079,48 @@ body::-webkit-scrollbar-thumb {
     color: transparent;
 }
 
-.common_btn {
-    background: linear-gradient(107.02deg, #00FFE1 12.76%, #6E5DF6 91.81%) !important;
-    border: 1px solid #FFFFFF;
-    padding: 11px 24px 11px 22.7px;
+.main-button {
+    padding: 12px 24px;
+    background-color: transparent;
     border-radius: 4px;
-    transition: all .3s linear !important;
+    border: 1px solid white;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.3s linear;
 }
 
-.common_btn:hover {
-    background: white !important;
-    color: #020507 !important;
+.main-button::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(107.02deg, #00ffe1 12.76%, #6e5df6 91.81%);
+    opacity: 1;
 }
 
-.company-dimension {
-    max-width: 210px;
-    max-height: 109px;
+.main-button::before {
+    content: "";
+    height: 100%;
+    width: 10px;
+    position: absolute;
+    left: -25%;
+    top: 0;
+    transform: skew(10deg);
+    z-index: 0;
+    filter: blur(5px);
+    background: white;
+    opacity: 1;
+    transition: all .3s linear;
 }
 
-.brand_slider_parent3 {
-    animation-name: sliderScroll2;
-    animation-duration: 70s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-delay: -70s;
+.main-button:hover::before {
+    left: 125% !important;
+
 }
 
-.brand_slider_parent4 {
-    animation-name: sliderScroll2;
-    animation-delay: -35s;
-    animation-duration: 70s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-.brand_slider_parentalternate3 {
-    animation-name: sliderScrollalternate2;
-    animation-duration: 70s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-delay: -70s;
-}
-
-.brand_slider_parentalternate4 {
-    animation-name: sliderScrollalternate2;
-    animation-delay: -35s;
-    animation-duration: 70s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+.main-button:hover::after {
+    background: linear-gradient(107.02deg, #6e5df6 12.76%, #00ffe1 91.81%);
 }
 
 .gap-12 {
