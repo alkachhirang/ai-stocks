@@ -97,6 +97,8 @@ body {
     --black-gray: #0f1b22;
     --black-45: #353739;
     --green-2d: #2db964;
+    --cc-gray: #CCCCCC;
+    --cd-gray: #CCCDCD;
 }
 
 ::-webkit-scrollbar-track {
@@ -121,6 +123,14 @@ body::-webkit-scrollbar-thumb {
 
 .c-black-100 {
     color: var(--c-black-100) !important;
+}
+
+.cc-gray {
+    color: var(--cc-gray);
+}
+
+.cd-gray {
+    color: var(--cd-gray);
 }
 
 .c-light-green {
@@ -354,19 +364,20 @@ body::-webkit-scrollbar-thumb {
     backdrop-filter: blur(20px);
 }
 
-.mb-45 {
-    margin-bottom: 45px;
-}
-
-.box-time::after {
+.box-timenumber::after {
     content: '';
     position: absolute;
     left: 0;
-    height: 4px;
+    height: 2px;
     width: 100%;
     top: 50%;
+    border-radius: 8px;
     transform: translateY(-50%);
     background-color: #04090E;
+}
+
+.mb-45 {
+    margin-bottom: 45px;
 }
 
 .p-12 {
@@ -647,6 +658,21 @@ body::-webkit-scrollbar-thumb {
     background: linear-gradient(90.19deg, rgba(255, 255, 255, 0.04) -76.18%, rgba(153, 153, 153, 0.0056) 88.54%);
     border-radius: 8px;
     cursor: pointer;
+    transition: all 300ms linear !important;
+}
+
+#submit {
+    pointer-events: none;
+    cursor: no-drop;
+}
+
+#headerfrom:valid #submit {
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.man-profile-card:hover {
+    box-shadow: 0 0 2px 2px var(--c-light-green);
 }
 
 .border-3-gradiant::before {
@@ -962,6 +988,8 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid transparent;
     border-radius: 50px;
     transition: all linear 0.3s !important;
+    background: var(--black);
+    animation: backToTop 2s linear infinite;
 }
 
 @keyframes pulse {
@@ -1305,14 +1333,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* ---------------faq--------------- */
-
 .accordion {
     --bs-accordion-border-color: none !important;
     --bs-accordion-border-width: none !important;
     --bs-accordion-active-color: none !important;
     --bs-accordion-active-bg: none !important;
     --bs-accordion-btn-focus-box-shadow: none !important;
-    --bs-accordion-btn-icon-width: 32px !important;
+    --bs-accordion-btn-icon-width: 22px !important;
 }
 
 .accordion-item {
@@ -1329,7 +1356,7 @@ body::-webkit-scrollbar-thumb {
 
 .accordion-button {
     display: flex;
-    align-items: flex-start;
+    align-items: start !important;
     padding: 9px 3px !important;
 }
 
@@ -1340,14 +1367,10 @@ body::-webkit-scrollbar-thumb {
     background-size: none !important;
 }
 
-button:not(:disabled) {
+.faqSection button:not(:disabled) {
     cursor: pointer;
     background-color: transparent !important;
     color: white;
-}
-
-.mt_24 {
-    margin-top: 24px;
 }
 
 .accordion-button:not(.collapsed) {
@@ -1359,9 +1382,8 @@ button:not(:disabled) {
 }
 
 .accordion-body {
-    opacity: 80%;
-    max-width: 603px;
-    padding: 6px 3px !important;
+    color: var(--cd-gray);
+    padding: 6px 25px 0px 3px !important;
     padding-top: 0px !important;
 }
 
@@ -1382,7 +1404,7 @@ button:not(:disabled) {
     inset: 0;
     border-radius: 8px;
     padding: 2px;
-    background: linear-gradient(180.4deg, #00ffe1 38.61%, #6e5df6 92.96%);
+    background: linear-gradient(180.4deg, #00FFE1 38.61%, #6E5DF6 92.96%);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
@@ -1394,41 +1416,45 @@ button:not(:disabled) {
     color: white;
     outline: none;
     border: 1px solid var(--gray);
-    border-radius: 8px;
-    padding: 16px;
+    border-radius: 4px;
+    padding: 12px;
 }
 
 .AiStockInputPhone {
     background-color: transparent;
-    color: white;
-    outline: none;
-    border-radius: 8px;
-    padding: 16px;
+    color: var(--white);
+    outline: 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+.backdrop {
+    backdrop-filter: blur(20px);
 }
 
 .borderInput {
     border: 1px solid var(--gray);
 }
 
+.border_red {
+    border-radius: 4px;
+    border-bottom: 1px solid red;
+}
+
 .place::placeholder {
     color: var(--white);
 }
 
-.btnSignup {
-    background: linear-gradient(107.02deg, #00ffe1 12.76%, #6e5df6 91.81%);
-    border: 1px solid var(--white);
-    width: 100%;
-    padding-bottom: 12px;
-    padding-top: 12px;
-    border-radius: 8px;
+/* ----------------footer-section---------------- */
+
+.hoverText {
     transition: all linear 300ms;
 }
 
-.btnSignup:hover {
-    background: var(--white);
+.hoverText:hover {
+    color: var(--white);
 }
-
-/* ----------------footer-section---------------- */
 
 .circle {
     position: relative;
@@ -1448,7 +1474,7 @@ button:not(:disabled) {
     inset: 0;
     border-radius: 50px;
     padding: 1px;
-    background: linear-gradient(180.4deg, #00ffe1 38.61%, #6e5df6 92.96%);
+    background: linear-gradient(180.4deg, #00FFE1 38.61%, #6E5DF6 92.96%);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
@@ -1457,12 +1483,7 @@ button:not(:disabled) {
 .borderTop {
     width: 100%;
     height: 1px;
-    background: linear-gradient(91.34deg,
-            rgba(0, 255, 225, 0) 0%,
-            rgba(0, 255, 225, 0.35) 9.95%,
-            #00ffe1 48.76%,
-            rgba(0, 255, 225, 0.35) 87.72%,
-            rgba(0, 255, 225, 0) 97.72%);
+    background: linear-gradient(91.34deg, rgba(0, 255, 225, 0) 0%, rgba(0, 255, 225, 0.35) 9.95%, #00FFE1 48.76%, rgba(0, 255, 225, 0.35) 87.72%, rgba(0, 255, 225, 0) 97.72%);
 }
 
 .FaqLeftEllips {
@@ -1471,7 +1492,7 @@ button:not(:disabled) {
     left: -10%;
     width: 150px;
     height: 150px;
-    background: linear-gradient(171.68deg, #00ffe1 39.97%, #6e5df6 107.69%);
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
     filter: blur(140px);
     z-index: -1;
 }
@@ -1482,7 +1503,7 @@ button:not(:disabled) {
     right: -5%;
     width: 100px;
     height: 150px;
-    background: linear-gradient(171.68deg, #00ffe1 39.97%, #6e5df6 107.69%);
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
     filter: blur(140px);
     z-index: -1;
 }
@@ -1493,7 +1514,7 @@ button:not(:disabled) {
     right: -10%;
     width: 100px;
     height: 100px;
-    background: linear-gradient(171.68deg, #00ffe1 39.97%, #6e5df6 107.69%);
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
     filter: blur(140px);
     z-index: -1;
 }
@@ -1504,7 +1525,7 @@ button:not(:disabled) {
     left: -10%;
     width: 100px;
     height: 100px;
-    background: linear-gradient(171.68deg, #00ffe1 39.97%, #6e5df6 107.69%);
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
     filter: blur(160px);
     z-index: -1;
 }
@@ -1515,7 +1536,7 @@ button:not(:disabled) {
     right: -10%;
     width: 200px;
     height: 200px;
-    background: linear-gradient(171.68deg, #00ffe1 39.97%, #6e5df6 107.69%);
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
     filter: blur(160px);
     z-index: -1;
 }
@@ -1526,7 +1547,7 @@ button:not(:disabled) {
     left: -10%;
     width: 100px;
     height: 100px;
-    background: linear-gradient(171.68deg, #00ffe1 39.97%, #6e5df6 107.69%);
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
     filter: blur(120px);
     z-index: -1;
 }
@@ -1537,7 +1558,7 @@ button:not(:disabled) {
     right: -10%;
     width: 100px;
     height: 50px;
-    background: linear-gradient(171.68deg, #00ffe1 39.97%, #6e5df6 107.69%);
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
     filter: blur(120px);
     z-index: -1;
 }
@@ -1553,9 +1574,13 @@ button:not(:disabled) {
     max-width: 153px;
 }
 
+.brandGroupwidth {
+    max-width: 518px;
+}
+
 .imgAi {
-    max-width: 130px;
-    height: 110px;
+    max-width: 140px;
+    height: 170px;
     transition: all linear 300ms;
 }
 
@@ -1565,30 +1590,44 @@ button:not(:disabled) {
 
 .imgPostion {
     position: absolute;
-    left: -73%;
-    top: 16%;
-    z-index: -1;
+    left: 2%;
+    top: 18.3%;
 }
 
 .imgPostion2 {
     position: absolute;
-    left: -73%;
-    bottom: 17%;
-    z-index: -1;
+    left: 2%;
+    bottom: 15.33%;
 }
 
 .imgPostion3 {
     position: absolute;
-    right: -73%;
-    top: 17%;
-    z-index: -1;
+    right: 2%;
+    top: 18.3%;
 }
 
 .imgPostion4 {
     position: absolute;
-    right: -73%;
-    bottom: 17%;
-    z-index: -1;
+    right: 2%;
+    bottom: 15.33%;
+}
+
+.imgPostion1 {
+    position: absolute;
+    right: 32%;
+    top: 2%;
+}
+
+.imgPostion5 {
+    position: absolute;
+    right: 33%;
+    bottom: 33.33%;
+}
+
+.imgPostion7 {
+    position: absolute;
+    right: 32%;
+    bottom: 0;
 }
 
 @media (max-width:1200px) {
@@ -1605,15 +1644,19 @@ button:not(:disabled) {
 @media (max-width:992px) {
     :root {
         --fs-6lg: 25px !important;
+        --fs-xxl: 46px !important;
         /*==========line-height============*/
         --lh-5xl: 38px !important;
         --lh-6xl: 38px !important;
+        --lh-9xl: 57px !important;
     }
 }
 
 @media (max-width: 768px) {
     :root {
         --lh-7xl: 47px !important;
+        --lh-9xl: 40px !important;
+        --fs-xxl: 38px !important;
     }
 
     .pt_Statistics {
@@ -1669,6 +1712,120 @@ button:not(:disabled) {
     .nav-small-screen {
         padding: 6px 16px !important;
     }
+
+    .imgAi {
+        max-width: 175px;
+        height: 162px;
+        transition: all linear 300ms;
+    }
+}
+
+@media (max-width:492px) {
+    .imgAi {
+        max-width: 151px;
+        height: 134px;
+        transition: all linear 300ms;
+    }
+
+    .imgPostion {
+        position: absolute;
+        left: 2%;
+        top: 18.3%;
+    }
+
+    .imgPostion2 {
+        position: absolute;
+        left: 2%;
+        bottom: 19.33%;
+    }
+
+    .imgPostion3 {
+        position: absolute;
+        right: 2%;
+        top: 18.3%;
+    }
+
+    .imgPostion4 {
+        position: absolute;
+        right: 2%;
+        bottom: 19.33%;
+    }
+
+    .imgPostion1 {
+        position: absolute;
+        right: 32%;
+        top: 2%;
+    }
+
+    .imgPostion5 {
+        position: absolute;
+        right: 33%;
+        bottom: 33.33%;
+    }
+
+    .imgPostion7 {
+        position: absolute;
+        right: 32%;
+        bottom: 2%;
+    }
+}
+
+@media (max-width:442px) {
+    .imgAi {
+        max-width: 131px;
+        height: 116px;
+        transition: all linear 300ms;
+    }
+
+    .imgPostion {
+        position: absolute;
+        left: 2%;
+        top: 18.3%;
+    }
+
+    .imgPostion2 {
+        position: absolute;
+        left: 2%;
+        bottom: 17.33%;
+    }
+
+    .imgPostion3 {
+        position: absolute;
+        right: 2%;
+        top: 18.3%;
+    }
+
+    .imgPostion4 {
+        position: absolute;
+        right: 2%;
+        bottom: 17.33%;
+    }
+
+    .imgPostion1 {
+        position: absolute;
+        right: 32%;
+        top: 2%;
+    }
+
+    .imgPostion5 {
+        position: absolute;
+        right: 32%;
+        bottom: 33.33%;
+    }
+
+    .imgPostion7 {
+        position: absolute;
+        right: 32%;
+        bottom: 2%;
+    }
+}
+
+@media (max-width:380px) {
+    .imgAi {
+        max-width: 121px;
+        height: 106px;
+        transition: all linear 300ms;
+    }
 }
 
 @media (min-width: 1400px) or (max-width: 1600px) {
@@ -1689,7 +1846,8 @@ button:not(:disabled) {
     }
 
     .accordion-body {
-        padding: 14px 3px 0px 3px !important;
+        max-width: 680px;
+        padding: 14px 30px 0px 3px !important;
     }
 
     .accordion-button {
@@ -1706,7 +1864,7 @@ button:not(:disabled) {
     }
 
     .imgAi {
-        max-width: 207px;
+        max-width: 190px;
         height: 176px;
     }
 
@@ -1755,6 +1913,23 @@ button:not(:disabled) {
         height: 4px;
     }
 
+    .FooterBottomPadding {
+        padding-top: 27px;
+        padding-bottom: 27px;
+    }
+
+    .AiStockInput {
+        padding: 16px;
+    }
+
+    .AiStockInputPhone {
+        padding: 16px;
+    }
+
+    .accordion {
+        --bs-accordion-btn-icon-width: 28px !important;
+    }
+
     .back {
         width: 35px;
         height: 35px;
@@ -1776,6 +1951,24 @@ button:not(:disabled) {
     .accordion {
         --bs-accordion-btn-icon-width: 28px !important;
     }
+
+    .imgPostion1 {
+        position: absolute;
+        right: 32%;
+        top: 2%;
+    }
+
+    .imgPostion5 {
+        position: absolute;
+        right: 33%;
+        bottom: 33.33%;
+    }
+
+    .imgPostion7 {
+        position: absolute;
+        right: 32%;
+        bottom: 0;
+    }
 }
 
 @media (min-width:768px) {
@@ -1790,6 +1983,18 @@ button:not(:disabled) {
 
     .mw_209 {
         max-width: 209px;
+    }
+
+    .mt-md-40 {
+        margin-top: 40px;
+    }
+
+    .mb-md-64 {
+        margin-bottom: 64px;
+    }
+
+    .email-input-style-header {
+        padding: 16px;
     }
 
     .box-time {
@@ -1821,6 +2026,8 @@ button:not(:disabled) {
     .pt_Statistics {
         padding-top: 70px;
     }
+
+
 }
 
 @media (min-width:992px) {
@@ -1886,6 +2093,34 @@ button:not(:disabled) {
         max-width: 198px;
     }
 
+    .imgAi {
+        max-width: 180px;
+        height: 164px;
+        transition: all linear 300ms;
+    }
+
+    .imgPostion1 {
+        position: absolute;
+        right: 31%;
+        top: 1%;
+    }
+
+    .imgPostion5 {
+        position: absolute;
+        right: 31%;
+        bottom: 32%;
+    }
+
+    .imgPostion7 {
+        position: absolute;
+        right: 32%;
+        bottom: -1%;
+    }
+
+    .max-w-lg-626 {
+        max-width: 626px;
+    }
+
 }
 
 @media (min-width: 1023.8px) {
@@ -1903,15 +2138,10 @@ button:not(:disabled) {
     .mb-lg-80 {
         margin-bottom: 80px;
     }
-}
 
-@media (min-width:1400px) {
-    .mw_xxl_800 {
-        max-width: 800px !important;
-    }
-
-    .mw_averageimg {
-        max-width: 260px !important;
+    .imgAi {
+        max-width: 180px;
+        height: 176px;
     }
 }
 
@@ -1950,5 +2180,39 @@ button:not(:disabled) {
 
     .mb-xl-100 {
         margin-bottom: 100px;
+    }
+
+    .max-w-xl-388 {
+        max-width: 388px;
+    }
+
+    .px-xl-44 {
+        padding-left: 44px;
+        padding-right: 44px;
+    }
+
+    .max-w-xl-654 {
+        max-width: 654px;
+    }
+
+    .imgAi {
+        max-width: 190px;
+        height: 176px;
+    }
+
+    .imgPostion1 {
+        position: absolute;
+        right: 32%;
+        top: 2%;
+    }
+}
+
+@media (min-width:1400px) {
+    .mw_xxl_800 {
+        max-width: 800px !important;
+    }
+
+    .mw_averageimg {
+        max-width: 260px !important;
     }
 }
