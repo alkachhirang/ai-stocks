@@ -14,6 +14,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    max-width: 1920px !important;
 }
 
 .z_5 {
@@ -1179,6 +1180,10 @@ body::-webkit-scrollbar-thumb {
     animation: scroll 10s linear infinite;
 }
 
+.gap_32 {
+    gap: 32px;
+}
+
 @-webkit-keyframes scroll {
     0% {
         -webkit-transform: translateX(0);
@@ -1372,6 +1377,21 @@ body::-webkit-scrollbar-thumb {
     gap: 13px;
 }
 
+.hoverText {
+    transition: all linear 300ms;
+}
+
+.hoverText:hover {
+    color: var(--greenlight);
+    /* change your color  */
+}
+
+.imgPostion4 {
+    position: absolute;
+    right: 2%;
+    bottom: 15.88%;
+}
+
 /* ---------------faq--------------- */
 .accordion {
     --bs-accordion-border-color: none !important;
@@ -1487,14 +1507,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* ----------------footer-section---------------- */
-
-.hoverText {
-    transition: all linear 300ms;
-}
-
-.hoverText:hover {
-    color: var(--white);
-}
 
 .circle {
     position: relative;
@@ -1689,7 +1701,7 @@ numberinput-header .numberinput-header[type="number"] {
 }
 
 .average_gap {
-    gap: 8px !important;
+    gap: 8px;
 }
 
 @media (max-width:1200px) {
@@ -1705,7 +1717,6 @@ numberinput-header .numberinput-header[type="number"] {
 
 
 @media (max-width:991.5px) {
-
     :root {
         --fs-6lg: 25px !important;
         --fs-3xxl: 60.24px !important;
@@ -1874,6 +1885,36 @@ numberinput-header .numberinput-header[type="number"] {
         right: 32%;
         bottom: 2%;
     }
+
+    .imgPostion3 {
+        position: absolute;
+        right: 3%;
+        top: 18.3%;
+    }
+
+    .imgPostion4 {
+        position: absolute;
+        right: 3%;
+        bottom: 18.33%;
+    }
+
+    .imgPostion5 {
+        position: absolute;
+        right: 35%;
+        bottom: 36.33%;
+    }
+
+    .imgPostion {
+        position: absolute;
+        left: 4%;
+        top: 18.3%;
+    }
+
+    .imgPostion2 {
+        position: absolute;
+        left: 4%;
+        bottom: 18.33%;
+    }
 }
 
 @media (max-width: 380px) {
@@ -1887,6 +1928,64 @@ numberinput-header .numberinput-header[type="number"] {
 @media (min-width: 1400px) or (max-width: 1600px) {
     .container {
         max-width: 1164px !important;
+    }
+}
+
+@media (max-width:410px) {
+    .imgAi {
+        max-width: 111px;
+        height: 97px;
+        transition: all linear 300ms;
+    }
+}
+
+@media (max-width:504px) {
+    .imgAi {
+        max-width: 151px;
+        height: 134px;
+        transition: all linear 300ms;
+    }
+
+    .imgPostion {
+        position: absolute;
+        left: 2%;
+        top: 18.3%;
+    }
+
+    .imgPostion2 {
+        position: absolute;
+        left: 2%;
+        bottom: 19.33%;
+    }
+
+    .imgPostion3 {
+        position: absolute;
+        right: 2%;
+        top: 18.3%;
+    }
+
+    .imgPostion4 {
+        position: absolute;
+        right: 2%;
+        bottom: 19.33%;
+    }
+
+    .imgPostion1 {
+        position: absolute;
+        right: 32%;
+        top: 2%;
+    }
+
+    .imgPostion5 {
+        position: absolute;
+        right: 33%;
+        bottom: 33.33%;
+    }
+
+    .imgPostion7 {
+        position: absolute;
+        right: 32%;
+        bottom: 2%;
     }
 }
 
@@ -2045,6 +2144,22 @@ numberinput-header .numberinput-header[type="number"] {
         padding: 20px;
         backdrop-filter: blur(20px);
     }
+
+    .imgAi:hover {
+        transform: scale(1.05);
+    }
+
+    .AiStockCard {
+        padding: 24px;
+    }
+
+    .AiStockInput {
+        padding: 15px 16px;
+    }
+
+    .AiStockInputPhone {
+        padding: 15px 16px;
+    }
 }
 
 @media (min-width:768px) {
@@ -2141,14 +2256,67 @@ numberinput-header .numberinput-header[type="number"] {
     }
 
     .average_gap {
-        gap: 24px !important;
+        gap: 24px;
+    }
+
+    .imgAi {
+        max-width: 180px;
+        height: 170px;
+    }
+
+    .imgPostion {
+        position: absolute;
+        left: 2.9%;
+        top: 19%;
+    }
+
+    .imgPostion1 {
+        position: absolute;
+        right: 32%;
+        top: 2%;
+    }
+
+    .imgPostion5 {
+        position: absolute;
+        right: 33%;
+        bottom: 33.33%;
+    }
+
+    .imgPostion7 {
+        position: absolute;
+        right: 32%;
+        bottom: 0;
     }
 
 }
 
 @media (min-width:992px) {
+    .imgPostion1 {
+        position: absolute;
+        right: 31.6%;
+        top: 2%;
+    }
+
+    .imgPostion4 {
+        position: absolute;
+        right: 2%;
+        bottom: 16.22%;
+    }
+
+    .imgPostion5 {
+        position: absolute;
+        right: 30.9%;
+        bottom: 32%;
+    }
+
+    .imgPostion7 {
+        position: absolute;
+        right: 31.6%;
+        bottom: -1%;
+    }
+
     .average_gap {
-        gap: 32px !important;
+        gap: 32px;
     }
 
     .accounts_card {
@@ -2158,10 +2326,6 @@ numberinput-header .numberinput-header[type="number"] {
     .px-lg-72 {
         padding-left: 72px;
         padding-right: 72px;
-    }
-
-    .gap_32 {
-        gap: 32px !important;
     }
 
     .mw_lg_397 {
@@ -2261,8 +2425,29 @@ numberinput-header .numberinput-header[type="number"] {
         height: 421px !important;
     }
 
+    .imgPostion4 {
+        position: absolute;
+        right: 2%;
+        bottom: 15.22%;
+    }
+
+    .imgPostion7 {
+        position: absolute;
+        right: 31.6%;
+        bottom: -2%;
+    }
+
+    .understanding_card {
+        padding: 25px 50px 0px 25px;
+    }
+
     .mb-lg-80 {
         margin-bottom: 80px;
+    }
+
+    .imgAi {
+        max-width: 180px;
+        height: 176px;
     }
 
     .icons_card {
@@ -2271,16 +2456,12 @@ numberinput-header .numberinput-header[type="number"] {
         border-radius: 4px;
         margin-bottom: 15px;
     }
-
-    .understanding_card {
-        padding: 25px 50px 0px 25px;
-    }
-
-    .imgAi {
-        max-width: 180px;
-        height: 176px;
-    }
 }
+
+
+
+
+
 
 @media (min-width:1200px) {
     .social_img {
@@ -2345,6 +2526,35 @@ numberinput-header .numberinput-header[type="number"] {
         position: absolute;
         right: 32%;
         top: 2%;
+    }
+
+    .imgAi {
+        max-width: 180px;
+        height: 176px;
+    }
+
+    .imgPostion4 {
+        position: absolute;
+        right: 2%;
+        bottom: 15.33%;
+    }
+
+    .imgPostion3 {
+        position: absolute;
+        right: 2%;
+        top: 17.6%;
+    }
+
+    .imgPostion7 {
+        position: absolute;
+        right: 31.6%;
+        bottom: -1%;
+    }
+
+    .imgPostion5 {
+        position: absolute;
+        right: 31.9%;
+        bottom: 32%;
     }
 }
 
