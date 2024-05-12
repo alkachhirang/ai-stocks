@@ -377,8 +377,8 @@ body::-webkit-scrollbar-thumb {
     background-color: #04090e;
 }
 
-.mb-45 {
-    margin-bottom: 45px;
+.mb-48 {
+    margin-bottom: 48px;
 }
 
 .p-12 {
@@ -2316,6 +2316,10 @@ numberinput-header .numberinput-header[type="number"] {
 }
 
 @media (min-width: 992px) {
+    .man-profile-card {
+        min-width: 367px;
+    }
+
     .mobile_back_ellp {
         left: 10.5% !important;
         top: 16% !important;
