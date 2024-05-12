@@ -965,8 +965,6 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 10px;
 }
 
-
-
 .man_img {
     width: 72px;
     height: 72px;
@@ -1476,6 +1474,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* -------------Ai stock trading section------------- */
+
+.submitFooter_from[disabled]:hover::before {
+    left: -25% !important;
+}
+
+.submitFooter_from[disabled]:hover::after {
+    background: linear-gradient(107.02deg, #00ffe1 12.76%, #6e5df6 91.81%);
+}
 
 .AiStockCard {
     max-width: 558px;
