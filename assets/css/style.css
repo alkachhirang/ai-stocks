@@ -898,11 +898,7 @@ body::-webkit-scrollbar-thumb {
     left: 8%;
 }
 
-.mobile_wh {
-    width: 265px;
-    height: 505px;
-    max-width: 100%;
-}
+
 
 .mobile_trading {
     border-radius: 5.87px;
@@ -2192,6 +2188,10 @@ numberinput-header .numberinput-header[type="number"] {
 }
 
 @media (min-width: 768px) {
+    .mobile_wh {
+        width: 314px !important;
+        height: 614px !important;
+      }
     .mobile_inner_part {
         padding: 28px 3px;
         max-width: 264px;
