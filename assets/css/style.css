@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     padding: 0;
@@ -14,8 +14,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    margin: 0 auto !important;
-    position: relative;
 }
 
 .mw_1920 {
@@ -34,10 +32,6 @@ body {
 
 .ff_opensans {
     font-family: "Open Sans", sans-serif;
-}
-
-.ff_montserrat {
-    font-family: "Montserrat", sans-serif;
 }
 
 .ff_roboto {
@@ -59,7 +53,6 @@ body {
     --fs-xxl: 52px;
     --fs-2xxl: 70px;
     --fs-3xxl: 88.24px;
-
     /*=============line-height============= */
     --lh-xsm: 24px;
     --lh-sm: 25px;
@@ -1534,11 +1527,6 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid var(--gray);
 }
 
-.border_red {
-    border-radius: 4px;
-    border-bottom: 1px solid red;
-}
-
 .place::placeholder {
     color: var(--white);
 }
@@ -1715,10 +1703,6 @@ numberinput-header .numberinput-header[type="number"] {
     position: absolute;
     right: 2%;
     top: 18.3%;
-}
-
-.border_red {
-    border-bottom-color: red;
 }
 
 .imgPostion4 {
