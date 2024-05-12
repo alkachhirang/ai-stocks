@@ -1579,6 +1579,7 @@ body::-webkit-scrollbar-thumb {
 numberinput-header .numberinput-header[type="number"] {
     -moz-appearance: textfield;
 }
+
 .submitheader_from[disabled]:hover::before {
     left: -25% !important;
 }
