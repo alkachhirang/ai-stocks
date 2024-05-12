@@ -756,7 +756,46 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* benifit-section */
-
+.benifit_card {
+    padding: 30px 10.5px 30px 10.5px;
+    height: 200px !important;
+    max-height: 100%;
+    max-width: 240px;
+  }
+  
+  .benifit_gradient {
+    padding: 1px;
+    border-radius: 12px;
+  
+    max-width: 240px;
+    transition: all 300ms linear;
+  }
+  
+  .benifit_gradient:hover {
+    transform: scale(1.05);
+    border-radius: 12px;
+    max-width: 240px;
+    background: linear-gradient(171.68deg, #00ffe1 39.97%, #6e5df6 107.69%);
+  }
+  .mw_357 {
+    max-width: 357px;
+  }
+  .mobile_wh {
+      width: 265px;
+      height: 505px;
+      max-width: 100%;
+    }
+    .mobile_trading {
+      border-radius: 5.87px;
+      max-width: 217px;
+      max-height: 208px;
+    }
+    .icons_card {
+      padding: 13px 11px 13px 11px;
+      background: #0b0e10;
+      border-radius: 4px;
+      margin-bottom: 15px;
+    }
 .section_bg {
   background-image: url("../images/png/background-image.png");
   background-position: center;
@@ -788,12 +827,6 @@ body::-webkit-scrollbar-thumb {
   padding-inline-start: 10px !important;
 }
 
-.mobile_back_ellp {
-  left: 1%;
-  top: 12%;
-  max-width: 310px;
-  height: 350px;
-}
 
 .icons_card {
   padding: 16px 14px 16px 14px;
@@ -1837,6 +1870,10 @@ numberinput-header .numberinput-header[type="number"] {
 }
 
 @media (min-width: 575.5px) {
+    .mobile_trading {
+        max-width: 244px;
+        max-height: 224px;
+      }
   .accounts_card {
     max-width: 471px;
   }
@@ -1968,6 +2005,15 @@ numberinput-header .numberinput-header[type="number"] {
 }
 
 @media (min-width: 768px) {
+    .icons_card {
+        padding: 16px 14px 16px 14px;
+        margin-bottom: 10px;
+      }
+    
+      .mobile_wh {
+        width: 314px;
+        height: 614px;
+      }
   .px-88 {
     padding-left: 88px;
     padding-right: 88px;
@@ -2025,6 +2071,9 @@ numberinput-header .numberinput-header[type="number"] {
 }
 
 @media (min-width: 992px) {
+    .accounts_card {
+        transform: translateY(-16%) !important;
+      }
   .mw_814 {
     max-width: 814px;
   }
