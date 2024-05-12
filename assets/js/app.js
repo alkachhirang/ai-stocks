@@ -1,5 +1,5 @@
-var myform = document.getElementById("headerfrom");
-var mysubmitButton = document.getElementById("submit");
+const myform = document.getElementById("headerfrom");
+const mysubmitButton = document.querySelector(".submitheader_from");
 myform.addEventListener("input", function () {
   // Check if all required fields are filled
   if (myform.checkValidity()) {
