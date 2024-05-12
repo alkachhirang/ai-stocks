@@ -20,6 +20,8 @@ body {
 
 .mw_1920 {
     max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .z_15 {
@@ -762,6 +764,50 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* benifit-section */
+.benifit_card {
+    padding: 30px 10.5px 30px 10.5px;
+    height: 200px !important;
+    max-height: 100%;
+    max-width: 240px;
+}
+
+.benifit_gradient {
+    padding: 1px;
+    border-radius: 12px;
+
+    max-width: 240px;
+    transition: all 300ms linear;
+}
+
+.benifit_gradient:hover {
+    transform: scale(1.05);
+    border-radius: 12px;
+    max-width: 240px;
+    background: linear-gradient(171.68deg, #00ffe1 39.97%, #6e5df6 107.69%);
+}
+
+.mw_357 {
+    max-width: 357px;
+}
+
+.mobile_wh {
+    width: 265px;
+    height: 505px;
+    max-width: 100%;
+}
+
+.mobile_trading {
+    border-radius: 5.87px;
+    max-width: 217px;
+    max-height: 208px;
+}
+
+.icons_card {
+    padding: 13px 11px 13px 11px;
+    background: #0b0e10;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
 
 .section_bg {
     background-image: url("../images/png/background-image.png");
@@ -795,7 +841,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .mobile_back_ellp {
-    left: 1%;
+    left: 2%;
     top: 12%;
     max-width: 310px;
     height: 350px;
@@ -846,8 +892,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .mobile_inner_part {
-    padding: 28px 3px;
-    max-width: 264px;
+    padding: 28px 8px;
+    max-width: 225px;
     top: 4%;
     left: 8%;
 }
@@ -2004,20 +2050,6 @@ numberinput-header .numberinput-header[type="number"] {
 }
 
 @media (min-width: 575.5px) {
-    .mt-sm-39 {
-        margin-top: 39px !important;
-    }
-
-    .border_Statistics {
-        width: 190px;
-        height: 190px;
-    }
-
-    .px-sm-68 {
-        padding-left: 68px;
-        padding-right: 68px;
-    }
-
     .accounts_card {
         max-width: 471px;
     }
@@ -2147,84 +2179,29 @@ numberinput-header .numberinput-header[type="number"] {
         bottom: 0;
     }
 
-    .mobile_trading {
-        max-width: 244px;
-        max-height: 224px;
-    }
-
     .mobile_inner_part {
         padding: 28px 14px;
     }
 
     .mobile_back_ellp {
-        left: 18% !important;
+        left: 25% !important;
         top: 16% !important;
         max-width: 361px !important;
         height: 321px !important;
     }
-
-    .box-email {
-        padding: 20px;
-        backdrop-filter: blur(20px);
-    }
-
-    .man-profile-card {
-        min-width: 367px;
-    }
-
-    .imgAi:hover {
-        transform: scale(1.05);
-    }
-
-    .AiStockCard {
-        padding: 24px;
-    }
-
-    .AiStockInput {
-        padding: 15px 16px;
-    }
-
-    .AiStockInputPhone {
-        padding: 15px 16px;
-    }
-
 }
 
-@media (min-width:768px) {
-    .icons_card {
-        padding: 16px 14px 16px 14px;
-        margin-bottom: 10px;
-    }
-
-    .px-10 {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .gap_md_20 {
-        gap: 20px;
-    }
-
-    .mobile_wh {
-        width: 314px;
-        height: 614px;
+@media (min-width: 768px) {
+    .mobile_inner_part {
+        padding: 28px 3px;
+        max-width: 264px;
+        left: 10%;
     }
 
     .mobile_back_ellp {
-        left: 18% !important;
-    }
-
-    .py_average {
-        padding-top: 64px;
-        padding-bottom: 64px;
-    }
-
-    .mw_300 {
-        max-width: 300px;
-    }
-
-    .social_img {
-        max-width: 150px
+        left: 27% !important;
+        max-width: 461px !important;
+        height: 421px !important;
     }
 
     .px-88 {
@@ -2319,42 +2296,10 @@ numberinput-header .numberinput-header[type="number"] {
 
 }
 
-@media (min-width:992px) {
-    .imgPostion1 {
-        position: absolute;
-        right: 31.6%;
-        top: 2%;
-    }
-
-    .man-profile-card {
-        min-width: 367px;
-    }
-
-    .imgPostion4 {
-        position: absolute;
-        right: 2%;
-        bottom: 16.22%;
-    }
-
-    .average_gap {
-        gap: 32px;
-    }
-
-    .accounts_card {
-        transform: translateY(-16%) !important;
-    }
-
-    .px-lg-72 {
-        padding-left: 72px;
-        padding-right: 72px;
-    }
-
-    .mw_lg_397 {
-        max-width: 397px;
-    }
-
-    .social_img {
-        max-width: 190px
+@media (min-width: 992px) {
+    .mobile_back_ellp {
+        left: 10.5% !important;
+        top: 16% !important;
     }
 
     .mw_814 {
@@ -2478,11 +2423,6 @@ numberinput-header .numberinput-header[type="number"] {
         margin-bottom: 15px;
     }
 }
-
-
-
-
-
 
 @media (min-width:1200px) {
     .social_img {
