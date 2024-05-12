@@ -14,9 +14,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    max-width: 1920px !important;
     margin: 0 auto !important;
     position: relative;
+}
+
+.mw_1920 {
+    max-width: 1920px;
 }
 
 .z_5 {
@@ -1711,7 +1714,8 @@ numberinput-header .numberinput-header[type="number"] {
 .average_gap {
     gap: 8px;
 }
-.mt-28{
+
+.mt-28 {
     margin-top: 28px;
 }
 
@@ -1747,7 +1751,7 @@ numberinput-header .numberinput-header[type="number"] {
         --lh-5xl: 38px !important;
         --lh-6xl: 38px !important;
         --lh-9xl: 50px !important;
-        --lh-xxl:23px !important;
+        --lh-xxl: 23px !important;
     }
 }
 
@@ -1770,9 +1774,8 @@ numberinput-header .numberinput-header[type="number"] {
         --fs-lg: 20px !important;
         --fs-6lg: 20px !important;
         --fs-xl: 32px !important;
-        --fs-xxl: 32px !important;
         --fs-8xl: 28px !important;
-        --fs-xxl: 28px !important;
+        --fs-xxl: 26px !important;
         --fs-3xxl: 51px !important;
 
         /*=============line-height=========== */
@@ -1782,6 +1785,8 @@ numberinput-header .numberinput-header[type="number"] {
         --lh-2md: 25px !important;
         --lh-2xl: 28px !important;
         --lh-4xl: 31px !important;
+        --lh-5xl: 31px !important;
+        --lh-6xl: 30px !important;
         --lh-7xl: 33px !important;
         --lh-8xl: 20px !important;
         --lh-9xl: 40px !important;
