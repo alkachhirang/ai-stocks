@@ -1585,6 +1585,21 @@ numberinput-header .numberinput-header[type="number"] {
     -moz-appearance: textfield;
 }
 
+.submitheaderfrom:not([disabled]):hover::before {
+    left: -25% !important;
+}
+
+.submitheaderfrom:not([disabled]):hover::after {
+    background: linear-gradient(107.02deg, #00ffe1 12.76%, #6e5df6 91.81%);
+}
+.submittradingfrom:not([disabled]):hover::before {
+    left: -25% !important;
+}
+
+.submittradingfrom:not([disabled]):hover::after {
+    background: linear-gradient(107.02deg, #00ffe1 12.76%, #6e5df6 91.81%);
+}
+
 .Ai_stackLeftEllips {
     position: absolute;
     bottom: 20%;
@@ -1724,6 +1739,7 @@ numberinput-header .numberinput-header[type="number"] {
 
 @media (max-width:991.5px) {
     :root {
+        --fs-xs: 14px !important;
         --fs-6lg: 25px !important;
         --fs-md: 16px !important;
         --fs-3xxl: 60.24px !important;
@@ -1750,7 +1766,7 @@ numberinput-header .numberinput-header[type="number"] {
     :root {
         /*=========font-size========*/
         --fs-xs: 14px !important;
-        --fs-sm: 16px !important;
+        --fs-sm: 14px !important;
         --fs-md: 16px !important;
         --fs-4md: 22px !important;
         --fs-8md: 20px !important;
@@ -2173,10 +2189,6 @@ numberinput-header .numberinput-header[type="number"] {
     .AiStockInputPhone {
         padding: 15px 16px;
     }
-
-    .man-profile-card {
-        min-width: 367px;
-    }
 }
 
 @media (min-width:768px) {
@@ -2313,6 +2325,10 @@ numberinput-header .numberinput-header[type="number"] {
         position: absolute;
         right: 31.6%;
         top: 2%;
+    }
+
+    .man-profile-card {
+        min-width: 367px;
     }
 
     .imgPostion4 {
