@@ -1581,13 +1581,29 @@ numberinput-header .numberinput-header[type="number"] {
     -moz-appearance: textfield;
 }
 
-.submitheaderfrom:not([disabled]):hover::before {
+#headerfrom:invalid .submitheaderfrom:hover {
+    cursor: not-allowed !important;
+}
+
+#headerfrom:invalid .submitheaderfrom:hover::before {
     left: -25% !important;
 }
 
-.submitheaderfrom:not([disabled]):hover::after {
-    background: linear-gradient(107.02deg, #00ffe1 12.76%, #6e5df6 91.81%);
+#headerfrom:invalid .submitheaderfrom:hover::after {
+    background: linear-gradient(107.02deg, #00ffe1 12.76%, #6e5df6 91.81%) !important;
 }
+#tradingfrom:invalid .submittradingfrom:hover {
+    cursor: not-allowed !important;
+}
+
+#tradingfrom:invalid .submittradingfrom:hover::before {
+    left: -25% !important;
+}
+
+#tradingfrom:invalid .submittradingfrom:hover::after {
+    background: linear-gradient(107.02deg, #00ffe1 12.76%, #6e5df6 91.81%) !important;
+}
+
 
 .submittradingfrom:not([disabled]):hover::before {
     left: -25% !important;
