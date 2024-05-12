@@ -656,6 +656,7 @@ body::-webkit-scrollbar-thumb {
     opacity: 4%;
     background: linear-gradient(195.67deg, #00ffe1 83.47%, #6e5df6 102.11%);
 }
+
 .max-w-654 {
     max-width: 654px;
 }
@@ -1040,6 +1041,7 @@ body::-webkit-scrollbar-thumb {
     padding: 20px 20px 0px 20px;
     background: linear-gradient(82.41deg, #00ffe1 -12.77%, #6e5df6 93.08%);
 }
+
 .italic {
     font-style: italic;
 }
@@ -1058,6 +1060,7 @@ body::-webkit-scrollbar-thumb {
     max-width: 471px;
     transform: translateY(-4%);
 }
+
 /*==================Statistics=================== */
 .Statistics_ellips1 {
     position: absolute;
@@ -1618,6 +1621,9 @@ numberinput-header .numberinput-header[type="number"] {
 .mt-28 {
     margin-top: 28px;
 }
+.gap-16{
+    gap: 16px;
+}
 
 @media (max-width:1200px) {
     :root {
@@ -2080,6 +2086,10 @@ numberinput-header .numberinput-header[type="number"] {
         padding: 28px 3px;
         max-width: 264px;
         left: 10%;
+    }
+
+    .gap_md_20 {
+        gap: 20px;
     }
 
     .mobile_back_ellp {
