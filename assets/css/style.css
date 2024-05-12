@@ -2343,18 +2343,6 @@ numberinput-header .numberinput-header[type="number"] {
         bottom: 16.22%;
     }
 
-    .imgPostion5 {
-        position: absolute;
-        right: 30.9%;
-        bottom: 32%;
-    }
-
-    .imgPostion7 {
-        position: absolute;
-        right: 31.6%;
-        bottom: -1%;
-    }
-
     .average_gap {
         gap: 32px;
     }
@@ -2448,7 +2436,7 @@ numberinput-header .numberinput-header[type="number"] {
 
     .imgPostion7 {
         position: absolute;
-        right: 32%;
+        right: 31%;
         bottom: -1%;
     }
 
