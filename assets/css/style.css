@@ -505,10 +505,6 @@ body::-webkit-scrollbar-thumb {
     padding-right: 12px;
 }
 
-.mt-39 {
-    margin-top: 39px !important;
-}
-
 .box-email {
     padding: 20px;
     backdrop-filter: blur(20px);
@@ -1581,29 +1577,13 @@ numberinput-header .numberinput-header[type="number"] {
     -moz-appearance: textfield;
 }
 
-#headerfrom:invalid .submitheaderfrom:hover {
-    cursor: not-allowed !important;
-}
-
-#headerfrom:invalid .submitheaderfrom:hover::before {
+.submitheaderfrom:not([disabled]):hover::before {
     left: -25% !important;
 }
 
-#headerfrom:invalid .submitheaderfrom:hover::after {
-    background: linear-gradient(107.02deg, #00ffe1 12.76%, #6e5df6 91.81%) !important;
+.submitheaderfrom:not([disabled]):hover::after {
+    background: linear-gradient(107.02deg, #00ffe1 12.76%, #6e5df6 91.81%);
 }
-#tradingfrom:invalid .submittradingfrom:hover {
-    cursor: not-allowed !important;
-}
-
-#tradingfrom:invalid .submittradingfrom:hover::before {
-    left: -25% !important;
-}
-
-#tradingfrom:invalid .submittradingfrom:hover::after {
-    background: linear-gradient(107.02deg, #00ffe1 12.76%, #6e5df6 91.81%) !important;
-}
-
 
 .submittradingfrom:not([disabled]):hover::before {
     left: -25% !important;
@@ -1731,6 +1711,9 @@ numberinput-header .numberinput-header[type="number"] {
 .average_gap {
     gap: 8px;
 }
+.mt-28{
+    margin-top: 28px;
+}
 
 @media (max-width:1200px) {
     :root {
@@ -1764,6 +1747,7 @@ numberinput-header .numberinput-header[type="number"] {
         --lh-5xl: 38px !important;
         --lh-6xl: 38px !important;
         --lh-9xl: 50px !important;
+        --lh-xxl:23px !important;
     }
 }
 
@@ -1788,7 +1772,7 @@ numberinput-header .numberinput-header[type="number"] {
         --fs-xl: 32px !important;
         --fs-xxl: 32px !important;
         --fs-8xl: 28px !important;
-        --fs-xxl: 32px !important;
+        --fs-xxl: 28px !important;
         --fs-3xxl: 51px !important;
 
         /*=============line-height=========== */
@@ -2027,6 +2011,10 @@ numberinput-header .numberinput-header[type="number"] {
 }
 
 @media (min-width: 575.5px) {
+    .mt-sm-39 {
+        margin-top: 39px !important;
+    }
+
     .border_Statistics {
         width: 190px;
         height: 190px;
