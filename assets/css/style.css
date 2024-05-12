@@ -2204,6 +2204,11 @@ numberinput-header .numberinput-header[type="number"] {
         height: 421px !important;
     }
 
+    .mobile_wh {
+        width: 314px !important;
+        height: 614px !important;
+    }
+
     .px-88 {
         padding-left: 88px;
         padding-right: 88px;
