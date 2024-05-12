@@ -1,4 +1,3 @@
-
 .gap-6 {
     gap: 6px;
 }
@@ -42,7 +41,7 @@
         --fs-8md: 20px !important;
         --fs-xxl: 32px !important;
     }
-    
+
 }
 
 @media (min-width:576px) {
@@ -50,13 +49,13 @@
         padding: 20px;
         backdrop-filter: blur(20px);
     }
-}
 
-@media (min-width:768px) {
     .man-profile-card {
         min-width: 367px;
     }
+}
 
+@media (min-width:768px) {
     .gap_md_20 {
         gap: 20px;
     }

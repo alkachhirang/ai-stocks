@@ -1,8 +1,16 @@
+// cursure not allowed before fill
 const form = document.getElementById('headerfrom');
 const submitButton = document.querySelector('.submitheaderfrom');
 submitButton.addEventListener('mouseover', () => {
   const isFormValid = Array.from(form.elements).every(input => input.validity.valid);
   submitButton.style.cursor = isFormValid ? 'pointer' : 'not-allowed';
+});
+// trading Take the first step into AI Stock Trading section 
+const tradingform = document.getElementById('tradingfrom');
+const tradingsubmitButton = document.querySelector('.submittradingfrom');
+tradingsubmitButton.addEventListener('mouseover', () => {
+  const isFormValid = Array.from(tradingform.elements).every(input => input.validity.valid);
+  tradingsubmitButton.style.cursor = isFormValid ? 'pointer' : 'not-allowed';
 });
 
 //================header-timeout===============

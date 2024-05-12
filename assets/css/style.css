@@ -15,6 +15,8 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     max-width: 1920px !important;
+    margin: 0 auto !important;
+    position: relative;
 }
 
 .z_5 {
@@ -820,7 +822,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .benifit_card:hover {
-    border: 1px solid var(--green);
     border-radius: 12px;
     background: var(--off-black2);
 }
@@ -840,7 +841,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .benifit_gradient:hover {
-    transform: scale(1.05);
     border-radius: 12px;
     max-width: 240px;
     background: linear-gradient(171.68deg, #00ffe1 39.97%, #6e5df6 107.69%);
@@ -1002,7 +1002,7 @@ body::-webkit-scrollbar-thumb {
 
 .back_top_btn {
     position: fixed;
-    bottom: 10px;
+    bottom: 53px;
     right: 10px;
     color: var(--white);
     border: 1px solid transparent;
@@ -1020,15 +1020,15 @@ body::-webkit-scrollbar-thumb {
 
 @keyframes backToTop {
     0% {
-        transform: translatey(0) scale(0.998);
+        transform: translatey(0);
     }
 
     50% {
-        transform: translatey(-7px) scale(1.1023);
+        transform: translatey(-7px);
     }
 
     100% {
-        transform: translatey(0) scale(0.998);
+        transform: translatey(0);
     }
 }
 
@@ -1712,9 +1712,15 @@ numberinput-header .numberinput-header[type="number"] {
         --fs-3xxl: 77.24px !important;
 
         --lh-7xl: 47px !important;
+        --lh-9xl: 53px !important;
     }
 }
 
+@media (max-width: 1099.5px) {
+    :root {
+        --fs-xxl: 44px !important;
+    }
+}
 
 @media (max-width:991.5px) {
     :root {
@@ -1728,7 +1734,7 @@ numberinput-header .numberinput-header[type="number"] {
         --lh-9xl: 50px !important;
         --lh-5xl: 38px !important;
         --lh-6xl: 38px !important;
-        --lh-9xl: 57px !important;
+        --lh-9xl: 48px !important;
     }
 }
 
@@ -1745,7 +1751,7 @@ numberinput-header .numberinput-header[type="number"] {
         /*=========font-size========*/
         --fs-xs: 14px !important;
         --fs-sm: 16px !important;
-        --fs-md: 20px !important;
+        --fs-md: 16px !important;
         --fs-4md: 22px !important;
         --fs-8md: 20px !important;
         --fs-lg: 20px !important;
@@ -1997,6 +2003,11 @@ numberinput-header .numberinput-header[type="number"] {
         height: 190px;
     }
 
+    .px-sm-68 {
+        padding-left: 68px;
+        padding-right: 68px;
+    }
+
     .accounts_card {
         max-width: 471px;
     }
@@ -2162,6 +2173,10 @@ numberinput-header .numberinput-header[type="number"] {
     .AiStockInputPhone {
         padding: 15px 16px;
     }
+
+    .man-profile-card {
+        min-width: 367px;
+    }
 }
 
 @media (min-width:768px) {
@@ -2170,8 +2185,9 @@ numberinput-header .numberinput-header[type="number"] {
         margin-bottom: 10px;
     }
 
-    .man-profile-card {
-        min-width: 367px;
+    .px-10 {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .gap_md_20 {
@@ -2565,11 +2581,5 @@ numberinput-header .numberinput-header[type="number"] {
         width: calc(244px * 12);
         -webkit-animation: scroll 15s linear infinite;
         animation: scroll 30s linear infinite;
-    }
-}
-
-@media (max-width: 1099.5px) {
-    :root {
-        --fs-xxl: 44px !important;
     }
 }
