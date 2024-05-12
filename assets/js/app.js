@@ -1,3 +1,4 @@
+//=============button not allow before fill==========
 const myform = document.getElementById("headerfrom");
 const mysubmitButton = document.querySelector(".submitheader_from");
 myform.addEventListener("input", function () {
@@ -80,6 +81,9 @@ const regex = {
 
 submit.addEventListener("click", function (event) {
   event.preventDefault();
+
+  //============will do that in future================
+  
   // if (!regex.Name.test(name.value)) {
   //   errorname.innerHTML = "invalid name";
   // } else {
@@ -136,29 +140,31 @@ const tradingregex = {
 Submit.addEventListener("click", function (event) {
   event.preventDefault();
 
-  if (!tradingregex.firstName.test(FirstName.value)) {
-    FirstName.classList.add("border_red");
-  } else {
-    FirstName.classList.remove("border_red");
-  }
+  //============will do that in future================
 
-  if (!tradingregex.lastName.test(lastName.value)) {
-    lastName.classList.add("border_red");
-  } else {
-    lastName.classList.remove("border_red");
-  }
+  // if (!tradingregex.firstName.test(FirstName.value)) {
+  //   FirstName.classList.add("border_red");
+  // } else {
+  //   FirstName.classList.remove("border_red");
+  // }
 
-  if (!tradingregex.number.test(PNumber.value)) {
-    PNumber.classList.add("border_red");
-  } else {
-    PNumber.classList.remove("border_red");
-  }
+  // if (!tradingregex.lastName.test(lastName.value)) {
+  //   lastName.classList.add("border_red");
+  // } else {
+  //   lastName.classList.remove("border_red");
+  // }
 
-  if (!tradingregex.email.test(Email.value)) {
-    Email.classList.add("border_red");
-  } else {
-    Email.classList.remove("border_red");
-  }
+  // if (!tradingregex.number.test(PNumber.value)) {
+  //   PNumber.classList.add("border_red");
+  // } else {
+  //   PNumber.classList.remove("border_red");
+  // }
+
+  // if (!tradingregex.email.test(Email.value)) {
+  //   Email.classList.add("border_red");
+  // } else {
+  //   Email.classList.remove("border_red");
+  // }
 
   if (
     tradingregex.firstName.test(FirstName.value) &&
