@@ -1183,6 +1183,11 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: 48px;
 }
 
+.px-6 {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
 .px_6 {
     padding-right: 6px;
     padding-bottom: 6px;
@@ -1621,7 +1626,8 @@ numberinput-header .numberinput-header[type="number"] {
 .mt-28 {
     margin-top: 28px;
 }
-.gap-16{
+
+.gap-16 {
     gap: 16px;
 }
 
