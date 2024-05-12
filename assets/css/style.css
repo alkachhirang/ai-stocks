@@ -1861,7 +1861,7 @@ numberinput-header .numberinput-header[type="number"] {
 
     .imgPostion1 {
         position: absolute;
-        right: 33%;
+        right: 32%;
         top: 2%;
     }
 
@@ -1952,8 +1952,8 @@ numberinput-header .numberinput-header[type="number"] {
 
     .imgPostion2 {
         position: absolute;
-        left: 2%;
-        bottom: 17.33%;
+        left: 3%;
+        bottom: 16.33%;
     }
 
     .accounts_card {
