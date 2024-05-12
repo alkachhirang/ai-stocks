@@ -83,7 +83,7 @@ submit.addEventListener("click", function (event) {
   event.preventDefault();
 
   //============will do that in future================
-  
+
   // if (!regex.Name.test(name.value)) {
   //   errorname.innerHTML = "invalid name";
   // } else {
@@ -194,6 +194,18 @@ window.addEventListener("scroll", function () {
     backtotop.style.display = "block";
   } else {
     backtotop.style.display = "none";
+  }
+});
+
+const footerform = document.getElementById("tradingfrom");
+const footersubmitButton = document.getElementById("Submit");
+footerform.addEventListener("input", function () {
+  if (footerform.checkValidity()) {
+    footersubmitButton.disabled = false;
+    footersubmitButton.style.cursor = "pointer";
+  } else {
+    footersubmitButton.disabled = true;
+    footersubmitButton.style.cursor = "not-allowed";
   }
 });
 

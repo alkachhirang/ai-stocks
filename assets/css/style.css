@@ -767,13 +767,11 @@ body::-webkit-scrollbar-thumb {
 .benifit_gradient {
     padding: 1px;
     border-radius: 12px;
-
     max-width: 240px;
     transition: all 300ms linear;
 }
 
 .benifit_gradient:hover {
-    transform: scale(1.05);
     border-radius: 12px;
     max-width: 240px;
     background: linear-gradient(171.68deg, #00ffe1 39.97%, #6e5df6 107.69%);
