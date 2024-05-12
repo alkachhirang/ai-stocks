@@ -1870,8 +1870,8 @@ numberinput-header .numberinput-header[type="number"] {
 
     .imgPostion5 {
         position: absolute;
-        right: 33%;
-        bottom: 33.33%;
+        right: 32%;
+        bottom: 36.33%;
     }
 
     .imgPostion7 {
@@ -1963,8 +1963,16 @@ numberinput-header .numberinput-header[type="number"] {
 
 @media (max-width: 380px) {
     .imgAi {
+        max-width: 111px;
+        height: 96px;
+        transition: all linear 300ms;
+    }
+}
+
+@media (max-width:410px) {
+    .imgAi {
         max-width: 121px;
-        height: 106px;
+        height: 100px;
         transition: all linear 300ms;
     }
 }
@@ -1984,18 +1992,6 @@ numberinput-header .numberinput-header[type="number"] {
 }
 
 @media (max-width:504px) {
-    .imgAi {
-        max-width: 151px;
-        height: 134px;
-        transition: all linear 300ms;
-    }
-
-    .imgPostion {
-        position: absolute;
-        left: 2%;
-        top: 18.3%;
-    }
-
     .imgPostion2 {
         position: absolute;
         left: 2%;
@@ -2020,20 +2016,44 @@ numberinput-header .numberinput-header[type="number"] {
         top: 2%;
     }
 
+    /* new class add  */
+    .imgAi {
+        max-width: 151px;
+        height: 124px;
+        transition: all linear 300ms;
+    }
+
+    .imgPostion {
+        position: absolute;
+        left: 2%;
+        top: 20.3%;
+    }
+
     .imgPostion5 {
         position: absolute;
-        right: 33%;
-        bottom: 33.33%;
+        right: 35%;
+        bottom: 36.33%;
     }
 
     .imgPostion7 {
         position: absolute;
-        right: 32%;
-        bottom: 2%;
+        right: 34%;
+        bottom: 4%;
     }
 }
 
 @media (min-width: 575.5px) {
+    .imgAi {
+        max-width: 180px;
+        height: 166px;
+    }
+
+    .imgPostion2 {
+        position: absolute;
+        left: 2%;
+        bottom: 17.33%;
+    }
+
     .accounts_card {
         max-width: 471px;
     }
@@ -2254,11 +2274,6 @@ numberinput-header .numberinput-header[type="number"] {
         gap: 24px;
     }
 
-    .imgAi {
-        max-width: 180px;
-        height: 170px;
-    }
-
     .imgPostion {
         position: absolute;
         left: 2.9%;
@@ -2271,16 +2286,27 @@ numberinput-header .numberinput-header[type="number"] {
         top: 2%;
     }
 
-    .imgPostion5 {
-        position: absolute;
-        right: 33%;
-        bottom: 33.33%;
-    }
-
     .imgPostion7 {
         position: absolute;
         right: 32%;
         bottom: 0;
+    }
+
+    .imgAi {
+        max-width: 180px;
+        height: 176px;
+    }
+
+    .imgPostion2 {
+        position: absolute;
+        left: 3%;
+        bottom: 15.33%;
+    }
+
+    .imgPostion5 {
+        position: absolute;
+        right: 33%;
+        bottom: 32.33%;
     }
 
 }
@@ -2370,6 +2396,18 @@ numberinput-header .numberinput-header[type="number"] {
     .max-w-lg-626 {
         max-width: 626px;
     }
+
+    .imgAi {
+        max-width: 170px;
+        height: 164px;
+        transition: all linear 300ms;
+    }
+
+    .imgPostion1 {
+        position: absolute;
+        right: 32%;
+        top: 1%;
+    }
 }
 
 @media (min-width: 1023.8px) {
@@ -2386,12 +2424,6 @@ numberinput-header .numberinput-header[type="number"] {
         bottom: 15.22%;
     }
 
-    .imgPostion7 {
-        position: absolute;
-        right: 31.6%;
-        bottom: -2%;
-    }
-
     .understanding_card {
         padding: 25px 50px 0px 25px;
     }
@@ -2400,16 +2432,34 @@ numberinput-header .numberinput-header[type="number"] {
         margin-bottom: 80px;
     }
 
-    .imgAi {
-        max-width: 180px;
-        height: 176px;
-    }
-
     .icons_card {
         padding: 13px 11px 13px 11px;
         background: #0b0e10;
         border-radius: 4px;
         margin-bottom: 15px;
+    }
+
+    .imgAi {
+        max-width: 170px;
+        height: 160px;
+    }
+
+    .imgPostion1 {
+        position: absolute;
+        right: 33%;
+        top: 2%;
+    }
+
+    .imgPostion7 {
+        position: absolute;
+        right: 33.6%;
+        bottom: 0%;
+    }
+
+    .imgPostion5 {
+        position: absolute;
+        right: 34%;
+        bottom: 34%;
     }
 }
 
