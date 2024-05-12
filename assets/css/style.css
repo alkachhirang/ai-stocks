@@ -1579,20 +1579,11 @@ body::-webkit-scrollbar-thumb {
 numberinput-header .numberinput-header[type="number"] {
     -moz-appearance: textfield;
 }
-
-.submitheaderfrom:not([disabled]):hover::before {
+.submitheader_from[disabled]:hover::before {
     left: -25% !important;
 }
 
-.submitheaderfrom:not([disabled]):hover::after {
-    background: linear-gradient(107.02deg, #00ffe1 12.76%, #6e5df6 91.81%);
-}
-
-.submittradingfrom:not([disabled]):hover::before {
-    left: -25% !important;
-}
-
-.submittradingfrom:not([disabled]):hover::after {
+.submitheader_from[disabled]:hover::after {
     background: linear-gradient(107.02deg, #00ffe1 12.76%, #6e5df6 91.81%);
 }
 
