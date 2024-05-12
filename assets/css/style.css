@@ -1180,10 +1180,6 @@ body::-webkit-scrollbar-thumb {
     animation: scroll 10s linear infinite;
 }
 
-.gap_32 {
-    gap: 32px;
-}
-
 @-webkit-keyframes scroll {
     0% {
         -webkit-transform: translateX(0);
@@ -1592,6 +1588,7 @@ numberinput-header .numberinput-header[type="number"] {
 .submitheaderfrom:not([disabled]):hover::after {
     background: linear-gradient(107.02deg, #00ffe1 12.76%, #6e5df6 91.81%);
 }
+
 .submittradingfrom:not([disabled]):hover::before {
     left: -25% !important;
 }
@@ -1750,7 +1747,7 @@ numberinput-header .numberinput-header[type="number"] {
         --lh-9xl: 50px !important;
         --lh-5xl: 38px !important;
         --lh-6xl: 38px !important;
-        --lh-9xl: 48px !important;
+        --lh-9xl: 50px !important;
     }
 }
 
@@ -2174,6 +2171,10 @@ numberinput-header .numberinput-header[type="number"] {
         backdrop-filter: blur(20px);
     }
 
+    .man-profile-card {
+        min-width: 367px;
+    }
+
     .imgAi:hover {
         transform: scale(1.05);
     }
@@ -2189,6 +2190,7 @@ numberinput-header .numberinput-header[type="number"] {
     .AiStockInputPhone {
         padding: 15px 16px;
     }
+
 }
 
 @media (min-width:768px) {
@@ -2589,6 +2591,11 @@ numberinput-header .numberinput-header[type="number"] {
         position: absolute;
         right: 31.9%;
         bottom: 32%;
+    }
+
+    .px-xl-88 {
+        padding-left: 88px;
+        padding-right: 88px;
     }
 }
 
