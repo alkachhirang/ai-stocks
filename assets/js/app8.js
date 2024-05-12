@@ -57,14 +57,14 @@ Submit.addEventListener("click", function (event) {
   }
 });
 const footerform = document.getElementById("tradingfrom");
-const mysubmitButton = document.getElementById("Submit");
+const footersubmitButton = document.getElementById("Submit");
 footerform.addEventListener("input", function () {
   if (footerform.checkValidity()) {
-    mysubmitButton.disabled = false;
-    mysubmitButton.style.cursor = "pointer";
+    footersubmitButton.disabled = false;
+    footersubmitButton.style.cursor = "pointer";
   } else {
-    mysubmitButton.disabled = true;
-    mysubmitButton.style.cursor = "not-allowed";
+    footersubmitButton.disabled = true;
+    footersubmitButton.style.cursor = "not-allowed";
   }
 });
 
@@ -72,22 +72,3 @@ footerform.addEventListener("input", function () {
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
 document.getElementById("currentYear").textContent = currentYear;
-// back to top
-function backtotop() {
-  window.scroll(0, 0);
-}
-window.addEventListener("scroll", function () {
-  let backtotop = document.getElementById("backtotop");
-  if (window.scrollY > 250) {
-    backtotop.style.display = "block";
-  } else {
-    backtotop.style.display = "none";
-  }
-});
-
-// preloader;
-const preloader = document.getElementById("preloader");
-setTimeout(() => {
-  document.getElementById("preloder").classList.add("d-none");
-  document.body.classList.remove("overflow_hidden");
-}, 1700);
