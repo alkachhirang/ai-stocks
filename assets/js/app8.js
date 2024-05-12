@@ -56,6 +56,17 @@ Submit.addEventListener("click", function (event) {
     Email.value = "";
   }
 });
+const footerform = document.getElementById("tradingfrom");
+const mysubmitButton = document.getElementById("Submit");
+footerform.addEventListener("input", function () {
+  if (footerform.checkValidity()) {
+    mysubmitButton.disabled = false;
+    mysubmitButton.style.cursor = "pointer";
+  } else {
+    mysubmitButton.disabled = true;
+    mysubmitButton.style.cursor = "not-allowed";
+  }
+});
 
 // year function
 const currentDate = new Date();
