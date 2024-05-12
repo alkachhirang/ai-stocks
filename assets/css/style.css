@@ -744,10 +744,6 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
 }
 
-#preloder {
-    z-index: 5;
-}
-
 .ciclre {
     width: 40px;
     height: 40px;
