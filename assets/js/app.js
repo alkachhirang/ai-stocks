@@ -1,27 +1,3 @@
-// cursure not allowed before fill
-const form = document.getElementById('headerfrom');
-const submitButton = document.querySelector('.submitheaderfrom');
-form.addEventListener('input', () => {
-  const isFormValid = Array.from(form.elements).every(input => input.validity.valid);
-  form.classList.toggle('invalid', !isFormValid);
-});
-
-submitButton.addEventListener('mouseover', () => {
-  submitButton.style.cursor = form.classList.contains('invalid') ? 'not-allowed' : 'pointer';
-});
-// trading Take the first step into AI Stock Trading section 
-const tradingform = document.getElementById('tradingfrom');
-const tradingsubmitButton = document.querySelector('.submittradingfrom');
-tradingform.addEventListener('input', () => {
-  const isFormValid = Array.from(tradingform.elements).every(input => input.validity.valid);
-  tradingform.classList.toggle('invalid', !isFormValid);
-});
-
-tradingsubmitButton.addEventListener('mouseover', () => {
-  tradingsubmitButton.style.cursor = tradingform.classList.contains('invalid') ? 'not-allowed' : 'pointer';
-});
-
-
 var myform = document.getElementById("headerfrom");
 var mysubmitButton = document.getElementById("submit");
 myform.addEventListener("input", function () {
@@ -104,26 +80,26 @@ const regex = {
 
 submit.addEventListener("click", function (event) {
   event.preventDefault();
-  if (!regex.Name.test(name.value)) {
-    errorname.innerHTML = "invalid name";
-  } else {
-    errorname.innerHTML = "";
-  }
-  if (!regex.LastName.test(lastname.value)) {
-    errorlastname.innerHTML = "invalid last name";
-  } else {
-    errorlastname.innerHTML = "";
-  }
-  if (!regex.Number.test(number.value)) {
-    errornumber.innerHTML = "invalid number";
-  } else {
-    errornumber.innerHTML = "";
-  }
-  if (!regex.Email.test(email.value)) {
-    erroremail.innerHTML = "invalid email";
-  } else {
-    erroremail.innerHTML = "";
-  }
+  // if (!regex.Name.test(name.value)) {
+  //   errorname.innerHTML = "invalid name";
+  // } else {
+  //   errorname.innerHTML = "";
+  // }
+  // if (!regex.LastName.test(lastname.value)) {
+  //   errorlastname.innerHTML = "invalid last name";
+  // } else {
+  //   errorlastname.innerHTML = "";
+  // }
+  // if (!regex.Number.test(number.value)) {
+  //   errornumber.innerHTML = "invalid number";
+  // } else {
+  //   errornumber.innerHTML = "";
+  // }
+  // if (!regex.Email.test(email.value)) {
+  //   erroremail.innerHTML = "invalid email";
+  // } else {
+  //   erroremail.innerHTML = "";
+  // }
 
   if (
     regex.Name.test(name.value) &&
