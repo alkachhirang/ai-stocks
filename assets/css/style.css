@@ -1171,6 +1171,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .social_img {
+    max-width: 170px;
     transition: all 300ms linear;
 }
 
@@ -1663,6 +1664,7 @@ numberinput-header .numberinput-header[type="number"] {
         --lh-5xl: 38px !important;
         --lh-6xl: 38px !important;
         --lh-9xl: 50px !important;
+        --lh-7xl: 42px !important;
         --lh-xxl: 23px !important;
     }
 }
@@ -1937,6 +1939,11 @@ numberinput-header .numberinput-header[type="number"] {
 }
 
 @media (min-width: 575.5px) {
+    .border_Statistics {
+        width: 190px;
+        height: 190px;
+    }
+
     .imgAi {
         max-width: 180px;
         height: 166px;
@@ -2088,6 +2095,14 @@ numberinput-header .numberinput-header[type="number"] {
 }
 
 @media (min-width: 768px) {
+    .social_img {
+        max-width: 190px
+    }
+
+    .mw_md_300 {
+        max-width: 300px;
+    }
+
     .mobile_inner_part {
         padding: 28px 3px;
         max-width: 264px;
@@ -2208,6 +2223,10 @@ numberinput-header .numberinput-header[type="number"] {
 }
 
 @media (min-width: 992px) {
+    .mw_lg_397 {
+        max-width: 397px;
+    }
+
     .man-profile-card {
         min-width: 367px;
     }
