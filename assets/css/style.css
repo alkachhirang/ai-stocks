@@ -1725,6 +1725,10 @@ numberinput-header .numberinput-header[type="number"] {
         height: 162px;
         transition: all linear 300ms;
     }
+        .imgPostion2 {
+            position: absolute;
+            left: 2%;
+            bottom: 17.33%;}
 }
 
 @media (max-width:504px) {
@@ -1908,6 +1912,20 @@ numberinput-header .numberinput-header[type="number"] {
     }
 }
 
+@media (max-width:410px) {
+    .imgAi {
+        max-width: 111px;
+        height: 97px;
+        transition: all linear 300ms;
+    }
+
+    .imgPostion1 {
+        position: absolute;
+        right: 34%;
+        top: 2%;
+    }
+}
+
 @media (max-width: 380px) {
     .imgAi {
         max-width: 111px;
@@ -1916,13 +1934,21 @@ numberinput-header .numberinput-header[type="number"] {
     }
 }
 
-@media (max-width:410px) {
+@media (max-width: 360px) {
     .imgAi {
-        max-width: 121px;
-        height: 100px;
+        max-width: 100px;
+        height: 87px;
         transition: all linear 300ms;
     }
+
+    .imgPostion5 {
+        position: absolute;
+        right: 33%;
+        bottom: 36.33%;
+    }
 }
+
+
 
 @media (min-width: 1400px) or (max-width: 1600px) {
     .container {
@@ -1930,13 +1956,7 @@ numberinput-header .numberinput-header[type="number"] {
     }
 }
 
-@media (max-width:410px) {
-    .imgAi {
-        max-width: 111px;
-        height: 97px;
-        transition: all linear 300ms;
-    }
-}
+
 
 @media (min-width: 575.5px) {
 
@@ -1977,10 +1997,7 @@ numberinput-header .numberinput-header[type="number"] {
         padding: 24px;
     }
 
-    .imgAi {
-        max-width: 190px;
-        height: 176px;
-    }
+
 
     .footerPadding {
         padding-top: 10px;
