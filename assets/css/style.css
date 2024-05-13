@@ -708,6 +708,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* benifit-section */
+.mobile_inner_part {
+    padding: 28px 8px;
+    width: 225px;
+    top: 4%;
+    left: 8%;
+}
+
 .benifit_card {
     padding: 30px 10.5px 30px 10.5px;
     height: 200px !important;
@@ -726,6 +733,49 @@ body::-webkit-scrollbar-thumb {
     border-radius: 12px;
     max-width: 240px;
     background: linear-gradient(171.68deg, #00ffe1 39.97%, #6e5df6 107.69%);
+}
+
+.benefits_bubble {
+    width: 300px !important;
+    height: 300px !important;
+    position: absolute;
+    pointer-events: none !important;
+    top: 55%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.benefits_bubble_bg {
+    border-radius: 70% 30% 73% 27% / 43% 32% 68% 57%;
+    animation: benefits_bubble_radious 7s linear infinite alternate;
+}
+
+.linear_bg {
+    background: linear-gradient(107.02deg, #00ffe1 12.76%, #6e5df6 91.81%);
+}
+
+.benefits_bubble_bg {
+    border-radius: 70% 30% 73% 27% / 43% 32% 68% 57%;
+    animation: benefits_bubble_radious 7s linear infinite alternate;
+}
+
+
+@keyframes benefits_bubble_radious {
+    25% {
+        border-radius: 48% 52% 18% 82% / 53% 46% 54% 47%;
+    }
+
+    50% {
+        border-radius: 20% 80% 18% 82% / 22% 31% 69% 78%;
+    }
+
+    75% {
+        border-radius: 20% 80% 73% 27% / 22% 59% 41% 78%;
+    }
+
+    100% {
+        border-radius: 70% 30% 73% 27% / 43% 59% 41% 57%;
+    }
 }
 
 .mw_357 {
@@ -782,13 +832,6 @@ body::-webkit-scrollbar-thumb {
     padding-inline-start: 10px !important;
 }
 
-.mobile_back_ellp {
-    left: 9%;
-    top: 12%;
-    max-width: 310px;
-    height: 350px;
-}
-
 .icons_card {
     padding: 16px 14px 16px 14px;
     background: #0b0e10;
@@ -810,7 +853,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .benifit_card {
-    padding: 30px 10.5px 30px 10.5px;
+    padding: 30px 7.5px 30px 7.5px;
     height: 200px !important;
     max-height: 100%;
     max-width: 240px;
@@ -833,12 +876,6 @@ body::-webkit-scrollbar-thumb {
     max-width: 357px;
 }
 
-.mobile_inner_part {
-    padding: 28px 8px;
-    max-width: 225px;
-    top: 4%;
-    left: 8%;
-}
 
 .mobile_wh {
     width: 265px;
@@ -846,11 +883,7 @@ body::-webkit-scrollbar-thumb {
     max-width: 100%;
 }
 
-.mobile_trading {
-    border-radius: 5.87px;
-    max-width: 217px;
-    max-height: 208px;
-}
+
 
 .gray-b3 {
     color: var(--gray-b3);
@@ -1673,7 +1706,7 @@ numberinput-header .numberinput-header[type="number"] {
 @media (max-width: 768px) {
     :root {
         --lh-7xl: 42px !important;
-        --lh-9xl: 40px !important;
+        --lh-9xl: 44px !important;
         --fs-xxl: 38px !important;
     }
 }
@@ -1704,7 +1737,7 @@ numberinput-header .numberinput-header[type="number"] {
         --lh-6xl: 30px !important;
         --lh-7xl: 33px !important;
         --lh-8xl: 20px !important;
-        --lh-9xl: 40px !important;
+        --lh-9xl: 45px !important;
         --lh-xxl: 23px !important;
         --lh-10xl: 48px !important;
     }
@@ -1927,6 +1960,11 @@ numberinput-header .numberinput-header[type="number"] {
         right: 34%;
         top: 2%;
     }
+        .imgPostion7 {
+            position: absolute;
+            right: 34%;
+            bottom: 2%;
+        }
 }
 
 @media (max-width: 380px) {
@@ -2103,14 +2141,14 @@ numberinput-header .numberinput-header[type="number"] {
         bottom: 0;
     }
 
+
+
     .mobile_inner_part {
         padding: 28px 14px;
     }
 
-    .mobile_back_ellp {
-        left: 25% !important;
-        top: 16% !important;
-        max-width: 361px !important;
+    .benefits_bubble {
+        width: 361px !important;
         height: 321px !important;
     }
 }
@@ -2125,22 +2163,12 @@ numberinput-header .numberinput-header[type="number"] {
         max-width: 300px;
     }
 
-    .mobile_inner_part {
-        padding: 28px 3px;
-        max-width: 264px;
-        left: 10%;
-    }
 
     .gap_md_20 {
         gap: 20px !important;
     }
 
-    .mobile_back_ellp {
-        left: 27% !important;
-        max-width: 461px !important;
-        height: 421px !important;
-    }
-
+  
     .mobile_wh {
         width: 314px !important;
         height: 614px !important;
@@ -2242,6 +2270,21 @@ numberinput-header .numberinput-header[type="number"] {
         bottom: 32.33%;
     }
 
+    .mobile_inner_part {
+        padding: 28px 3px;
+        width: 244px;
+        left: 11%;
+    }
+
+    .benefits_bubble {
+        width: 461px !important;
+        height: 421px !important;
+    }
+          .mobile_trading {
+              border-radius: 5.87px;
+              max-width: 247px;
+              max-height: 208px;
+          }
 }
 
 @media (min-width: 992px) {
@@ -2253,10 +2296,7 @@ numberinput-header .numberinput-header[type="number"] {
         min-width: 367px;
     }
 
-    .mobile_back_ellp {
-        left: 10.5% !important;
-        top: 16% !important;
-    }
+ 
 
     .mw_814 {
         max-width: 814px;
@@ -2352,12 +2392,7 @@ numberinput-header .numberinput-header[type="number"] {
 }
 
 @media (min-width: 1023.8px) {
-    .mobile_back_ellp {
-        left: 11% !important;
-        top: 16% !important;
-        max-width: 461px !important;
-        height: 421px !important;
-    }
+   
 
     .imgPostion4 {
         position: absolute;
@@ -2511,3 +2546,6 @@ numberinput-header .numberinput-header[type="number"] {
         animation: scroll 30s linear infinite;
     }
 }
+
+
+
