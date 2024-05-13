@@ -220,4 +220,20 @@
         width: 270px;
         height: 270px;
     }
+.submitheader_from[disabled]:hover::before {
+    left: -25% !important;
+}
+
+.submitheader_from[disabled]:hover::after {
+    background: linear-gradient(107.02deg, #00ffe1 12.76%, #6e5df6 91.81%);
+}
+
+@media (max-width: 576px) {
+    :root {
+        /*=========font-size========*/
+        --fs-xxl: 26px !important;
+        --fs-8xl: 24px !important;
+    }
+
+}
 }

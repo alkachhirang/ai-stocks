@@ -1,0 +1,49 @@
+.benefits_bubble {
+  width: 300px !important;
+  height: 300px !important;
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.benefits_bubble_bg {
+  border-radius: 70% 30% 73% 27% / 43% 32% 68% 57%;
+  animation: benefits_bubble_radious 7s linear infinite alternate;
+}
+.linear_bg {
+  background: linear-gradient(107.02deg, #00ffe1 12.76%, #6e5df6 91.81%);
+}
+
+.benefits_bubble_bg {
+  border-radius: 70% 30% 73% 27% / 43% 32% 68% 57%;
+  animation: benefits_bubble_radious 7s linear infinite alternate;
+}
+@keyframes benefits_bubble_radious {
+  25% {
+    border-radius: 48% 52% 18% 82% / 53% 46% 54% 47%;
+  }
+  50% {
+    border-radius: 20% 80% 18% 82% / 22% 31% 69% 78%;
+  }
+  75% {
+    border-radius: 20% 80% 73% 27% / 22% 59% 41% 78%;
+  }
+  100% {
+    border-radius: 70% 30% 73% 27% / 43% 59% 41% 57%;
+  }
+}
+@media (min-width: 576px) {
+    .benefits_bubble {
+        width: 361px !important;
+        height: 321px !important;
+      
+      }
+}
+@media (min-width: 768px) {
+  .benefits_bubble {
+    width: 461px !important;
+    height: 421px !important;
+ 
+  }
+}
