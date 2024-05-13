@@ -1,24 +1,17 @@
-// cursure not allowed before fill
-const form = document.getElementById('headerfrom');
-const submitButton = document.querySelector('.submitheaderfrom');
-form.addEventListener('input', () => {
-  const isFormValid = Array.from(form.elements).every(input => input.validity.valid);
-  form.classList.toggle('invalid', !isFormValid);
-});
-
-submitButton.addEventListener('mouseover', () => {
-  submitButton.style.cursor = form.classList.contains('invalid') ? 'not-allowed' : 'pointer';
-});
-// trading Take the first step into AI Stock Trading section 
-const tradingform = document.getElementById('tradingfrom');
-const tradingsubmitButton = document.querySelector('.submittradingfrom');
-tradingform.addEventListener('input', () => {
-  const isFormValid = Array.from(tradingform.elements).every(input => input.validity.valid);
-  tradingform.classList.toggle('invalid', !isFormValid);
-});
-
-tradingsubmitButton.addEventListener('mouseover', () => {
-  tradingsubmitButton.style.cursor = tradingform.classList.contains('invalid') ? 'not-allowed' : 'pointer';
+//=============button not allow before fill==========
+const myform = document.getElementById("headerfrom");
+const mysubmitButton = document.querySelector(".submitheader_from");
+myform.addEventListener("input", function () {
+  // Check if all required fields are filled
+  if (myform.checkValidity()) {
+    // If all fields are filled, enable the submit button
+    mysubmitButton.disabled = false;
+    mysubmitButton.style.cursor = "pointer";
+  } else {
+    // If any required field is empty, disable the submit button
+    mysubmitButton.disabled = true;
+    mysubmitButton.style.cursor = "not-allowed";
+  }
 });
 
 //================header-timeout===============
@@ -88,26 +81,29 @@ const regex = {
 
 submit.addEventListener("click", function (event) {
   event.preventDefault();
-  if (!regex.Name.test(name.value)) {
-    errorname.innerHTML = "invalid name";
-  } else {
-    errorname.innerHTML = "";
-  }
-  if (!regex.LastName.test(lastname.value)) {
-    errorlastname.innerHTML = "invalid last name";
-  } else {
-    errorlastname.innerHTML = "";
-  }
-  if (!regex.Number.test(number.value)) {
-    errornumber.innerHTML = "invalid number";
-  } else {
-    errornumber.innerHTML = "";
-  }
-  if (!regex.Email.test(email.value)) {
-    erroremail.innerHTML = "invalid email";
-  } else {
-    erroremail.innerHTML = "";
-  }
+
+  //============will do that in future================
+
+  // if (!regex.Name.test(name.value)) {
+  //   errorname.innerHTML = "invalid name";
+  // } else {
+  //   errorname.innerHTML = "";
+  // }
+  // if (!regex.LastName.test(lastname.value)) {
+  //   errorlastname.innerHTML = "invalid last name";
+  // } else {
+  //   errorlastname.innerHTML = "";
+  // }
+  // if (!regex.Number.test(number.value)) {
+  //   errornumber.innerHTML = "invalid number";
+  // } else {
+  //   errornumber.innerHTML = "";
+  // }
+  // if (!regex.Email.test(email.value)) {
+  //   erroremail.innerHTML = "invalid email";
+  // } else {
+  //   erroremail.innerHTML = "";
+  // }
 
   if (
     regex.Name.test(name.value) &&
@@ -144,29 +140,31 @@ const tradingregex = {
 Submit.addEventListener("click", function (event) {
   event.preventDefault();
 
-  if (!tradingregex.firstName.test(FirstName.value)) {
-    FirstName.classList.add("border_red");
-  } else {
-    FirstName.classList.remove("border_red");
-  }
+  //============will do that in future================
 
-  if (!tradingregex.lastName.test(lastName.value)) {
-    lastName.classList.add("border_red");
-  } else {
-    lastName.classList.remove("border_red");
-  }
+  // if (!tradingregex.firstName.test(FirstName.value)) {
+  //   FirstName.classList.add("border_red");
+  // } else {
+  //   FirstName.classList.remove("border_red");
+  // }
 
-  if (!tradingregex.number.test(PNumber.value)) {
-    PNumber.classList.add("border_red");
-  } else {
-    PNumber.classList.remove("border_red");
-  }
+  // if (!tradingregex.lastName.test(lastName.value)) {
+  //   lastName.classList.add("border_red");
+  // } else {
+  //   lastName.classList.remove("border_red");
+  // }
 
-  if (!tradingregex.email.test(Email.value)) {
-    Email.classList.add("border_red");
-  } else {
-    Email.classList.remove("border_red");
-  }
+  // if (!tradingregex.number.test(PNumber.value)) {
+  //   PNumber.classList.add("border_red");
+  // } else {
+  //   PNumber.classList.remove("border_red");
+  // }
+
+  // if (!tradingregex.email.test(Email.value)) {
+  //   Email.classList.add("border_red");
+  // } else {
+  //   Email.classList.remove("border_red");
+  // }
 
   if (
     tradingregex.firstName.test(FirstName.value) &&
@@ -196,6 +194,18 @@ window.addEventListener("scroll", function () {
     backtotop.style.display = "block";
   } else {
     backtotop.style.display = "none";
+  }
+});
+
+const footerform = document.getElementById("tradingfrom");
+const footersubmitButton = document.getElementById("Submit");
+footerform.addEventListener("input", function () {
+  if (footerform.checkValidity()) {
+    footersubmitButton.disabled = false;
+    footersubmitButton.style.cursor = "pointer";
+  } else {
+    footersubmitButton.disabled = true;
+    footersubmitButton.style.cursor = "not-allowed";
   }
 });
 
