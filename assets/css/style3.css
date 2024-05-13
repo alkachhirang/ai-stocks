@@ -1,3 +1,20 @@
+/* CUSTOM SCROLL BAR  */
+.secondpage::-webkit-scrollbar-track {
+    border-radius: 12px;
+}
+
+.secondpage::-webkit-scrollbar {
+    width: 5px;
+    height: 4px;
+    background: black;
+}
+
+.secondpage::-webkit-scrollbar-thumb {
+    background: #FB0267;
+    border-radius: 12px;
+    outline: unset;
+}
+
 .gradient_text2 {
     background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
     background-clip: text;
@@ -111,6 +128,84 @@
             #A445B2 0%,
             #D41872 52%,
             #FF0066 100%);
+}
+
+/*=============trade-section================ */
+
+.linear_bg2 {
+    background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+}
+
+.ai_blue .trade_line_3rd::after,
+.ai_blue .active_timeline_dot2::before,
+.ai_blue .trade_timeline_gradient2::after,
+.ai_blue .trade_line_4th::after {
+    background:
+        linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+}
+
+.ai_blue .trade_shares_active_btns_pink {
+    background: linear-gradient(#010407, #010407) padding-box,
+        linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%) border-box !important;
+    opacity: 100%;
+    font-weight: 700 !important;
+}
+
+.ai_blue .common_account_button {
+    border: 1px solid white;
+    background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    border-radius: 4px;
+    padding: 12px 24px;
+    transition: all 300ms linear;
+}
+
+.ai_blue .common_account_button:hover {
+    background: linear-gradient(90deg, #FF0066 0%, #D41872 52%, #A445B2 100%);
+}
+
+.trade_line_3rd::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    /* Adjust as needed */
+    right: 8px;
+    width: 1px;
+    /* Adjust as needed */
+    height: 0%;
+    transition: all 0.3s ease;
+    background: linear-gradient(150.02deg, #00ffe1 12.76%, #6e5df6 91.81%);
+    z-index: 1;
+}
+
+.trade_line_4th::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    /* Adjust as needed */
+    right: 8px;
+    width: 1px;
+    /* Adjust as needed */
+    height: 0%;
+    background: linear-gradient(320.02deg, #00ffe1 12.76%, #6e5df6 91.81%);
+    z-index: 1;
+}
+
+.active_timeline_dot2 {
+    border-color: transparent;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.active_timeline_dot2::before {
+    background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    top: 0;
+    z-index: -1;
+    /* Push the pseudo-element behind the content */
+}
+
+.trade_timeline_gradient2::after {
+    background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
 }
 
 @media (min-width:576px) {

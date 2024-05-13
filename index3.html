@@ -14,7 +14,72 @@
 </head>
 
 <body class="bg-black">
-    <!--============Statistics-For-Today================ -->
+    <!--=====================track-section====================-->
+    <section class="pt-lg-5 pt-md-4 mt-5">
+        <div class="custom_container container px-4 travel_section_padding pt-xl-5 mt-lg-5">
+            <div class="row align-items-center justify-content-md-between justify-content-center flex-wrap-reverse ai_blue">
+                <div class="col-xl-7 col-md-6 mt-4 mt-md-0 trade_leverage_parent px-lg-0 pe-0 ps-md-2 ps-0">
+                    <h2 class="ff_open_sans fw-bold fs_8xl leading_124 mb-0 text-white text-md-start text-center">
+                        <span class="gradient_text2">Trade long</span> and short with
+                        <span class="gradient_text2"> leverage in CFDs </span>
+                    </h2>
+                    <p class="fw-normal fs-sm text-white opacity_07 pt-3 text-md-start text-center">
+                        Stocks, Forex, Indices and more
+                    </p>
+                    <div
+                        class="trade_shares d-flex flex-column justify-content-center align-items-center align-items-md-start gap-3 pt-3 mt-1 pb-4 trade_timeline mx-auto position-relative">
+                        <div data-title="company"
+                            class="d-flex align-items-center gap-lg-5 gap-3 trade_line_3rd position-relative">
+                            <span onclick="changeImageHandler('company')"
+                                class="trade_shares_btns trade_shares_active_btns_pink leverage-tab d-flex align-items-center fw-bold cursior_pointer fs_md text-white ">
+                                Choose your favorite asset
+                            </span>
+                            <span onclick="changeImageHandler('company')"
+                                class="timeline_dot cursior_pointer rounded-pill active_timeline_dot2 duration_300"></span>
+                        </div>
+                        <div data-title="invest"
+                            class="d-flex align-items-center gap-lg-5 gap-3 trade_line_second position-relative">
+                            <span onclick="changeImageHandler('invest')"
+                                class="trade_shares_btns leverage-tab d-flex align-items-center fw-bold cursior_pointer fs_md text-white ">
+                                Select how much to fs_md
+                            </span>
+                            <span onclick="changeImageHandler('invest')"
+                                class="timeline_dot cursior_pointer rounded-pill duration_300"></span>
+                        </div>
+                        <div data-title="shares" class="d-flex align-items-center gap-lg-5 gap-3">
+                            <span onclick="changeImageHandler('shares')"
+                                class="trade_shares_btns leverage-tab d-flex align-items-center fw-bold cursior_pointer fs_md text-white ">
+                                Get your shares in seconds
+                            </span>
+                            <span onclick="changeImageHandler('shares')"
+                                class="timeline_dot cursior_pointer rounded-pill duration_300"></span>
+                        </div>
+                    </div>
+                    <a href="#contact"
+                        class="text-black linear_bg2 common_account_button fs_xs fw-bold ff_open_sans mt-2 d-md-inline-block d-none">Open
+                        Your account</a>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-8 px-lg-2 position-relative travel_phone_image">
+                    <lottie-player id="company" src="./assets/json/phone-1.json" speed=".55"
+                        class="position-relative z-2 mx-auto w-100 px-4 h-auto px-md-5 mb-3 mb-md-0" autoplay></lottie-player>
+                    <lottie-player id="invest" src="./assets/json/phone-2.json" speed=".4"
+                        class="position-relative d_none z-2 mx-auto w-100 px-4 h-auto px-md-5 mb-3 mb-md-0" autoplay>
+                    </lottie-player>
+                    </lottie-player>
+                    <lottie-player id="shares" src="./assets/json/phone-3.json" speed=".28"
+                        class="position-relative d_none z-2 mx-auto w-100 px-4 h-auto px-md-5 mb-3 mb-md-0" autoplay>
+                    </lottie-player>
+        
+                    <div class="phone_bubble linear_bg2 position-absolute top-50 start-50 translate-middle z-0"></div>
+                    <a href="#contact"
+                        class="text-black text-center common_account_button linear_bg2 fs_xs fw-bold ff_open_sans mt-4 d-block w-100 d-md-none">
+                        Open Your account
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============Statistics-For-Today================-->
     <section id="statistics-today" class="pt_Statistics position-relative z-1 mw_1920 overflow-x-clip">
         <div class="Statisticsellips2 d-none d-md-block"></div>
         <div class="container mw_1164">
@@ -22,11 +87,12 @@
                     class="gradient_text2">Statistics</span> For Today</h2>
             <div class="row pt-lg-3 justify-content-center">
                 <div class="col-md-4 col-sm-6 col-12 d-flex flex-column align-items-center mt-4 mt-md-5">
-                    <div class="border_Statistics2 d-flex justify-content-center align-items-center pb-lg-2">
+                    <div
+                        class="border_Statistics2 statistics_cards_parent d-flex justify-content-center align-items-center pb-lg-2">
                         <div>
-                                    <p id="placesLeftCounter" class="counter fw-bold ff_roboto fs_3xxl text-white lh_12xl mb-0">
-                                        01
-                                    </p>
+                            <p id="placesLeftCounter" class="counter fw-bold ff_roboto fs_3xxl text-white lh_12xl mb-0">
+                                01
+                            </p>
                         </div>
                     </div>
                     <p class="ff_opensans fw-semibold text-white lh_6xl text-center fs_6lg mt-2 mt-md-4 pt-1">
@@ -38,11 +104,9 @@
                 </div>
                 <div
                     class="col-md-4 col-sm-6 col-12 d-flex flex-column align-items-center mt-1 mt-md-5 mt-md-0 pt-4 pt-md-0">
-                    <div class="border_Statistics2 d-flex justify-content-center align-items-center pb-lg-2">
+                    <div
+                        class="border_Statistics2 statistics_cards_parent d-flex justify-content-center align-items-center pb-lg-2">
                         <div>
-                            <!-- <p id="registrationsPerDayCounter"
-                                class="fw-bold ff_roboto fs_3xxl text-white lh_12xl mb-0"><span class=""
-                                    data-target="135">1 </span></p> -->
                             <p id="registrationsPerDayCounter"
                                 class="fw-bold counter ff_roboto fs_3xxl text-white lh_12xl mb-0">
                                 135
@@ -58,7 +122,8 @@
                 </div>
                 <div
                     class="col-md-4 col-sm-6 col-12 d-flex flex-column align-items-center mt-1 mt-md-5 mt-md-0 pt-4 pt-md-0">
-                    <div class="border_Statistics2 d-flex justify-content-center align-items-center pb-lg-2">
+                    <div
+                        class="border_Statistics2 statistics_cards_parent d-flex justify-content-center align-items-center pb-lg-2">
                         <div>
                             <p id="earningsIncreaseCounter" class="fw-bold ff_roboto fs_3xxl text-white lh_12xl mb-0">
                                 <span class="counter">5</span>x
@@ -74,143 +139,148 @@
             </div>
         </div>
     </section>
-    <!--============Average-Earnings============== -->
-    <section class="py_average position-relative z-1 mw_1920 overflow-x-clip">
-        <div class="Statisticsellips1 d-none d-xl-block"></div>
-        <div class="Statisticsellips3  d-none d-xl-block"></div>
-        <div class=" d-flex flex-md-row flex-column align-items-center average_gap  pe-md-3 pe-lg-4 pe-xl-5">
-            <div class="mw_814 overflow-hidden w-100">
-                <div class="d-flex slide_container mb-2">
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/knx-logo.svg" alt="knx" />
+        <!--============Average-Earnings==============-->
+        <section class="py_average position-relative z-1 mw_1920 overflow-x-clip">
+            <div class="Statisticsellips1 d-none d-xl-block"></div>
+            <div class="Statisticsellips3  d-none d-xl-block"></div>
+            <div class=" d-flex flex-md-row flex-column align-items-center average_gap  pe-md-3 pe-lg-4 pe-xl-5">
+                <div class="mw_814 overflow-hidden w-100">
+                    <div class="d-flex slide_container mb-2">
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/knx-logo.svg" alt="knx" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/google-logo.svg" alt="google-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/spotify-logo.svg" alt="spotify-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/tesla-logo.svg" alt="tesla-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/knx-logo.svg" alt="knx" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/google-logo.svg" alt="google-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/spotify-logo.svg" alt="spotify-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/tesla-logo.svg" alt="tesla-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/knx-logo.svg" alt="knx" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/spotify-logo.svg" alt="spotify-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/tesla-logo.svg" alt="tesla-logo" />
+                        </div>
                     </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/google-logo.svg" alt="google-logo" />
+                    <div class="d-flex slide_container2 mt-1 mb-2">
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/company-logo.svg" alt="company-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/ford-logo.svg" alt="ford-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/samsung-logo.svg" alt="samsung-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/tata-logo.svg" alt="tata-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/company-logo.svg" alt="company-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/ford-logo.svg" alt="ford-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/samsung-logo.svg" alt="samsung-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/tata-logo.svg" alt="tata-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/company-logo.svg" alt="company-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/ford-logo.svg" alt="ford-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/samsung-logo.svg" alt="samsung-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/tata-logo.svg" alt="tata-logo" />
+                        </div>
                     </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/spotify-logo.svg" alt="spotify-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/tesla-logo.svg" alt="tesla-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/knx-logo.svg" alt="knx" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/google-logo.svg" alt="google-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/spotify-logo.svg" alt="spotify-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/tesla-logo.svg" alt="tesla-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/knx-logo.svg" alt="knx" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/spotify-logo.svg" alt="spotify-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/tesla-logo.svg" alt="tesla-logo" />
+                    <div class="d-flex slide_container mt-1">
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/company-logo.svg" alt="company-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/reliance-logo.svg" alt="reliance-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/stripe-logo.svg" alt="stripe-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/adani-logo.svg" alt="adani-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/company-logo.svg" alt="company-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/reliance-logo.svg" alt="reliance-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/stripe-logo.svg" alt="stripe-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/adani-logo.svg" alt="adani-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/company-logo.svg" alt="company-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/reliance-logo.svg" alt="reliance-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/stripe-logo.svg" alt="stripe-logo" />
+                        </div>
+                        <div class="px-6">
+                            <img class="social_img" src="/assets/images/svg/adani-logo.svg" alt="adani-logo" />
+                        </div>
                     </div>
                 </div>
-                <div class="d-flex slide_container2 mt-1 mb-2">
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/company-logo.svg" alt="company-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/ford-logo.svg" alt="ford-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/samsung-logo.svg" alt="samsung-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/tata-logo.svg" alt="tata-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/company-logo.svg" alt="company-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/ford-logo.svg" alt="ford-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/samsung-logo.svg" alt="samsung-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/tata-logo.svg" alt="tata-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/company-logo.svg" alt="company-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/ford-logo.svg" alt="ford-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/samsung-logo.svg" alt="samsung-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/tata-logo.svg" alt="tata-logo" />
-                    </div>
-                </div>
-                <div class="d-flex slide_container mt-1">
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/company-logo.svg" alt="company-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/reliance-logo.svg" alt="reliance-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/stripe-logo.svg" alt="stripe-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/adani-logo.svg" alt="adani-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/company-logo.svg" alt="company-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/reliance-logo.svg" alt="reliance-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/stripe-logo.svg" alt="stripe-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/adani-logo.svg" alt="adani-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/company-logo.svg" alt="company-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/reliance-logo.svg" alt="reliance-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/stripe-logo.svg" alt="stripe-logo" />
-                    </div>
-                    <div class="px-6">
-                        <img class="social_img" src="/assets/images/svg/adani-logo.svg" alt="adani-logo" />
+                <div class='mw_518 mw_lg_397 w-100 px-3 px-md-0 mw_md_300 pt-lg-0 mt-lg-0 mb-md-3 mb-lg-0'>
+                    <h2 class="ff_opensans fw-bold text-md-start text-center text-white fs_8xl lh_7xl mb-4 mb-lg-5">
+                        Average Earnings of a
+                        Registered
+                        User From a
+                        <span class="gradient_text2">Deposit of $250 to 521$</span>
+                    </h2>
+                    <div class="mt-xl-3 d-flex justify-content-md-start justify-content-center">
+                        <button aria-label="registernow" class="ff_opensans fw-bold text-white fs_xs lh_xsm common_btn">Register
+                            Now</button>
                     </div>
                 </div>
             </div>
-            <div class='mw_518 mw_lg_397 w-100 px-3 px-md-0 mw_md_300 pt-lg-0 mt-lg-0 mb-md-3 mb-lg-0'>
-                <h2 class="ff_opensans fw-bold text-md-start text-center text-white fs_8xl lh_7xl mb-4 mb-lg-5">
-                    Average Earnings of a
-                    Registered
-                    User From a
-                    <span class="gradient_text2">Deposit of $250 to 521$</span>
-                </h2>
-                <div class="mt-xl-3 d-flex justify-content-md-start justify-content-center">
-                    <button aria-label="registernow"
-                        class="ff_opensans fw-bold text-white fs_xs lh_xsm common_btn">Register Now</button>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- counter -->
+        </section>
+ 
+    <!--================bootdtrap-link============-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+         <!-- LOTTIE PLAYER  -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script>
         const options = {
-            threshold: 0.10, // Trigger when 20% of the element is visible
+            threshold: 0.2, // Trigger when 20% of the element is visible
         };
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
@@ -227,17 +297,17 @@
                             } else {
                                 clearInterval(counter);
                             }
-                        }, 100); // Adjust speed here
+                        }, 60); // Adjust speed here
                     } else {
                         // For registrationsPerDayCounter and earningsIncreaseCounter, count up
-                        let currentCount = countTo - 5;
+                        let currentCount = countTo - 7;
                         const counter = setInterval(() => {
                             if (currentCount <= countTo) {
                                 target.innerText = currentCount++;
                             } else {
                                 clearInterval(counter);
                             }
-                        }, 100); // Adjust speed here
+                        }, 60); // Adjust speed here
                     }
                 }
             });
@@ -247,11 +317,6 @@
             observer.observe(card);
         });
     </script>
-    <!--======================botstrap-link=========================-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
-    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
