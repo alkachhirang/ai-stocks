@@ -169,22 +169,22 @@ linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
 .close:hover{
   opacity: 0.5;
 }
-.gradient-leftline{
+.pink-gradient-leftline{
  width: 42%;
-background: linear-gradient(91.31deg, #00FFE1 0.25%, #7E34DC 28.47%, #AEAEAE 50.45%, rgba(110, 93, 246, 0) 95.53%);
+background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, rgba(255, 0, 102, 0) 100%);
 position: absolute;
 top: 50%;
 right: 0;
-height: 1px;
+height: 3px;
 z-index: -1;
 }
-.gradient-rightline {
+.pink-gradient-rightline {
     width: 42%;
-    background: linear-gradient(91.31deg, #00FFE1 0.25%, #7E34DC 28.47%, #AEAEAE 50.45%, rgba(110, 93, 246, 0) 95.53%);
+    background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, rgba(255, 0, 102, 0) 100%);
     position: absolute;
     top: 50%;
     left: 0;
-    height: 1px;
+    height: 3px;
     rotate: 180deg;
     z-index: -1;
 }
@@ -226,7 +226,26 @@ z-index: -1;
   border-radius: 6px;
   padding: 13px;
 }
-
+.right-pink-box{
+        width: 248px;
+    height: 226px;
+      background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    position: absolute;
+    left: 14%;
+    top: -16%;
+    z-index: -1;
+    border-radius: 26px;
+}
+.left-pink-box{
+        width: 248px;
+    height: 226px;
+      background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    position: absolute;
+   right: 14%;
+    top: -16%;
+    z-index: -1;
+    border-radius: 26px;
+}
 .popup_button {
   background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
   padding: 12px 12px;
@@ -330,7 +349,7 @@ left: -28%;
   padding: 22px 31px 36px 62px !important;
 }
 .stock-3{
-  padding: 62px 35px !important;
+  padding: 50px !important;
 }
 .stock-4{
   padding: 90px 40px !important;
@@ -388,6 +407,16 @@ left: -28%;
 }
 
 @media (min-width: 768px) {
+    .right-pink-box{
+   width: 314px;
+        height: 236px;
+      left: 22%;
+}
+   .left-pink-box{
+   width: 314px;
+        height: 236px;
+      right: 22%;
+}
   .stock_bubble-right {
  width: 360px !important;
   height: 350px !important;
@@ -422,6 +451,16 @@ left: -28%;
 }
 }
  @media (min-width:992px) {
+     .right-pink-box{
+    width: 366px;
+    height: 315px;
+    left: 20%;
+}
+    .left-pink-box{
+    width: 366px;
+    height: 315px;
+    right: 20%;
+}
   .nividia-bottomellipse{
   width: 346px;
   height: 346px;
