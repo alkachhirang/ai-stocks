@@ -1628,8 +1628,8 @@ numberinput-header .numberinput-header[type="number"] {
     margin-top: 28px;
 }
 
-.gap-16 {
-    gap: 16px !important;
+.gap-8 {
+    gap: 8px !important;
 }
 
 @media (max-width:1200px) {
