@@ -13,8 +13,8 @@
 
 <body>
     <!-- header -->
-    <header class=" bg-hero-img-2 mw_1920 position-relative mb-xl-100 mb-md-64 mb-48 overflow-x-clip  z-1">
-        <nav class=" py-12 nav-background position-relative  z-1">
+    <header class=" bg-hero-img-2 mw_1920 position-relative overflow-x-clip  z-1">
+        <nav class="backdrop-20 py-12 nav-background position-relative  z-1">
             <div class="container">
                 <div class=" d-flex  justify-content-between align-items-center ">
                     <ul class=" mb-0 ps-0">
@@ -37,10 +37,10 @@
                 <h1 class="ff_opensans px-xl-88 px-lg-72 px_2 fw-bold lh_9xl mb-0 text-white mt-5 fs_xxl text-center ">
                     Dive
                     into
-                    <span class="gradient_text"> the Explosive
+                    <span class="gradient_text2"> the Explosive
                         Momentum</span> of
                     2024 with
-                    the Top 7 Fastest-Growing <span class="gradient_text"> AI Stocks!</span>
+                    the Top 7 Fastest-Growing <span class="gradient_text2"> AI Stocks!</span>
                 </h1>
                 <p
                     class=" fw-normal fs_xs lh_md ff_opensans text-center max-w-665 mx-auto mb-0  c-gray pt-2 pt-sm-4 mt-1">
@@ -55,7 +55,7 @@
                         130.66% in 2024</span>
                 </p>
                 <div
-                    class=" d-flex align-items-center   align-items-lg-start justify-content-between flex-column flex-lg-row align-items-start mt-sm-39 mt-28">
+                    class=" d-flex align-items-center   align-items-lg-start justify-content-between max-w-1075  flex-column flex-lg-row align-items-start mt-sm-39 mt-28">
                     <div class="max-w-xl-654 max-w-lg-626 max-w-654 w-100 px-lg-1 px-xl-0">
                         <div class="vedio2">
                             <video id="vid" controls src="./assets/images/video/herader-video.mp4" muted
@@ -70,7 +70,7 @@
                                 class=" d-flex px-xl-44 px-12 mt-4 gap-20  justify-content-between  align-items-center ">
                                 <div>
                                     <div class="box-time rounded-2">
-                                        <p id="days"
+                                        <p id="desktopDays"
                                             class="ff_opensans box-timenumber position-relative z-1 mb-0 fw-bold lh_10xl fs_xxl text-white">
                                             06
                                         </p>
@@ -80,7 +80,7 @@
                                 </div>
                                 <div>
                                     <div class="box-time rounded-2">
-                                        <p id="hours"
+                                        <p id="desktopHours"
                                             class="ff_opensans box-timenumber position-relative z-1 mb-0 fw-bold lh_10xl fs_xxl text-white">
                                             12
                                         </p>
@@ -90,7 +90,7 @@
                                 </div>
                                 <div>
                                     <div class="box-time rounded-2">
-                                        <p id="minuets"
+                                        <p id="desktopMinutes"
                                             class="ff_opensans box-timenumber position-relative z-1 mb-0 fw-bold lh_10xl fs_xxl text-white">
                                             35
                                         </p>
@@ -101,7 +101,7 @@
                                 </div>
                                 <div>
                                     <div class="box-time rounded-2">
-                                        <p id="seconds"
+                                        <p id="desktopSeconds"
                                             class="ff_opensans box-timenumber position-relative z-1 mb-0 fw-bold lh_10xl fs_xxl text-white">
                                             17
                                         </p>
@@ -114,52 +114,50 @@
                         </div>
                     </div>
                     <div
-                        class="max-w-xl-388 max-w-654 w-100 px-lg-1 px-xl-0 position-relative mt_0 mt-md-40 mt_24   z-1 ">
-                        <div class="gradient-border-mask3 box-email">
-                            <h2
-                                class=" text-white  text-center ff_opensans fw-semibold lh_2xl px-10 mb-sm-3 mb-2  fs_8md">
-                                This
-                                Is
-                                The
-                                Right Time
-                                to Invest In AI Stocks</h2>
-                            <p class="ff_opensans fw-normal  fs_xs lh_xsm text-center  text-white  mb-0">In a matter
-                                of
-                                minutes, one of our AI mentors will contact you, No Experience Required!
-                            </p>
-                            <form id="headerfrom">
-                                <input required id="name" type="text" placeholder="First Name"
-                                    class="email-input-style-header mt-4 ff_opensans fw-normal  fs_xs lh_xsm c-black-100 ">
-                                <p class=" mb-0 text-white " id="errorname"></p>
-                                <input required id="lastname" type="text" placeholder="Last Name"
-                                    class="email-input-style-header mt-3 ff_opensans fw-normal  fs_xs lh_xsm c-black-100 ">
-                                <p class=" mb-0 text-white " id="errorlastname"></p>
-                                <input required id="email" type="email" placeholder="Email"
-                                    class="email-input-style-header mt-3 ff_opensans fw-normal  fs_xs lh_xsm c-black-100 ">
-                                <p class=" mb-0 text-white " id="erroremail"></p>
-                                <div class=" d-flex align-items-center rounded-1 overflow-hidden    bg-white  mt-3  ">
-                                    <div class=" d-flex align-items-center bg-number  gap-1 p-lg-3 p-12">+91 <svg
-                                            width="8" height="6" viewBox="0 0 8 6" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4 6L0.535898 0H7.4641L4 6Z" fill="#010101" />
-                                        </svg>
-                                    </div>
-                                    <input required pattern="/^-?\d+\.?\d*$/"
-                                        onKeyPress="if(this.value.length==10) return false;" id="number" type="number"
-                                        placeholder="Phone Number"
-                                        class="email-input-style-header numberinput-header  ff_opensans fw-normal   fs_xs lh_xsm c-black-100 ">
-                                </div>
-                                <p class=" mb-0 text-white " id="errornumber"></p>
-                                <button disabled style="cursor: not-allowed;" aria-label="fromsubmit" id="submit"
-                                    type="submit"
-                                    class=" mt-32 text-decoration-none submit submitheader_from w-100 ff_opensans c-black-100 fw-bold fs_xs lh_xsm main-button  ">Get
-                                    Started</button>
-                            </form>
+                        class="max-w-328 max-w-654 w-100 px-lg-1 px-xl-0 position-relative mt_0 mt-md-40 mt-sm-32 mt_24   z-1 ">
+                        <div class=" position-relative z-1 w-fit-content">
+                            <div class="bg-white card-from-red-header">
+                                <h3 class=" mt_2 ff_opensans fw-bold fs_xs off-black3 lh-xs">This Is The Right Time to
+                                    Invest In
+                                    AI Stocks</h3>
+                                <p class=" ff_opensans fw-normal mb-0 fs_axs gray-4e lh-axs">
+                                    In a matter of minutes one of our AI mentors will contact you, No Experience
+                                    Required!
+                                </p>
+                                <button aria-label="spotleft" href="#"
+                                    class=" text-decoration-none  d-block mt-27 ff_opensans text-white fw-bold fs_axs lh-xm spot-left   ">3
+                                    Spot Left</button>
+                                <form id="headerfrommobile" class="mt-3">
+                                    <label class=" d-block ff_opensans fw-semibold fs_axs lh-xm gray-400">
+                                        First Name
+                                    </label>
+                                    <input id="nameheadermobile" required autocomplete="off" type="text"
+                                        class=" w-100 mt-6 header-red-input-modification ff_opensans fw-semibold fs_xs lh-xm clr-black">
+                                    <label class="mt-10 d-block ff_opensans fw-semibold fs_axs lh-xm gray-400">
+                                        Last Name
+                                    </label>
+                                    <input id="lastnameheadermobile" required autocomplete="off" type="text"
+                                        class=" w-100 mt-6 header-red-input-modification ff_opensans fw-semibold fs_xs lh-xm clr-black">
+                                    <label class="mt-10 d-block ff_opensans fw-semibold fs_axs lh-xm gray-400">
+                                        Email
+                                    </label>
+                                    <input id="emailheadermobile" required autocomplete="off" type="email"
+                                        class=" w-100 mt-6 header-red-input-modification ff_opensans fw-semibold fs_xs lh-xm clr-black">
+                                    <label class="mt-10 d-block ff_opensans fw-semibold fs_axs lh-xm gray-400">
+                                        Phone Number
+                                    </label>
+                                    <input id="numberheadermobile" required autocomplete="off" pattern="/^-?\d+\.?\d*$/"
+                                        onKeyPress="if(this.value.length==10) return false;" type="number"
+                                        class=" w-100 mt-6 numberinput-header  header-red-input-modification ff_opensans fw-semibold fs_xs lh-xm clr-black">
+                                    <button id="submitheadermobile" disabled style="cursor: not-allowed;"
+                                        aria-label="spotleft" href="#"
+                                        class=" submitheader_from_mobile text-decoration-none  w-100 mt-4 ff_opensans text-white fw-bold fs_axs lh-xm spot-left">Get
+                                        Started</button>
+                                </form>
+                            </div>
+                            <img src="./assets/images/webp/mobileheader.webp" alt="mobile-header"
+                                class=" max-w-328 img-padding-from max-h-644">
                         </div>
-                        <p class="ff_opensans fw-bold  fs_md lh_2lg text-center text-white mt-14 mb-0 ">1 Spot Left
-                        </p>
-                        <span class="ellipes-card-email d-none  d-md-block "></span>
-                        <span class="ellipes2-card-email d-none  d-md-block "></span>
                     </div>
                     <div class=" d-block  d-lg-none ">
                         <p class="ff_opensans mb-0 mt-20 fs_sm fw-bold lh_2md text-center text-white ">Due to
@@ -169,7 +167,7 @@
                         <div class=" d-flex mt-4 gap-2 max-w-500 mx-auto  justify-content-between  align-items-center ">
                             <div>
                                 <div class="box-time rounded-2">
-                                    <p id="day"
+                                    <p id="mobileDays"
                                         class="ff_opensans box-timenumber position-relative z-1 mb-0 fw-bold lh_10xl fs_xxl text-white">
                                         06</p>
                                 </div>
@@ -177,7 +175,7 @@
                             </div>
                             <div>
                                 <div class="box-time rounded-2">
-                                    <p id="hour"
+                                    <p id="mobileHours"
                                         class="ff_opensans box-timenumber position-relative z-1 mb-0 fw-bold lh_10xl fs_xxl text-white">
                                         12</p>
                                 </div>
@@ -185,7 +183,7 @@
                             </div>
                             <div>
                                 <div class="box-time rounded-2">
-                                    <p id="minuet"
+                                    <p id="mobileMintus"
                                         class="ff_opensans box-timenumber position-relative z-1 mb-0 fw-bold lh_10xl fs_xxl text-white">
                                         35
                                     </p>
@@ -195,7 +193,7 @@
                             </div>
                             <div>
                                 <div class="box-time rounded-2">
-                                    <p id="second"
+                                    <p id="mobileSeconds"
                                         class="ff_opensans box-timenumber position-relative z-1 mb-0 fw-bold lh_10xl fs_xxl text-white">
                                         17
                                     </p>
@@ -215,732 +213,200 @@
         <span class=" ellipes5headerright-bottom2 d-none d-lg-block"></span>
     </header>
     <!-- silder by  keyframes  -->
-    <section class="overflow-hidden pb-5 mw_1920">
+    <section class="overflow-hidden mt-5 pb-5 mw_1920">
         <div class="d-flex  py_2 align-items-center gap_md_20 gap-16 slide_container">
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span><img src="./assets/images/svg/girl.svg" alt="girl"></span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Esther Howard</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$2,208</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,361</p>
-                    </div>
+            <div class="man-profile-card2 d-flex align-items-center gap-3">
+                <span><img src="./assets/images/webp/profile1.webp" alt="girl"></span>
+                <div>
+                    <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Courtney</h2>
+                    <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                            class='c-light-red-grandait'>$35,499</span></p>
+                    <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $68,187</p>
                 </div>
             </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span>
-                        <img src="./assets/images/svg/lognhariman.svg" alt="longhairman">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Theresa Webb</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$3,302</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $1,625</p>
-                    </div>
+            <div class="man-profile-card2 d-flex align-items-center gap-3">
+                <span>
+                    <img src="./assets/images/webp/profile2.webp" alt="longhairman">
+                </span>
+                <div>
+                    <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Brent</h2>
+                    <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                            class='c-light-red-grandait'>$32,911</span></p>
+                    <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $55,780</p>
                 </div>
             </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span>
-                        <img src="./assets/images/svg/orangetshirtman.svg" alt="orangetshirtman">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Devon Lane</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$5,265</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $3,489</p>
-                    </div>
+            <div class="man-profile-card2 d-flex align-items-center gap-3">
+                <span>
+                    <img src="./assets/images/webp/profile3.webp" alt="orangetshirtman">
+                </span>
+                <div>
+                    <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Ana</h2>
+                    <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                            class='c-light-red-grandait'>$4,760</span></p>
+                    <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $7,414</p>
                 </div>
             </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span>
-                        <img src="./assets/images/svg/girlface.svg" alt="girlface">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Ralph Edwards</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$4,654</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,584</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span><img src="./assets/images/svg/girl.svg" alt="girl"></span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Esther Howard</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$2,208</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,361</p>
-                    </div>
+            <div class="man-profile-card2 d-flex align-items-center gap-3">
+                <span>
+                    <img src="./assets/images/webp/profile4.webp" alt="girlface">
+                </span>
+                <div>
+                    <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Ray</h2>
+                    <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                            class='c-light-red-grandait'>$4,490</span></p>
+                    <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $9,840</p>
                 </div>
             </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span>
-                        <img src="./assets/images/svg/lognhariman.svg" alt="longhairman">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Theresa Webb</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$3,302</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $1,625</p>
-                    </div>
+            <div class="man-profile-card2 d-flex align-items-center gap-3">
+                <span><img src="./assets/images/webp/profile5.webp" alt="girl"></span>
+                <div>
+                    <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Brian</h2>
+                    <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                            class='c-light-red-grandait'>$62,233</span></p>
+                    <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $105,080
+                    </p>
                 </div>
             </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span>
-                        <img src="./assets/images/svg/orangetshirtman.svg" alt="orangetshirtman">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Devon Lane</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$5,265</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $3,489</p>
-                    </div>
+            <div class="man-profile-card2 d-flex align-items-center gap-3">
+                <span>
+                    <img src="./assets/images/webp/profile6.webp" alt="longhairman">
+                </span>
+                <div>
+                    <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Tamara</h2>
+                    <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                            class='c-light-red-grandait'>$4,930</span></p>
+                    <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $12,230</p>
                 </div>
             </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span>
-                        <img src="./assets/images/svg/girlface.svg" alt="girlface">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Ralph Edwards</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$4,654</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,584</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span><img src="./assets/images/svg/girl.svg" alt="girl"></span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Esther Howard</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$2,208</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,361</p>
-                    </div>
+            <div class="man-profile-card2 d-flex align-items-center gap-3">
+                <span>
+                    <img src="./assets/images/webp/profile7.webp" alt="orangetshirtman">
+                </span>
+                <div>
+                    <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Jerome</h2>
+                    <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                            class='c-light-red-grandait'>$35,499</span></p>
+                    <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $68,187</p>
                 </div>
             </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span>
-                        <img src="./assets/images/svg/lognhariman.svg" alt="longhairman">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Theresa Webb</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$3,302</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $1,625</p>
-                    </div>
+            <div class="man-profile-card2 d-flex align-items-center gap-3">
+                <span>
+                    <img src="./assets/images/webp/profile8.webp" alt="girlface">
+                </span>
+                <div>
+                    <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Murray</h2>
+                    <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                            class='c-light-red-grandait'>$35,499</span></p>
+                    <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $68,187</p>
                 </div>
             </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span>
-                        <img src="./assets/images/svg/orangetshirtman.svg" alt="orangetshirtman">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Devon Lane</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$5,265</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $3,489</p>
-                    </div>
+            <div class="man-profile-card2 d-flex align-items-center gap-3">
+                <span><img src="./assets/images/webp/profile9.webp" alt="girl"></span>
+                <div>
+                    <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Felicia</h2>
+                    <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                            class='c-light-red-grandait'>$2,104</span></p>
+                    <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $4,584</p>
                 </div>
             </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span>
-                        <img src="./assets/images/svg/girlface.svg" alt="girlface">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Ralph Edwards</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$4,654</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,584</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span><img src="./assets/images/svg/girl.svg" alt="girl"></span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Esther Howard</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$2,208</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,361</p>
-                    </div>
+            <div class="man-profile-card2 d-flex align-items-center gap-3">
+                <span><img src="./assets/images/webp/profile1.webp" alt="girl"></span>
+                <div>
+                    <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Courtney</h2>
+                    <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                            class='c-light-red-grandait'>$35,499</span></p>
+                    <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $68,187</p>
                 </div>
             </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span>
-                        <img src="./assets/images/svg/lognhariman.svg" alt="longhairman">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Theresa Webb</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$3,302</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $1,625</p>
-                    </div>
+            <div class="man-profile-card2 d-flex align-items-center gap-3">
+                <span>
+                    <img src="./assets/images/webp/profile2.webp" alt="longhairman">
+                </span>
+                <div>
+                    <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Brent</h2>
+                    <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                            class='c-light-red-grandait'>$32,911</span></p>
+                    <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $55,780</p>
                 </div>
             </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span>
-                        <img src="./assets/images/svg/orangetshirtman.svg" alt="orangetshirtman">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Devon Lane</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$5,265</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $3,489</p>
-                    </div>
+            <div class="man-profile-card2 d-flex align-items-center gap-3">
+                <span>
+                    <img src="./assets/images/webp/profile3.webp" alt="orangetshirtman">
+                </span>
+                <div>
+                    <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Ana</h2>
+                    <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                            class='c-light-red-grandait'>$4,760</span></p>
+                    <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $7,414</p>
                 </div>
             </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span>
-                        <img src="./assets/images/svg/girlface.svg" alt="girlface">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Ralph Edwards</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$4,654</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,584</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span><img src="./assets/images/svg/girl.svg" alt="girl"></span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Esther Howard</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$2,208</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,361</p>
-                    </div>
+            <div class="man-profile-card2 d-flex align-items-center gap-3">
+                <span>
+                    <img src="./assets/images/webp/profile4.webp" alt="girlface">
+                </span>
+                <div>
+                    <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Ray</h2>
+                    <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                            class='c-light-red-grandait'>$4,490</span></p>
+                    <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $9,840</p>
                 </div>
             </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span>
-                        <img src="./assets/images/svg/lognhariman.svg" alt="longhairman">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Theresa Webb</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$3,302</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $1,625</p>
-                    </div>
+            <div class="man-profile-card2 d-flex align-items-center gap-3">
+                <span><img src="./assets/images/webp/profile5.webp" alt="girl"></span>
+                <div>
+                    <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Brian</h2>
+                    <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                            class='c-light-red-grandait'>$62,233</span></p>
+                    <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $105,080
+                    </p>
                 </div>
             </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span>
-                        <img src="./assets/images/svg/orangetshirtman.svg" alt="orangetshirtman">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Devon Lane</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$5,265</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $3,489</p>
-                    </div>
+            <div class="man-profile-card2 d-flex align-items-center gap-3">
+                <span>
+                    <img src="./assets/images/webp/profile6.webp" alt="longhairman">
+                </span>
+                <div>
+                    <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Tamara</h2>
+                    <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                            class='c-light-red-grandait'>$4,930</span></p>
+                    <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $12,230</p>
                 </div>
             </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span>
-                        <img src="./assets/images/svg/girlface.svg" alt="girlface">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Ralph Edwards</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$4,654</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,584</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span><img src="./assets/images/svg/girl.svg" alt="girl"></span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Esther Howard</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$2,208</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,361</p>
-                    </div>
+            <div class="man-profile-card2 d-flex align-items-center gap-3">
+                <span>
+                    <img src="./assets/images/webp/profile7.webp" alt="orangetshirtman">
+                </span>
+                <div>
+                    <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Jerome</h2>
+                    <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                            class='c-light-red-grandait'>$35,499</span></p>
+                    <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $68,187</p>
                 </div>
             </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span>
-                        <img src="./assets/images/svg/lognhariman.svg" alt="longhairman">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Theresa Webb</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$3,302</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $1,625</p>
-                    </div>
+            <div class="man-profile-card2 d-flex align-items-center gap-3">
+                <span>
+                    <img src="./assets/images/webp/profile8.webp" alt="girlface">
+                </span>
+                <div>
+                    <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Murray</h2>
+                    <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                            class='c-light-red-grandait'>$35,499</span></p>
+                    <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $68,187</p>
                 </div>
             </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span>
-                        <img src="./assets/images/svg/orangetshirtman.svg" alt="orangetshirtman">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Devon Lane</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$5,265</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $3,489</p>
-                    </div>
-                </div>
-            </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span>
-                        <img src="./assets/images/svg/girlface.svg" alt="girlface">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Ralph Edwards</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$4,654</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,584</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span><img src="./assets/images/svg/girl.svg" alt="girl"></span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Esther Howard</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$2,208</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,361</p>
-                    </div>
-                </div>
-            </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span>
-                        <img src="./assets/images/svg/lognhariman.svg" alt="longhairman">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Theresa Webb</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$3,302</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $1,625</p>
-                    </div>
-                </div>
-            </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span>
-                        <img src="./assets/images/svg/orangetshirtman.svg" alt="orangetshirtman">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Devon Lane</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$5,265</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $3,489</p>
-                    </div>
-                </div>
-            </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span>
-                        <img src="./assets/images/svg/girlface.svg" alt="girlface">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Ralph Edwards</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$4,654</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $2,584</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span>
-                        <img src="./assets/images/svg/lognhariman.svg" alt="longhairman">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Theresa Webb</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$3,302</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $1,625</p>
-                    </div>
-                </div>
-            </div>
-            <div class="logo_size">
-                <div class="man-profile-card d-flex align-items-center gap-3">
-                    <span>
-                        <img src="./assets/images/svg/orangetshirtman.svg" alt="orangetshirtman">
-                    </span>
-                    <div>
-                        <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Devon Lane</h2>
-                        <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
-                                class='c-light-green'>$5,265</span></p>
-                        <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $3,489</p>
-                    </div>
+            <div class="man-profile-card2 d-flex align-items-center gap-3">
+                <span><img src="./assets/images/webp/profile9.webp" alt="girl"></span>
+                <div>
+                    <h2 class='ff_opensans fw-bold mb-2  fs_md lh_2lg text-white '>Felicia</h2>
+                    <p class=' mb-0 pb_2 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Profit: <span
+                            class='c-light-red-grandait'>$2,104</span></p>
+                    <p class=' mb-0 ff_opensans fw-normal text-white  fs_xs lh_xsm'>Current Balance: $4,584</p>
                 </div>
             </div>
         </div>
     </section>
+    <script src="./assets/js/app45.js"></script>
     <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
-<!-- 
-<div class="slick-track" style="opacity: 1; width: 6600px; transform: translate3d(-2585px, 0px, 0px); transition: transform 6000ms linear 0s;"><div class="slider_box slick-slide slick-cloned" data-slick-index="-6" id="" aria-hidden="true" style="width: 250px;" tabindex="-1">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/Courtney.webp" alt="courtney image" class="slider_image">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Courtney
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$35,499</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$68,187</span>
-        </p>
-      </div><div class="slider_box slick-slide slick-cloned" data-slick-index="-5" id="" aria-hidden="true" style="width: 250px;" tabindex="-1">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/bret.jpg" alt="jerome image" class="slider_image rounded-pill">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Brent
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$32,911</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$55,780</span>
-        </p>
-      </div><div class="slider_box slick-slide slick-cloned" data-slick-index="-4" id="" aria-hidden="true" style="width: 250px;" tabindex="-1">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/ana.jpg" alt="murray image" class="slider_image rounded-pill">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Ana
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$4,760</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$7,414</span>
-        </p>
-      </div><div class="slider_box slick-slide slick-cloned" data-slick-index="-3" id="" aria-hidden="true" style="width: 250px;" tabindex="-1">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/ray.jpg" alt="murray image" class="slider_image rounded-pill">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Ray
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$4,490</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$9,840</span>
-        </p>
-      </div><div class="slider_box slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" style="width: 250px;" tabindex="-1">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/brian.jpg" alt="murray image" class="slider_image rounded-pill">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Brian
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$62,233</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$105,080</span>
-        </p>
-      </div><div class="slider_box slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" style="width: 250px;" tabindex="-1">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/tamara.jpg" alt="murray image" class="slider_image rounded-pill">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Tamara
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$4,930</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$12,230</span>
-        </p>
-      </div><div class="slider_box slick-slide" data-slick-index="0" aria-hidden="true" style="width: 250px;" tabindex="-1">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/Jerome.webp" alt="jerome image" class="slider_image">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Jerome
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$35,499</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$68,187</span>
-        </p>
-      </div><div class="slider_box slick-slide" data-slick-index="1" aria-hidden="true" style="width: 250px;" tabindex="-1">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/Murray.webp" alt="murray image" class="slider_image">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Murray
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$35,499</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$68,187</span>
-        </p>
-      </div><div class="slider_box slick-slide" data-slick-index="2" aria-hidden="true" style="width: 250px;" tabindex="-1">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/Felicia.webp" alt="felicia image" class="slider_image">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Felicia
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$2,104</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$4,584</span>
-        </p>
-      </div><div class="slider_box slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 250px;" tabindex="0">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/Courtney.webp" alt="courtney image" class="slider_image">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Courtney
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$35,499</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$68,187</span>
-        </p>
-      </div><div class="slider_box slick-slide slick-current slick-active" data-slick-index="4" aria-hidden="false" style="width: 250px;" tabindex="0">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/bret.jpg" alt="jerome image" class="slider_image rounded-pill">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Brent
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$32,911</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$55,780</span>
-        </p>
-      </div><div class="slider_box slick-slide slick-active" data-slick-index="5" aria-hidden="false" style="width: 250px;" tabindex="0">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/ana.jpg" alt="murray image" class="slider_image rounded-pill">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Ana
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$4,760</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$7,414</span>
-        </p>
-      </div><div class="slider_box slick-slide slick-active" data-slick-index="6" aria-hidden="false" style="width: 250px;" tabindex="0">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/ray.jpg" alt="murray image" class="slider_image rounded-pill">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Ray
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$4,490</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$9,840</span>
-        </p>
-      </div><div class="slider_box slick-slide slick-active" data-slick-index="7" aria-hidden="false" style="width: 250px;" tabindex="0">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/brian.jpg" alt="murray image" class="slider_image rounded-pill">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Brian
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$62,233</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$105,080</span>
-        </p>
-      </div><div class="slider_box slick-slide" data-slick-index="8" aria-hidden="true" style="width: 250px;" tabindex="0">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/tamara.jpg" alt="murray image" class="slider_image rounded-pill">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Tamara
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$4,930</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$12,230</span>
-        </p>
-      </div><div class="slider_box slick-slide slick-cloned" data-slick-index="9" id="" aria-hidden="true" style="width: 250px;" tabindex="-1">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/Jerome.webp" alt="jerome image" class="slider_image">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Jerome
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$35,499</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$68,187</span>
-        </p>
-      </div><div class="slider_box slick-slide slick-cloned" data-slick-index="10" id="" aria-hidden="true" style="width: 250px;" tabindex="-1">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/Murray.webp" alt="murray image" class="slider_image">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Murray
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$35,499</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$68,187</span>
-        </p>
-      </div><div class="slider_box slick-slide slick-cloned" data-slick-index="11" id="" aria-hidden="true" style="width: 250px;" tabindex="-1">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/Felicia.webp" alt="felicia image" class="slider_image">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Felicia
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$2,104</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$4,584</span>
-        </p>
-      </div><div class="slider_box slick-slide slick-cloned" data-slick-index="12" id="" aria-hidden="true" style="width: 250px;" tabindex="-1">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/Courtney.webp" alt="courtney image" class="slider_image">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Courtney
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$35,499</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$68,187</span>
-        </p>
-      </div><div class="slider_box slick-slide slick-cloned" data-slick-index="13" id="" aria-hidden="true" style="width: 250px;" tabindex="-1">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/bret.jpg" alt="jerome image" class="slider_image rounded-pill">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Brent
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$32,911</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$55,780</span>
-        </p>
-      </div><div class="slider_box slick-slide slick-cloned" data-slick-index="14" id="" aria-hidden="true" style="width: 250px;" tabindex="-1">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/ana.jpg" alt="murray image" class="slider_image rounded-pill">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Ana
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$4,760</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$7,414</span>
-        </p>
-      </div><div class="slider_box slick-slide slick-cloned" data-slick-index="15" id="" aria-hidden="true" style="width: 250px;" tabindex="-1">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/ray.jpg" alt="murray image" class="slider_image rounded-pill">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Ray
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$4,490</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$9,840</span>
-        </p>
-      </div><div class="slider_box slick-slide slick-cloned" data-slick-index="16" id="" aria-hidden="true" style="width: 250px;" tabindex="-1">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/brian.jpg" alt="murray image" class="slider_image rounded-pill">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Brian
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$62,233</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$105,080</span>
-        </p>
-      </div><div class="slider_box slick-slide slick-cloned" data-slick-index="17" id="" aria-hidden="true" style="width: 250px;" tabindex="-1">
-        <div class="d-flex align-items-center slider_image_title_gap">
-          <img src="./assets/images/light-theme/slider/tamara.jpg" alt="murray image" class="slider_image rounded-pill">
-          <p class="ff_open_sans fw-bold fs_lg leading_140 text-black mb-0">
-            Tamara
-          </p>
-        </div>
-
-        <p class="pt_10 ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Profit: <span class="fw-bold text-black">$4,930</span>
-        </p>
-        <p class="pt_2ff_open_sans fw-normal fs_sm leading_150 mb-0 clr_oslogray">
-          Current Balance: <span class="fw-bold text-black">$12,230</span>
-        </p>
-      </div></div> -->
