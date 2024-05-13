@@ -154,13 +154,13 @@
                                     minutes, one of our AI mentors will contact you, No Experience Required!
                                 </p>
                                 <form id="headerfrom">
-                                    <input required id="name" type="text" placeholder="First Name"
+                                    <input autocomplete="off" required id="name" type="text" placeholder="First Name"
                                         class="email-input-style-header mt-4 ff_opensans fw-normal  fs_xs lh_xsm c-black-100 ">
                                     <p class=" mb-0 text-white " id="errorname"></p>
-                                    <input required id="lastname" type="text" placeholder="Last Name"
+                                    <input autocomplete="off" required id="lastname" type="text" placeholder="Last Name"
                                         class="email-input-style-header mt-3 ff_opensans fw-normal  fs_xs lh_xsm c-black-100 ">
                                     <p class=" mb-0 text-white " id="errorlastname"></p>
-                                    <input required id="email" type="email" placeholder="Email"
+                                    <input autocomplete="off" required id="email" type="email" placeholder="Email"
                                         class="email-input-style-header mt-3 ff_opensans fw-normal  fs_xs lh_xsm c-black-100 ">
                                     <p class=" mb-0 text-white " id="erroremail"></p>
                                     <div
@@ -171,7 +171,7 @@
                                                 <path d="M4 6L0.535898 0H7.4641L4 6Z" fill="#010101" />
                                             </svg>
                                         </div>
-                                        <input required pattern="/^-?\d+\.?\d*$/"
+                                        <input autocomplete="off" required pattern="/^-?\d+\.?\d*$/"
                                             onKeyPress="if(this.value.length==10) return false;" id="number"
                                             type="number" placeholder="Phone Number"
                                             class="email-input-style-header numberinput-header  ff_opensans fw-normal   fs_xs lh_xsm c-black-100 ">
@@ -1236,16 +1236,16 @@
                             </h3>
                             <form id="tradingfrom" class="pt-4 mt-sm-2 invalid">
                                 <div class="d-sm-flex align-items-center gap-2">
-                                    <div class="w-100 w-sm-50"> <input required id="firstName" type="text"
+                                    <div class="w-100 w-sm-50"> <input autocomplete="off" required id="firstName" type="text"
                                             placeholder="First Name"
                                             class="ff_opensans fw-normal fs-xs lh_xsm white AiStockInput place w-100 w-sm-50 ">
                                     </div>
-                                    <div class="w-100 w-sm-50"> <input required id="lastName" type="text"
+                                    <div class="w-100 w-sm-50"> <input autocomplete="off" required id="lastName" type="text"
                                             placeholder="Last Name"
                                             class="ff_opensans fw-normal fs-xs lh_xsm AiStockInput place w-100 w-sm-50  mt-2 mt-sm-0">
                                     </div>
                                 </div>
-                                <input required id="Email" type="email" placeholder="Email"
+                                <input autocomplete="off" required id="Email" type="email" placeholder="Email"
                                     class="mt-2 ff_opensans fw-normal fs-xs lh_xsm AiStockInput place w-100">
 
                                 <div class="d-flex align-items-center rounded-1 overflow-hidden mt-2 borderInput">
@@ -1405,8 +1405,6 @@
     </div>
     <!-- counter -->
     <script>
-    </script>
-    <script>
         // Get the section element
         const section = document.getElementById('statistics-today');
 
@@ -1437,7 +1435,6 @@
                 };
 
                 updateCounter();
-
             });
         }
 

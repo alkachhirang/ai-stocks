@@ -1989,15 +1989,11 @@ numberinput-header .numberinput-header[type="number"] {
     }
 }
 
-
-
 @media (min-width: 1400px) or (max-width: 1600px) {
     .container {
         max-width: 1164px !important;
     }
 }
-
-
 
 @media (min-width: 575.5px) {
 
