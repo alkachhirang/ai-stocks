@@ -252,7 +252,7 @@ z-index: -1;
   border: none;
   border-radius: 6px;
 }
-.blur_btn {
+.blur_pink_btn {
     padding: 17px 12.79px;
     z-index: 1;
     background: #ffffff21;
@@ -264,7 +264,7 @@ z-index: -1;
     bottom: -10%;
     right: -26%;
 }
-.nividia-topellipse{
+.nividia-pink-topellipse{
   width: 240px;
   height: 240px;
   background:linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
@@ -273,7 +273,7 @@ position: absolute;
 top: 0;
 left: -16%;
 }
-.nividia-bottomellipse{
+.nividia-pink-bottomellipse{
   width: 240px;
   height: 240px;
   background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
@@ -282,7 +282,7 @@ position: absolute;
 top: 10%;
 right: -16%;
 }
-.microsoft-ellipse{
+.microsoft-pink-ellipse{
   width: 346px;
   height: 346px;
   background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
@@ -291,7 +291,7 @@ position: absolute;
 top: 20%;
 left: -30%;
 }
-.aws-ellipse{
+.aws-pink-ellipse{
   width: 204px;
   height: 204px;
   background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
@@ -300,7 +300,7 @@ position: absolute;
 top: 35%;
 right: -30%;
 }
-.plantir-ellipse{
+.plantir-pink-ellipse{
   width: 280px;
   height: 280px;
   background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
@@ -309,7 +309,7 @@ position: absolute;
 top: 52%;
 left: -28%;
 }
-.crowd-ellipse{
+.crowd-pink-ellipse{
   width: 304px;
   height: 304px;
   background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
@@ -318,7 +318,7 @@ position: absolute;
 top: 60%;
 right: -30%;
 }
-.ui-ellipse{
+.ui-pink-ellipse{
   width: 244px;
   height: 204px;
   background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
@@ -327,7 +327,7 @@ position: absolute;
 top: 70%;
 left: -30%;
 }
-.ui-ellipse2{
+.ui-pink-ellipse2{
   width: 25px;
   height: 250px;
   background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
@@ -336,7 +336,7 @@ position: absolute;
 top: 78%;
 right: -26%;
 }
-.arista-ellipse2{
+.arista-pink-ellipse2{
   width: 220px;
   height: 226px;
 background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
@@ -368,7 +368,7 @@ left: -28%;
    bottom: -14%;
    left: -20%;
 }
-.blur_btn::before {
+.blur_pink_btn::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -395,7 +395,7 @@ left: -28%;
   overflow: hidden;
   position: absolute;
 }
-.popup-bottomleft-ellipse {
+.popup-pink-bottomleft-ellipse {
    background: #98BD42;
   height: 365px;
   width: 365px;
@@ -461,44 +461,44 @@ left: -28%;
     height: 315px;
     right: 20%;
 }
-  .nividia-bottomellipse{
+  .nividia-pink-bottomellipse{
   width: 346px;
   height: 346px;
 }
-.microsoft-ellipse{
+.microsoft-pink-ellipse{
   width: 346px;
   height: 346px;
 }
-.aws-ellipse{
+.aws-pink-ellipse{
   width: 314px;
   height: 314px;
 }
-.plantir-ellipse{
+.plantir-pink-ellipse{
   width: 340px;
   height: 340px;
 }
-.crowd-ellipse{
+.crowd-pink-ellipse{
   width: 344px;
   height: 344px;
 }
-.ui-ellipse{
+.ui-pink-ellipse{
   width: 344px;
   height: 344px;
 }
 
-.nividia-topellipse{
+.nividia-pink-topellipse{
   width: 346px;
   height: 346px;
 }
-.nividia-bottomellipse{
+.nividia-pink-bottomellipse{
   width: 346px;
   height: 346px;
 }
-  .ui-ellipse2{
+  .ui-pink-ellipse2{
   width: 304px;
   height: 304px;
 }
-.arista-ellipse2{
+.arista-pink-ellipse2{
   width: 346px;
   height: 346px;
 }
@@ -593,7 +593,7 @@ left: -28%;
     width: 100%;
     max-width: 420px !important;
   }
-.blur_btn {
+.blur_pink_btn {
     padding: 12px;
     z-index: 1;
     background: #ffffff21;
