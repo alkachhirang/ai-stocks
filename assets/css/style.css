@@ -713,6 +713,12 @@ body::-webkit-scrollbar-thumb {
     max-width: 654px;
 }
 
+.man-profile-card span img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
 /*=================keyframe-slider=============== */
 .slide_container {
     width: calc(389px * 12);
@@ -1670,12 +1676,7 @@ numberinput-header .numberinput-header[type="number"] {
     z-index: -1;
 }
 
-.imgAIshot {
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    transform: translate(50% -50%);
-}
+
 
 .max_Width {
     max-width: 153px;
@@ -1683,62 +1684,7 @@ numberinput-header .numberinput-header[type="number"] {
 
 .brandGroupwidth {
     max-width: 518px;
-}
 
-.imgAi {
-    max-width: 140px;
-    height: 170px;
-    transition: all linear 300ms;
-}
-
-.imgAi:hover {
-    transform: scale(1.05);
-}
-
-.imgPostion {
-    position: absolute;
-    left: 2%;
-    top: 18.3%;
-}
-
-.imgPostion2 {
-    position: absolute;
-    left: 2%;
-    bottom: 15.33%;
-}
-
-.imgPostion3 {
-    position: absolute;
-    right: 2%;
-    top: 18.3%;
-}
-
-.border_red {
-    border-bottom-color: red;
-}
-
-.imgPostion4 {
-    position: absolute;
-    right: 2%;
-    bottom: 15.33%;
-}
-
-.imgPostion1 {
-    position: absolute;
-    right: 32%;
-    top: 2%;
-}
-
-.imgPostion5 {
-    position: absolute;
-    right: 33%;
-    bottom: 33.33%;
-}
-
-.imgPostion7 {
-    position: absolute;
-    right: 32%;
-    bottom: 0;
 }
 
 .average_gap {
@@ -1836,149 +1782,6 @@ numberinput-header .numberinput-header[type="number"] {
         padding: 6px 16px !important;
     }
 
-    .imgAi {
-        max-width: 175px;
-        height: 162px;
-        transition: all linear 300ms;
-    }
-}
-
-@media (max-width: 492px) {
-    .imgAi {
-        max-width: 151px;
-        height: 134px;
-        transition: all linear 300ms;
-    }
-
-    .imgPostion {
-        position: absolute;
-        left: 2%;
-        top: 18.3%;
-    }
-
-    .imgPostion2 {
-        position: absolute;
-        left: 2%;
-        bottom: 19.33%;
-    }
-
-    .imgPostion3 {
-        position: absolute;
-        right: 2%;
-        top: 18.3%;
-    }
-
-    .imgPostion4 {
-        position: absolute;
-        right: 2%;
-        bottom: 19.33%;
-    }
-
-    .imgPostion1 {
-        position: absolute;
-        right: 32%;
-        top: 2%;
-    }
-
-    .imgPostion5 {
-        position: absolute;
-        right: 33%;
-        bottom: 33.33%;
-    }
-
-    .imgPostion7 {
-        position: absolute;
-        right: 32%;
-        bottom: 2%;
-    }
-}
-
-@media (max-width: 442px) {
-    .imgAi {
-        max-width: 131px;
-        height: 116px;
-        transition: all linear 300ms;
-    }
-
-    .imgPostion {
-        position: absolute;
-        left: 2%;
-        top: 18.3%;
-    }
-
-    .imgPostion2 {
-        position: absolute;
-        left: 2%;
-        bottom: 17.33%;
-    }
-
-    .imgPostion3 {
-        position: absolute;
-        right: 2%;
-        top: 18.3%;
-    }
-
-    .imgPostion4 {
-        position: absolute;
-        right: 2%;
-        bottom: 17.33%;
-    }
-
-    .imgPostion1 {
-        position: absolute;
-        right: 32%;
-        top: 2%;
-    }
-
-    .imgPostion5 {
-        position: absolute;
-        right: 32%;
-        bottom: 33.33%;
-    }
-
-    .imgPostion7 {
-        position: absolute;
-        right: 32%;
-        bottom: 2%;
-    }
-
-    .imgPostion3 {
-        position: absolute;
-        right: 3%;
-        top: 18.3%;
-    }
-
-    .imgPostion4 {
-        position: absolute;
-        right: 3%;
-        bottom: 18.33%;
-    }
-
-    .imgPostion5 {
-        position: absolute;
-        right: 35%;
-        bottom: 36.33%;
-    }
-
-    .imgPostion {
-        position: absolute;
-        left: 4%;
-        top: 18.3%;
-    }
-
-    .imgPostion2 {
-        position: absolute;
-        left: 4%;
-        bottom: 18.33%;
-    }
-}
-
-@media (max-width: 380px) {
-    .imgAi {
-        max-width: 121px;
-        height: 106px;
-        transition: all linear 300ms;
-    }
 }
 
 @media (min-width: 1400px) or (max-width: 1600px) {
@@ -1987,63 +1790,17 @@ numberinput-header .numberinput-header[type="number"] {
     }
 }
 
-@media (max-width:410px) {
-    .imgAi {
-        max-width: 111px;
-        height: 97px;
-        transition: all linear 300ms;
-    }
-}
-
-@media (max-width:504px) {
-    .imgAi {
-        max-width: 151px;
-        height: 134px;
-        transition: all linear 300ms;
+@media (min-width: 575.5px) {
+    .brandGroupwidth {
+        max-width: 518px;
+        height: 534px;
     }
 
-    .imgPostion {
-        position: absolute;
-        left: 2%;
-        top: 18.3%;
+    .border_Statistics {
+        width: 190px;
+        height: 190px;
     }
 
-    .imgPostion2 {
-        position: absolute;
-        left: 2%;
-        bottom: 19.33%;
-    }
-
-    .imgPostion3 {
-        position: absolute;
-        right: 2%;
-        top: 18.3%;
-    }
-
-    .imgPostion4 {
-        position: absolute;
-        right: 2%;
-        bottom: 19.33%;
-    }
-
-    .imgPostion1 {
-        position: absolute;
-        right: 32%;
-        top: 2%;
-    }
-
-    .imgPostion5 {
-        position: absolute;
-        right: 33%;
-        bottom: 33.33%;
-    }
-
-    .imgPostion7 {
-        position: absolute;
-        right: 32%;
-        bottom: 2%;
-    }
-}
 
 @media (min-width: 575.5px) {
     .accounts_card {
@@ -2157,23 +1914,7 @@ numberinput-header .numberinput-header[type="number"] {
         --bs-accordion-btn-icon-width: 28px !important;
     }
 
-    .imgPostion1 {
-        position: absolute;
-        right: 32%;
-        top: 2%;
-    }
 
-    .imgPostion5 {
-        position: absolute;
-        right: 32%;
-        bottom: 32%;
-    }
-
-    .imgPostion7 {
-        position: absolute;
-        right: 32%;
-        bottom: 0;
-    }
 
     .mobile_inner_part {
         padding: 28px 14px;
@@ -2188,6 +1929,21 @@ numberinput-header .numberinput-header[type="number"] {
 }
 
 @media (min-width: 768px) {
+
+    .social_img {
+        max-width: 190px
+    }
+
+    .mw_md_300 {
+        max-width: 300px;
+    }
+
+
+    .gap_md_20 {
+        gap: 20px !important;
+    }
+
+
     .mobile_wh {
         width: 314px !important;
         height: 614px !important;
@@ -2270,30 +2026,23 @@ numberinput-header .numberinput-header[type="number"] {
         height: 170px;
     }
 
-    .imgPostion {
-        position: absolute;
-        left: 2.9%;
-        top: 19%;
+
+    .mobile_inner_part {
+        padding: 28px 3px;
+        width: 244px;
+        left: 11%;
     }
 
-    .imgPostion1 {
-        position: absolute;
-        right: 32%;
-        top: 2%;
+    .benefits_bubble {
+        width: 461px !important;
+        height: 421px !important;
     }
 
-    .imgPostion5 {
-        position: absolute;
-        right: 33%;
-        bottom: 33.33%;
+    .mobile_trading {
+        border-radius: 5.87px;
+        max-width: 247px;
+        max-height: 208px;
     }
-
-    .imgPostion7 {
-        position: absolute;
-        right: 32%;
-        bottom: 0;
-    }
-
 }
 
 @media (min-width: 992px) {
@@ -2354,54 +2103,15 @@ numberinput-header .numberinput-header[type="number"] {
         margin-top: 0;
     }
 
-    .imgAi {
-        max-width: 180px;
-        height: 164px;
-        transition: all linear 300ms;
-    }
-
-    .imgPostion1 {
-        position: absolute;
-        right: 31%;
-        top: 1%;
-    }
-
-    .imgPostion5 {
-        position: absolute;
-        right: 31%;
-        bottom: 32%;
-    }
-
-    .imgPostion7 {
-        position: absolute;
-        right: 31%;
-        bottom: -1%;
-    }
 
     .max-w-lg-626 {
         max-width: 626px;
     }
+
+
 }
 
 @media (min-width: 1023.8px) {
-    .mobile_back_ellp {
-        left: 11% !important;
-        top: 16% !important;
-        max-width: 461px !important;
-        height: 421px !important;
-    }
-
-    .imgPostion4 {
-        position: absolute;
-        right: 2%;
-        bottom: 15.22%;
-    }
-
-    .imgPostion7 {
-        position: absolute;
-        right: 31.6%;
-        bottom: -2%;
-    }
 
     .understanding_card {
         padding: 25px 50px 0px 25px;
@@ -2422,9 +2132,12 @@ numberinput-header .numberinput-header[type="number"] {
         border-radius: 4px;
         margin-bottom: 15px;
     }
+
+
 }
 
 @media (min-width:1200px) {
+
     .social_img {
         max-width: 210px
     }
@@ -2478,45 +2191,6 @@ numberinput-header .numberinput-header[type="number"] {
         max-width: 654px;
     }
 
-    .imgAi {
-        max-width: 190px;
-        height: 176px;
-    }
-
-    .imgPostion1 {
-        position: absolute;
-        right: 32%;
-        top: 2%;
-    }
-
-    .imgAi {
-        max-width: 180px;
-        height: 176px;
-    }
-
-    .imgPostion4 {
-        position: absolute;
-        right: 2%;
-        bottom: 15.33%;
-    }
-
-    .imgPostion3 {
-        position: absolute;
-        right: 2%;
-        top: 17.6%;
-    }
-
-    .imgPostion7 {
-        position: absolute;
-        right: 31.6%;
-        bottom: -1%;
-    }
-
-    .imgPostion5 {
-        position: absolute;
-        right: 31.9%;
-        bottom: 32%;
-    }
 
     .px-xl-88 {
         padding-left: 88px;
