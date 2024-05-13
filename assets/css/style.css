@@ -2501,7 +2501,7 @@ numberinput-header .numberinput-header[type="number"] {
     .imgPostion1 {
         position: absolute;
         right: 32%;
-        top: 2%;
+        top: 3%;
     }
 
     .imgAi {
@@ -2530,7 +2530,7 @@ numberinput-header .numberinput-header[type="number"] {
     .imgPostion5 {
         position: absolute;
         right: 31.9%;
-        bottom: 32%;
+        bottom: 31%;
     }
 
     .px-xl-88 {
