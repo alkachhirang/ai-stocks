@@ -735,7 +735,7 @@
             </div>
         </section>
         <!--============Statistics-For-Today================ -->
-        <section class="pt_Statistics position-relative z-1 mw_1920">
+        <section id="statistics-today" class="pt_Statistics position-relative z-1 mw_1920">
             <div class="Statistics_ellips2 d-none d-md-block"></div>
             <div class="container mw_1164">
                 <h2 class="text-white ff_opensans fw-bold fs_8xl lh_7xl text-center mb-sm-4 mb-lg-5"><span
@@ -1405,22 +1405,43 @@
     </div>
     <!-- counter -->
     <script>
-        const counters = document.querySelectorAll(".counter");
-        counters.forEach((counter) => {
-            counter.innerText = "0";
-            const updateCounter = () => {
-                const target = +counter.getAttribute("data-target");
-                const count = +counter.innerText;
-                const increment = target / 200;
-                if (count < target) {
-                    counter.innerText = Math.ceil(count + increment);
-                    setTimeout(updateCounter, 1);
-                } else counter.innerText = target;
-            };
-            setTimeout(() => {
+
+    </script>
+    <script>
+        // Get the section element
+        const section = document.getElementById('statistics-today');
+
+        // Create an observer instance
+        const observer = new IntersectionObserver((entries) => {
+            // If the section is visible, call the function
+            if (entries[0].isIntersecting) {
+                myFunction();
+            }
+        }, { threshold: 1.0 });
+
+        // Observe the section
+        observer.observe(section);
+
+        // The function to be called
+        function myFunction() {
+            const counters = document.querySelectorAll(".counter");
+            counters.forEach((counter) => {
+                counter.innerText = "0";
+                const updateCounter = () => {
+                    const target = +counter.getAttribute("data-target");
+                    const count = +counter.innerText;
+                    const increment = target / 200;
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(updateCounter, 1);
+                    } else counter.innerText = target;
+                };
+
                 updateCounter();
-            }, 2500);
-        });
+
+            });
+        }
+
     </script>
     <!--======================botstrap-link=========================-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
