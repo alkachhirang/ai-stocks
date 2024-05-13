@@ -1,3 +1,20 @@
+//=============button not allow before fill==========
+const myform = document.getElementById("headerfrom");
+const mysubmitButton = document.querySelector(".submitheader_from");
+myform.addEventListener("input", function () {
+  // Check if all required fields are filled
+  if (myform.checkValidity()) {
+    // If all fields are filled, enable the submit button
+    mysubmitButton.disabled = false;
+    mysubmitButton.style.cursor = "pointer";
+  } else {
+    // If any required field is empty, disable the submit button
+    mysubmitButton.disabled = true;
+    mysubmitButton.style.cursor = "not-allowed";
+  }
+});
+
+//================header-timeout===============
 function countdown(endDate) {
   //  current date and time
   const now = new Date().getTime();
@@ -11,7 +28,6 @@ function countdown(endDate) {
   );
   let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
   let seconds = Math.floor((difference % (1000 * 60)) / 1000);
-  let milliseconds = difference % 1000;
   if (days < 10) {
     days = `0${days}`;
   }
@@ -29,7 +45,6 @@ function countdown(endDate) {
     hours,
     minutes,
     seconds,
-    milliseconds,
   };
 }
 
@@ -45,6 +60,8 @@ setInterval(function () {
   document.querySelector("#minuet").innerHTML = ` ${remainingTime.minutes}`;
   document.querySelector("#second").innerHTML = ` ${remainingTime.seconds}`;
 }, 1000);
+
+//=============header-form===============
 const name = document.getElementById("name");
 const errorname = document.getElementById("errorname");
 const lastname = document.getElementById("lastname");
@@ -64,26 +81,29 @@ const regex = {
 
 submit.addEventListener("click", function (event) {
   event.preventDefault();
-  if (!regex.Name.test(name.value)) {
-    errorname.innerHTML = "invalid name";
-  } else {
-    errorname.innerHTML = "";
-  }
-  if (!regex.LastName.test(lastname.value)) {
-    errorlastname.innerHTML = "invalid last name";
-  } else {
-    errorlastname.innerHTML = "";
-  }
-  if (!regex.Number.test(number.value)) {
-    errornumber.innerHTML = "invalid number";
-  } else {
-    errornumber.innerHTML = "";
-  }
-  if (!regex.Email.test(email.value)) {
-    erroremail.innerHTML = "invalid email";
-  } else {
-    erroremail.innerHTML = "";
-  }
+
+  //============will do that in future================
+
+  // if (!regex.Name.test(name.value)) {
+  //   errorname.innerHTML = "invalid name";
+  // } else {
+  //   errorname.innerHTML = "";
+  // }
+  // if (!regex.LastName.test(lastname.value)) {
+  //   errorlastname.innerHTML = "invalid last name";
+  // } else {
+  //   errorlastname.innerHTML = "";
+  // }
+  // if (!regex.Number.test(number.value)) {
+  //   errornumber.innerHTML = "invalid number";
+  // } else {
+  //   errornumber.innerHTML = "";
+  // }
+  // if (!regex.Email.test(email.value)) {
+  //   erroremail.innerHTML = "invalid email";
+  // } else {
+  //   erroremail.innerHTML = "";
+  // }
 
   if (
     regex.Name.test(name.value) &&
@@ -99,6 +119,7 @@ submit.addEventListener("click", function (event) {
   }
 });
 
+//===================Trading-section==================
 const FirstName = document.getElementById("firstName");
 const errorFirstName = document.getElementById("errorFirstName");
 const lastName = document.getElementById("lastName");
@@ -113,59 +134,37 @@ const tradingregex = {
   firstName: /^[a-zA-Z\s]+$/,
   lastName: /^[a-zA-Z\s]+$/,
   number: /^\d{10}$/,
-  email: /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/,
+  email: /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,})$/,
 };
 
 Submit.addEventListener("click", function (event) {
   event.preventDefault();
 
-  if (!tradingregex.firstName.test(FirstName.value)) {
-<<<<<<< HEAD
-    errorFirstName.innerHTML = "Invalid first name";
-  } else {
-=======
-    errorFirstName.classList.add("border_red");
-  } else {
-    errorFirstName.classList.remove("border_red");
->>>>>>> 8282e1fea316dca9f80145060af1609ad06bf460
-    errorFirstName.innerHTML = "";
-  }
+  //============will do that in future================
 
-  if (!tradingregex.lastName.test(lastName.value)) {
-<<<<<<< HEAD
-    errorLastName.innerHTML = "Invalid last name";
-  } else {
-=======
-    errorLastName.classList.add("border_red");
-  } else {
-    errorLastName.classList.remove("border_red");
->>>>>>> 8282e1fea316dca9f80145060af1609ad06bf460
-    errorLastName.innerHTML = "";
-  }
+  // if (!tradingregex.firstName.test(FirstName.value)) {
+  //   FirstName.classList.add("border_red");
+  // } else {
+  //   FirstName.classList.remove("border_red");
+  // }
 
-  if (!tradingregex.number.test(PNumber.value)) {
-<<<<<<< HEAD
-    errorNumber.innerHTML = "Invalid number";
-  } else {
-=======
-    errorNumber.classList.add("border_red");
-  } else {
-    errorNumber.classList.remove("border_red");
->>>>>>> 8282e1fea316dca9f80145060af1609ad06bf460
-    errorNumber.innerHTML = "";
-  }
+  // if (!tradingregex.lastName.test(lastName.value)) {
+  //   lastName.classList.add("border_red");
+  // } else {
+  //   lastName.classList.remove("border_red");
+  // }
 
-  if (!tradingregex.email.test(Email.value)) {
-<<<<<<< HEAD
-    errorEmail.innerHTML = "Invalid email";
-  } else {
-=======
-    errorEmail.classList.add("border_red");
-  } else {
-    errorEmail.classList.remove("border_red");
->>>>>>> 8282e1fea316dca9f80145060af1609ad06bf460
-    errorEmail.innerHTML = "";
-  }
+  // if (!tradingregex.number.test(PNumber.value)) {
+  //   PNumber.classList.add("border_red");
+  // } else {
+  //   PNumber.classList.remove("border_red");
+  // }
+
+  // if (!tradingregex.email.test(Email.value)) {
+  //   Email.classList.add("border_red");
+  // } else {
+  //   Email.classList.remove("border_red");
+  // }
 
   if (
     tradingregex.firstName.test(FirstName.value) &&
@@ -180,6 +179,7 @@ Submit.addEventListener("click", function (event) {
     Email.value = "";
   }
 });
+
 // year function
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
@@ -197,16 +197,21 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// preloader
+const footerform = document.getElementById("tradingfrom");
+const footersubmitButton = document.getElementById("Submit");
+footerform.addEventListener("input", function () {
+  if (footerform.checkValidity()) {
+    footersubmitButton.disabled = false;
+    footersubmitButton.style.cursor = "pointer";
+  } else {
+    footersubmitButton.disabled = true;
+    footersubmitButton.style.cursor = "not-allowed";
+  }
+});
+
+// preloader;
 // const preloader = document.getElementById("preloader");
 // setTimeout(() => {
-//     document.getElementById("preloder").classList.add("d-none");
-//     document.body.classList.remove("overflow_hidden");
-<<<<<<< HEAD
-// }, 1700);
 //   document.getElementById("preloder").classList.add("d-none");
 //   document.body.classList.remove("overflow_hidden");
-// }, 30);
-=======
-// }, 3500);
->>>>>>> 8282e1fea316dca9f80145060af1609ad06bf460
+// }, 1700);
