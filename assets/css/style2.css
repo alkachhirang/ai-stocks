@@ -1,6 +1,7 @@
 :root {
     --fs-axs: 12px;
     --lh-xm: 16px;
+    --lh-xbm: 18px;
     --lh-axs: 19px;
     --lh-xs: 22px;
     --gray-400: #4D4D4D;
@@ -8,6 +9,10 @@
 
 .lh-xs {
     line-height: var(--lh-xs);
+}
+
+.lh-xbm {
+    line-height: var(--lh-xbm);
 }
 
 .lh-xm {
@@ -199,8 +204,8 @@
     border-radius: 7.2px;
 }
 
-.mt_2 {
-    margin-top: 2px;
+.pt_2 {
+    padding-top: 2px;
 }
 
 .card-from-red-header {
@@ -239,7 +244,7 @@
 .header-red-input-modification {
     outline: 0;
     border-radius: 100px;
-    padding: 10.5px;
+    padding: 6.9px 12px;
     border: 1px solid #00000033
 }
 
@@ -248,7 +253,7 @@
 }
 
 .mt-10 {
-    margin-top: 10px;
+    margin-top: 10.97px;
 }
 
 .header-red-input-modification:focus {
