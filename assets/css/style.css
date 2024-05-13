@@ -661,6 +661,12 @@ body::-webkit-scrollbar-thumb {
     max-width: 654px;
 }
 
+.man-profile-card span img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
 /*=================keyframe-slider=============== */
 .slide_container {
     width: calc(389px * 12);
