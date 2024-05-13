@@ -210,8 +210,8 @@ footerform.addEventListener("input", function () {
 });
 
 // preloader;
-const preloader = document.getElementById("preloader");
-setTimeout(() => {
-  document.getElementById("preloder").classList.add("d-none");
-  document.body.classList.remove("overflow_hidden");
-}, 1700);
+// const preloader = document.getElementById("preloader");
+// setTimeout(() => {
+//   document.getElementById("preloder").classList.add("d-none");
+//   document.body.classList.remove("overflow_hidden");
+// }, 1700);
