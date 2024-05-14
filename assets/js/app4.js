@@ -206,3 +206,8 @@ AiStockform.addEventListener("input", function () {
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
 document.getElementById("fullYear").textContent = currentYear;
+// preloader;
+setTimeout(() => {
+  document.getElementById("preloderred").classList.add("d-none");
+  document.body.classList.remove("overflow_hidden");
+}, 1700);

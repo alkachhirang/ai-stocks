@@ -40,6 +40,7 @@
 
 :root {
     /*=========font-size========*/
+    --fs-axs: 12px;
     --fs-xs: 16px;
     --fs-sm: 18px;
     --fs-md: 20px;
@@ -54,6 +55,8 @@
     --fs-2xxl: 70px;
     --fs-3xxl: 88.24px;
     /*=============line-height============= */
+    --lh-xm: 16px;
+    --lh-axs: 19px;
     --lh-xsm: 24px;
     --lh-sm: 25px;
     --lh-md: 25.6px;
@@ -77,7 +80,6 @@
     --lh-5xxl: 52px;
     /*==========colors=========*/
     --clr-black: #010101;
-    --c-gray: #cccecf;
     --c-black-100: #010101;
     --off-black: #0b0e10;
     --off-black2: #0b0f11;
@@ -120,6 +122,10 @@
 }
 
 .c-gray {
+    color: var(--c-gray);
+}
+
+.c-gray-2 {
     color: var(--c-gray);
 }
 
@@ -248,9 +254,25 @@
     font-size: var(--fs-3xxl);
 }
 
+.fs_axs {
+    font-size: var(--fs-axs);
+}
+
 /*=================line-heght================= */
+.lh-xs {
+    line-height: var(--lh-xs);
+}
+
+.lh-axs {
+    line-height: var(--lh-axs);
+}
+
 .lh_xsm {
     line-height: var(--lh-xsm);
+}
+
+.lh-xm {
+    line-height: var(--lh-xm);
 }
 
 .lh_sm {
@@ -2460,6 +2482,7 @@ numberinput-header .numberinput-header[type="number"] {
         --fs-8xl: 24px !important;
         --fs-xxl: 26px !important;
         --fs-3xxl: 51px !important;
+        --fs-2xxl: 58px !important;
         /*=============line-height=========== */
         --lh-xsm: 21px !important;
         --lh-sm: 22px !important;
@@ -2471,12 +2494,11 @@ numberinput-header .numberinput-header[type="number"] {
         --lh-6xl: 30px !important;
         --lh-7xl: 33px !important;
         --lh-8xl: 20px !important;
-        --lh-9xl: 45px !important;
+        --lh-9xl: 38px !important;
         --lh-xxl: 23px !important;
         --lh-10xl: 48px !important;
         --lh-5xxl: 26px !important;
     }
-
 
     .bgpopup {
         padding: 83px 30px 84px 30px !important;
@@ -2929,7 +2951,7 @@ numberinput-header .numberinput-header[type="number"] {
         width: 0;
         /* Adjust as needed */
         height: 0;
-    
+
     }
 }
 
