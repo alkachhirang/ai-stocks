@@ -407,6 +407,61 @@ submitpopup.addEventListener("click", function (event) {
 });
 
 
+
+// popup form
+function validateForm() {
+  event.preventDefault();
+  var firstName = document.getElementById('popupfirstname').value.trim();
+  var lastName = document.getElementById('popuplastname').value.trim();
+  var email = document.getElementById('popupemail').value.trim();
+  var phone = document.getElementById('popupphone').value.trim();
+  var isValid = true;
+  if (isValid) {
+    clearForm();
+    openPopup();
+  }
+  return isValid;
+}
+
+function openPopup() {
+  Swal.fire({
+    icon: 'success',
+    title: 'Form submitted successfully!',
+    showConfirmButton: false,
+    timer: 1500
+  });
+}
+function clearForm() {
+  document.getElementById('myForm').reset();
+}
+
+// second
+// popup form
+function microvalidateForm() {
+  event.preventDefault();
+  var microfirstName = document.getElementById('popupfirstname').value.trim();
+  var microlastName = document.getElementById('popuplastname').value.trim();
+  var microemail = document.getElementById('popupemail').value.trim();
+  var microphone = document.getElementById('popupphone').value.trim();
+  var isValid = true;
+  if (isValid) {
+    clearForm();
+    openPopup();
+  }
+  return isValid;
+}
+
+function openPopup() {
+  Swal.fire({
+    icon: 'success',
+    title: 'Form submitted successfully!',
+    showConfirmButton: false,
+    timer: 1500
+  });
+}
+function clearForm() {
+  document.getElementById('myFormmicro').reset();
+}
 // preloader;
 const preloader = document.getElementById("preloader");
 setTimeout(() => {

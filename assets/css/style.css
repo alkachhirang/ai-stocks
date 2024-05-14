@@ -1373,12 +1373,12 @@
 }
 
 .verification_position {
-    top: 301px;
+    top: 264px;
     right: 100px;
 }
 
 .investing_position {
-    bottom: 105px;
+    bottom: 58px;
     left: 127px;
 }
 
@@ -2415,10 +2415,10 @@ numberinput-header .numberinput-header[type="number"] {
         right: 100px;
     }
 
-    .investing_position {
-        bottom: 109px;
-        left: 127px;
-    }
+   .investing_position {
+       bottom: 109px;
+       left: 127px;
+   }
 
     :root {
         --lh-7xl: 42px !important;
@@ -2454,7 +2454,7 @@ numberinput-header .numberinput-header[type="number"] {
         /*=============line-height=========== */
         --lh-xsm: 21px !important;
         --lh-sm: 22px !important;
-        --lh-md: 22px !important;
+        --lh-md: 15px !important;
         --lh-2md: 25px !important;
         --lh-2xl: 28px !important;
         --lh-4xl: 31px !important;
@@ -2512,22 +2512,22 @@ numberinput-header .numberinput-header[type="number"] {
     }
 
     .verification_position {
-        top: 264px;
+        top: 274px;
         right: 52px;
     }
 
-    .max-p-7 {
-        padding: 7px !important;
+    .max-p-5 {
+        padding: 5px !important;
     }
 
     :root {
         --lh-6xxl: 26px;
     }
 
-    .investing_position {
-        bottom: 65px;
-        left: 127px;
-    }
+   .investing_position {
+       bottom: 65px;
+       left: 127px;
+   }
 
     .statistics_circle {
         width: 254px;
@@ -2562,13 +2562,24 @@ numberinput-header .numberinput-header[type="number"] {
     .trade_timeline::after {
         right: 21px;
     }
+        .max-sm-fs-10 {
+            font-size: 10px !important;
+        }
+}
+
+@media (max-width:520px) {
+    .verification_position {
+        top: 260px;
+        right: 52px;
+    }
+
 }
 
 @media (max-width:480.98px) {
     .verification_position {
-        top: 214px;
-        right: 52px;
-    }
+            top: 214px;
+            right: 52px;
+        }
 }
 
 @media (max-width: 450px) {
@@ -2586,24 +2597,24 @@ numberinput-header .numberinput-header[type="number"] {
 
 @media (max-width:430.98px) {
     .sign_up_position {
-        top: 2px;
+        top: 24px;
         left: 77px;
     }
 
-    .verification_position {
-        top: 189px;
-        right: 52px;
-    }
+  .verification_position {
+      top: 189px;
+      right: 52px;
+  }
 
-    .investing_position {
-        bottom: 56px;
-        left: 64px;
-    }
+   .investing_position {
+       bottom: 56px;
+       left: 64px;
+   }
 }
 
 @media (max-width:390.98px) {
     .sign_up_position {
-        top: 2px;
+        top: 15px;
         left: 77px;
     }
 
@@ -2613,15 +2624,15 @@ numberinput-header .numberinput-header[type="number"] {
         max-width: 320px !important;
     }
 
-    .verification_position {
-        top: 160px;
-        right: 52px;
-    }
+   .verification_position {
+       top: 154px;
+       right: 52px;
+   }
 
-    .investing_position {
-        bottom: 56px;
-        left: 64px;
-    }
+   .investing_position {
+       bottom: 22px;
+       left: 64px;
+   }
 }
 
 @media (max-width: 375px) {
