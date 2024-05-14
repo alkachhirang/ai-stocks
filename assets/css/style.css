@@ -344,6 +344,22 @@
     line-height: 135%;
 }
 
+.firstpage::-webkit-scrollbar-track {
+    border-radius: 12px;
+}
+
+.firstpage::-webkit-scrollbar {
+    width: 5px;
+    height: 4px;
+    background: black;
+}
+
+.firstpage::-webkit-scrollbar-thumb {
+    background: var(--c-light-green);
+    border-radius: 12px;
+    outline: unset;
+}
+
 /*==================track-section================*/
 
 .opacity_07 {
@@ -838,7 +854,7 @@
 
 .man-profile-card {
     padding: 20px;
-    min-width: 293px;
+    min-width: 312px;
     width: 100%;
     background: linear-gradient(90.19deg, rgba(255, 255, 255, 0.04) -76.18%, rgba(153, 153, 153, 0.0056) 88.54%);
     border-radius: 8px;
@@ -979,11 +995,11 @@
 .ellipes-road-map-green-left {
     width: 346px;
     height: 456px;
-    filter: blur(300px);
+    filter: blur(205px);
     border-radius: 999px;
     pointer-events: none;
     position: absolute;
-    left: -30%;
+    left: -23%;
     bottom: -5%;
     z-index: -1;
     background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
@@ -2093,8 +2109,8 @@ numberinput-header .numberinput-header[type="number"] {
         right: 52px;
     }
 
-    .max-p-10 {
-        padding: 10px !important;
+    .max-p-7 {
+        padding: 7px !important;
     }
 
     :root {
@@ -2225,6 +2241,10 @@ numberinput-header .numberinput-header[type="number"] {
 @media (min-width: 575.5px) {
     .mb_sm_32 {
         margin-bottom: 32px;
+    }
+
+    .mt-sm-32 {
+        margin-top: 32px;
     }
 
     .brandGroupwidth {
