@@ -1316,6 +1316,12 @@
     height: 126px !important;
 }
 
+.live_tag {
+    background: #c20000;
+    padding: 5.5px 8px;
+    line-height: 110%;
+}
+
 /*===================roadmap=============== */
 .how_it_work_gredient_text {
     background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
@@ -1764,8 +1770,8 @@
 
 .back_top_btn {
     position: fixed;
-    bottom: 53px;
-    right: 10px;
+    bottom: 12px;
+    right: 12px;
     color: var(--white);
     border: 1px solid transparent;
     border-radius: 50px;
@@ -2071,20 +2077,6 @@
     gap: 13px;
 }
 
-.hoverText {
-    transition: all linear 300ms;
-}
-
-.hoverText:hover {
-    color: var(--greenlight);
-    /* change your color  */
-}
-
-.imgPostion4 {
-    position: absolute;
-    right: 2%;
-    bottom: 15.88%;
-}
 
 /* ---------------faq--------------- */
 .accordion {
@@ -2204,30 +2196,6 @@
 }
 
 /* ----------------footer-section---------------- */
-
-.circle {
-    position: relative;
-    border-radius: 34px;
-    width: 34px;
-    height: 34px;
-    transition: all linear 300ms;
-}
-
-.circle:hover {
-    transform: translateY(-10%);
-}
-
-.circle::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 50px;
-    padding: 1px;
-    background: linear-gradient(180.4deg, #00ffe1 38.61%, #6e5df6 92.96%);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-}
 
 .borderTop {
     width: 100%;
@@ -2639,6 +2607,12 @@ numberinput-header .numberinput-header[type="number"] {
         left: 77px;
     }
 
+    .bgpopup {
+        padding: 83px 30px 84px 30px !important;
+        width: 100%;
+        max-width: 320px !important;
+    }
+
     .verification_position {
         top: 160px;
         right: 52px;
@@ -2654,6 +2628,7 @@ numberinput-header .numberinput-header[type="number"] {
     .trade_shares {
         max-width: 294px;
     }
+
 
     .trade_shares_btns {
         width: 200px !important;
@@ -2800,8 +2775,6 @@ numberinput-header .numberinput-header[type="number"] {
     .accordion {
         --bs-accordion-btn-icon-width: 28px !important;
     }
-
-
 
     .mobile_inner_part {
         padding: 28px 14px;
@@ -3158,10 +3131,6 @@ numberinput-header .numberinput-header[type="number"] {
     .benifit_card {
         padding: 20px 20.5px 20px 20.5px;
         min-height: 240px;
-    }
-
-    .pt_Statistics {
-        padding-top: 80px;
     }
 
 }

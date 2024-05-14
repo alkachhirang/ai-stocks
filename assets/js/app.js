@@ -1,5 +1,6 @@
-var myform = document.getElementById("headerfrom");
-var mysubmitButton = document.getElementById("submit");
+const myform = document.getElementById("headerfrom");
+const mysubmitButton = document.querySelector(".headerfrombutton");
+// document.getElementById("Button").disabled = true;
 myform.addEventListener("input", function () {
   // Check if all required fields are filled
   if (myform.checkValidity()) {
@@ -12,6 +13,22 @@ myform.addEventListener("input", function () {
     mysubmitButton.style.cursor = "not-allowed";
   }
 });
+const myformtrading = document.getElementById("tradeingsectionfrom");
+const mysubmitButtontrading = document.querySelector(".tradingfrombutton");
+myformtrading.addEventListener("input", function () {
+console.log('hjghasfdhgfh');
+  // Check if all required fields are filled
+  if (myformtrading.checkValidity()) {
+    // If all fields are filled, enable the submit button
+    mysubmitButtontrading.disabled = false;
+    mysubmitButtontrading.style.cursor = "pointer";
+  } else {
+    // If any required field is empty, disable the submit button
+    mysubmitButtontrading.disabled = true;
+    mysubmitButtontrading.style.cursor = "not-allowed";
+  }
+});
+
 
 //================header-timeout===============
 function countdown(endDate) {
