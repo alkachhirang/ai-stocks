@@ -49,6 +49,7 @@
     opacity: 1;
 }
 
+
 .common_btn::before {
     content: "";
     height: 100%;

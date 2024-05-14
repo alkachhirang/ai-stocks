@@ -747,6 +747,8 @@
     max-width: 1140px;
     position: absolute;
     top: 50%;
+    margin: 11px 0;
+    max-height: 100vh;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 5px;
@@ -774,6 +776,14 @@
     padding: 12px 12px;
     border: none;
     border-radius: 6px;
+}
+
+.submitTop_from[disabled]:hover::before {
+    left: -25% !important;
+}
+
+.submitTop_from[disabled]:hover::after {
+    background: linear-gradient(107.02deg, #00ffe1 12.76%, #6e5df6 91.81%);
 }
 
 .blur_btn {
@@ -2368,10 +2378,8 @@ numberinput-header .numberinput-header[type="number"] {
     }
 
     .bgpopup {
-        max-width: 690px !important;
-        padding: 30px !important;
-        overflow-y: scroll !important;
-        height: 630px !important;
+        padding: 55px 22px 38px 22px !important;
+        max-width: 658px !important;
         width: 100%;
     }
 
@@ -2409,16 +2417,21 @@ numberinput-header .numberinput-header[type="number"] {
 }
 
 @media (max-width: 767.9px) {
+    .bgpopup {
+        padding: 40px 19px 28px 22px !important;
+        max-width: 430px !important;
+        width: 100%;
+    }
 
     .verification_position {
         top: 275px;
         right: 100px;
     }
 
-   .investing_position {
-       bottom: 109px;
-       left: 127px;
-   }
+    .investing_position {
+        bottom: 109px;
+        left: 127px;
+    }
 
     :root {
         --lh-7xl: 42px !important;
@@ -2524,10 +2537,10 @@ numberinput-header .numberinput-header[type="number"] {
         --lh-6xxl: 26px;
     }
 
-   .investing_position {
-       bottom: 65px;
-       left: 127px;
-   }
+    .investing_position {
+        bottom: 65px;
+        left: 127px;
+    }
 
     .statistics_circle {
         width: 254px;
@@ -2562,9 +2575,10 @@ numberinput-header .numberinput-header[type="number"] {
     .trade_timeline::after {
         right: 21px;
     }
-        .max-sm-fs-10 {
-            font-size: 10px !important;
-        }
+
+    .max-sm-fs-10 {
+        font-size: 10px !important;
+    }
 }
 
 @media (max-width:520px) {
@@ -2577,9 +2591,9 @@ numberinput-header .numberinput-header[type="number"] {
 
 @media (max-width:480.98px) {
     .verification_position {
-            top: 214px;
-            right: 52px;
-        }
+        top: 214px;
+        right: 52px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -2601,15 +2615,15 @@ numberinput-header .numberinput-header[type="number"] {
         left: 77px;
     }
 
-  .verification_position {
-      top: 189px;
-      right: 52px;
-  }
+    .verification_position {
+        top: 189px;
+        right: 52px;
+    }
 
-   .investing_position {
-       bottom: 56px;
-       left: 64px;
-   }
+    .investing_position {
+        bottom: 56px;
+        left: 64px;
+    }
 }
 
 @media (max-width:390.98px) {
@@ -2624,15 +2638,15 @@ numberinput-header .numberinput-header[type="number"] {
         max-width: 320px !important;
     }
 
-   .verification_position {
-       top: 154px;
-       right: 52px;
-   }
+    .verification_position {
+        top: 154px;
+        right: 52px;
+    }
 
-   .investing_position {
-       bottom: 22px;
-       left: 64px;
-   }
+    .investing_position {
+        bottom: 22px;
+        left: 64px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -2940,6 +2954,12 @@ numberinput-header .numberinput-header[type="number"] {
 }
 
 @media (min-width: 992px) {
+    .bgpopup {
+        padding: 65px 30px 65px 30px !important;
+        max-width: 800px !important;
+        width: 100%;
+    }
+
     .border_Statistics {
         width: 270px;
         height: 270px;
@@ -3011,36 +3031,37 @@ numberinput-header .numberinput-header[type="number"] {
     }
 
     .stock-2 {
-        padding: 22px 31px 36px 62px !important;
+        padding: 22px 31px 36px 40px !important;
     }
 
     .stock-3 {
-        padding: 78px 35px !important;
+        padding: 50px 27px !important;
     }
 
     .stock-4 {
-        padding: 133px 40px !important;
+        padding: 107px 26px !important;
     }
 
     .stock-5 {
-        padding: 114px 12px !important;
+        padding: 84px 12px !important;
     }
 
     .stock-6 {
-        padding: 115px 32.68px !important;
+        padding: 93px 17px !important;
     }
 
     .stock-7 {
-        padding: 142px 19px !important;
+        padding: 108px 18px !important;
     }
 
     .white_bg_box {
-        padding: 49px 59.79px 79px 27.21px;
+        padding: 35px 38.79px 63px 27.21px;
         max-width: 375px;
         max-height: 340px;
         width: 100%;
         background: white;
     }
+
 
     .stock_bubble-left {
         width: 460px !important;
@@ -3103,12 +3124,6 @@ numberinput-header .numberinput-header[type="number"] {
         max-width: 457px !important;
     }
 
-    .bgpopup {
-        padding: 83px 30px 84px 30px !important;
-        max-width: 1000px !important;
-        width: 100%;
-    }
-
     .mw_lg_397 {
         max-width: 397px;
     }
@@ -3162,11 +3177,47 @@ numberinput-header .numberinput-header[type="number"] {
         border-radius: 4px;
         margin-bottom: 15px;
     }
-
-
 }
 
 @media (min-width:1200px) {
+    .bgpopup {
+        padding: 65px 30px 65px 30px !important;
+        max-width: 1000px !important;
+        width: 100%;
+    }
+
+    .stock-7 {
+        padding: 142px 19px !important;
+    }
+
+    .stock-6 {
+        padding: 115px 32.68px !important;
+    }
+
+    .stock-5 {
+        padding: 114px 12px !important;
+    }
+
+    .stock-4 {
+        padding: 133px 40px !important;
+    }
+
+    .stock-3 {
+        padding: 78px 35px !important;
+    }
+
+    .stock-2 {
+        padding: 22px 31px 36px 62px !important;
+    }
+
+    .white_bg_box {
+        padding: 49px 59.79px 79px 27.21px;
+        max-width: 375px;
+        max-height: 340px;
+        width: 100%;
+        background: white;
+    }
+
     .custom_container {
         max-width: 1140px !important;
         padding-left: 0 !important;
@@ -3243,4 +3294,16 @@ numberinput-header .numberinput-header[type="number"] {
         -webkit-animation: scroll 15s linear infinite;
         animation: scroll 30s linear infinite;
     }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }

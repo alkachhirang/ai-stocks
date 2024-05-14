@@ -128,7 +128,7 @@ if (!targetDate) {
 }
 startCountdown(targetDate);
 
-//=================trading-section==================
+
 
 //===================Trading-section==================
 const AIFirstName = document.getElementById("AIfirstName");
@@ -190,6 +190,49 @@ SubmitForm.addEventListener("click", function (event) {
         EmailAI.value = "";
     }
 });
+
+SubmitForm.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    //============will do that in future================
+
+    // if (!AiStokeregex.firstNameAI.test(AIFirstName.value)) {
+    //   AIFirstName.classList.add("border_red");
+    // } else {
+    //   AIFirstName.classList.remove("border_red");
+    // }
+
+    // if (!AiStokeregex.lastNameAI.test(AIlastName.value)) {
+    //   AIlastName.classList.add("border_red");
+    // } else {
+    //   AIlastName.classList.remove("border_red");
+    // }
+
+    // if (!AiStokeregex.numberAI.test(AIPNumber.value)) {
+    //   AIPNumber.classList.add("border_red");
+    // } else {
+    //   AIPNumber.classList.remove("border_red");
+    // }
+
+    // if (!AiStokeregex.emailAI.test(EmailAI.value)) {
+    //   EmailAI.classList.add("border_red");
+    // } else {
+    //   EmailAI.classList.remove("border_red");
+    // }
+
+    if (
+        AiStokeregex.firstNameAI.test(AIFirstName.value) &&
+        AiStokeregex.lastNameAI.test(AIlastName.value) &&
+        AiStokeregex.numberAI.test(AIPNumber.value) &&
+        AiStokeregex.emailAI.test(EmailAI.value)
+    ) {
+        alert("Form submitted successfully");
+        AIFirstName.value = "";
+        AIlastName.value = "";
+        AIPNumber.value = "";
+        EmailAI.value = "";
+    }
+});
 const AiStockform = document.getElementById("AIDStockfrom");
 const AiStocksubmitButton = document.getElementById("SubmitForm");
 AiStockform.addEventListener("input", function () {
@@ -208,6 +251,85 @@ const currentYear = currentDate.getFullYear();
 document.getElementById("fullYear").textContent = currentYear;
 // preloader;
 setTimeout(() => {
-  document.getElementById("preloderred").classList.add("d-none");
-  document.body.classList.remove("overflow_hidden");
+    document.getElementById("preloderred").classList.add("d-none");
+    document.body.classList.remove("overflow_hidden");
 }, 1700);
+const TopFirstName = document.getElementById("TopfirstName");
+const errorTopFirstName = document.getElementById("errorTopFirstName");
+const ToplastName = document.getElementById("ToplastName");
+const errorTopLastName = document.getElementById("errorTopLastName");
+const TopPNumber = document.getElementById("TopNumber");
+const errorTopNumber = document.getElementById("errorTopNumber");
+const EmailTop = document.getElementById("TopEmail");
+const errorTopEmail = document.getElementById("errorTopEmail");
+const TopSubmitForm = document.getElementById("TopSubmitForm");
+
+const TopSectionregex = {
+    firstNameTop: /^[a-zA-Z\s]+$/,
+    lastNameTop: /^[a-zA-Z\s]+$/,
+    numberTop: /^\d{10}$/,
+    emailTop: /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/,
+};
+
+TopSubmitForm.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    let valid = true;
+
+    // if (!TopSectionregex.firstNameTop.test(TopFirstName.value)) {
+    //     TopFirstName.classList.add("border_red");
+    //     errorTopFirstName.textContent = "Invalid first name";
+    //     valid = false;
+    // } else {
+    //     TopFirstName.classList.remove("border_red");
+    //     errorTopFirstName.textContent = "";
+    // }
+
+    // if (!TopSectionregex.lastNameTop.test(ToplastName.value)) {
+    //     ToplastName.classList.add("border_red");
+    //     errorTopLastName.textContent = "Invalid last name";
+    //     valid = false;
+    // } else {
+    //     ToplastName.classList.remove("border_red");
+    //     errorTopLastName.textContent = "";
+    // }
+
+    // if (!TopSectionregex.numberTop.test(TopPNumber.value)) {
+    //     TopPNumber.classList.add("border_red");
+    //     errorTopNumber.textContent = "Invalid phone number";
+    //     valid = false;
+    // } else {
+    //     TopPNumber.classList.remove("border_red");
+    //     errorTopNumber.textContent = "";
+    // }
+
+    // if (!TopSectionregex.emailTop.test(EmailTop.value)) {
+    //     EmailTop.classList.add("border_red");
+    //     errorTopEmail.textContent = "Invalid email address";
+    //     valid = false;
+    // } else {
+    //     EmailTop.classList.remove("border_red");
+    //     errorTopEmail.textContent = "";
+    // }
+
+    if (valid) {
+        alert("Form submitted successfully");
+        TopFirstName.value = "";
+        ToplastName.value = "";
+        TopPNumber.value = "";
+        EmailTop.value = "";
+    }
+});
+
+const Topform = document.getElementById("Topform");
+const TopsubmitButton = document.getElementById("TopSubmitForm");
+
+Topform.addEventListener("input", function () {
+    if (Topform.checkValidity()) {
+        TopsubmitButton.disabled = false;
+        TopsubmitButton.style.cursor = "pointer";
+    } else {
+        TopsubmitButton.disabled = true;
+        TopsubmitButton.style.cursor = "not-allowed";
+    }
+});
