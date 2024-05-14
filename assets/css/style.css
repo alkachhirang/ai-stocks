@@ -50,7 +50,7 @@
     --fs-6lg: 36px;
     --fs-xl: 40px;
     --fs-8xl: 48px;
-    --fs-xxl: 52px;
+    --fs-xxl: 52px !important;
     --fs-2xxl: 70px;
     --fs-3xxl: 88.24px;
     /*=============line-height============= */
@@ -914,6 +914,123 @@
 .logo_size {
     width: 367px;
     height: 126px !important;
+}
+
+/*===================roadmap=============== */
+.how_it_work_gredient_text {
+    background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.how_it_work_gredient_text-greenis {
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.how_work_para_max_w {
+    max-width: 891px;
+}
+
+.opacity_80 {
+    opacity: 80%;
+}
+
+.linear_bg_red {
+    background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+}
+
+.open_account_button {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 12px 24px;
+    box-shadow: 23px 20px 20px 22px #0084ff00 inset,
+        0px 2px 10px 0px #00000026;
+}
+
+.open_account_button:hover {
+    background: #D41872 !important;
+    box-shadow: 23px 20px 20px 22px #D41872 inset !important;
+}
+
+.verifaction_max_w {
+    max-width: 540px;
+}
+
+.sign_up_position {
+    top: 35px;
+    left: 127px;
+    max-height: 168px;
+}
+
+.verification_position {
+    top: 301px;
+    right: 100px;
+}
+
+.investing_position {
+    bottom: 105px;
+    left: 127px;
+}
+
+.ellipes-road-map-green-left {
+    width: 346px;
+    height: 456px;
+    filter: blur(300px);
+    border-radius: 999px;
+    pointer-events: none;
+    position: absolute;
+    left: -30%;
+    bottom: -5%;
+    z-index: -1;
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+}
+
+.ellipes-road-map-green-right {
+    width: 346px;
+    height: 456px;
+    filter: blur(150px);
+    border-radius: 999px;
+    pointer-events: none;
+    position: absolute;
+    right: -30%;
+    bottom: -25%;
+    z-index: -1;
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+}
+
+.ellipes-road-map-red-left {
+    width: 346px;
+    height: 456px;
+    filter: blur(300px);
+    border-radius: 999px;
+    pointer-events: none;
+    position: absolute;
+    left: -30%;
+    bottom: -5%;
+    z-index: -1;
+    background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+}
+
+.ellipes-road-map-red-right {
+    width: 346px;
+    height: 456px;
+    filter: blur(150px);
+    border-radius: 999px;
+    pointer-events: none;
+    position: absolute;
+    right: -30%;
+    bottom: -25%;
+    z-index: -1;
+    background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+}
+
+.how_work_roadmap_img {
+    max-width: 556px;
+    width: 100%;
 }
 
 /*===============preloader================ */
@@ -1817,8 +1934,6 @@ numberinput-header .numberinput-header[type="number"] {
     z-index: -1;
 }
 
-
-
 .max_Width {
     max-width: 153px;
 }
@@ -1911,6 +2026,16 @@ numberinput-header .numberinput-header[type="number"] {
 }
 
 @media (max-width: 767.9px) {
+    .verification_position {
+        top: 275px;
+        right: 100px;
+    }
+
+    .investing_position {
+        bottom: 65px;
+        left: 127px;
+    }
+
     :root {
         --lh-7xl: 42px !important;
         --lh-9xl: 44px !important;
@@ -1958,6 +2083,29 @@ numberinput-header .numberinput-header[type="number"] {
         --lh-10xl: 48px !important;
     }
 
+    .sign_up_position {
+        top: 40px;
+        left: 78px;
+    }
+
+    .verification_position {
+        top: 264px;
+        right: 52px;
+    }
+
+    .max-p-10 {
+        padding: 10px !important;
+    }
+
+    :root {
+        --lh-6xxl: 26px;
+    }
+
+    .investing_position {
+        bottom: 65px;
+        left: 127px;
+    }
+
     .statistics_circle {
         width: 254px;
         height: 254px;
@@ -1991,10 +2139,17 @@ numberinput-header .numberinput-header[type="number"] {
     .trade_timeline::after {
         right: 21px;
     }
+}
 
+@media (max-width:480.98px) {
+    .verification_position {
+        top: 214px;
+        right: 52px;
+    }
 }
 
 @media (max-width: 450px) {
+
     .hero_video {
         height: 190px;
         max-width: 327px;
@@ -2003,6 +2158,40 @@ numberinput-header .numberinput-header[type="number"] {
     .hero_video2 {
         height: 190px;
         max-width: 327px;
+    }
+}
+
+@media (max-width:430.98px) {
+    .sign_up_position {
+        top: 2px;
+        left: 77px;
+    }
+
+    .verification_position {
+        top: 189px;
+        right: 52px;
+    }
+
+    .investing_position {
+        bottom: 56px;
+        left: 64px;
+    }
+}
+
+@media (max-width:390.98px) {
+    .sign_up_position {
+        top: 2px;
+        left: 77px;
+    }
+
+    .verification_position {
+        top: 160px;
+        right: 52px;
+    }
+
+    .investing_position {
+        bottom: 56px;
+        left: 64px;
     }
 }
 
@@ -2358,6 +2547,10 @@ numberinput-header .numberinput-header[type="number"] {
         max-width: 1140px !important;
         padding-left: 0 !important;
         padding-right: 0 !important;
+    }
+
+    .text_wrap {
+        text-wrap: nowrap;
     }
 
     .social_img {
