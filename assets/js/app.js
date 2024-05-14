@@ -363,105 +363,6 @@ window.onclick = function (event) {
 const popupForms = document.querySelectorAll(".formpopup_form");
 const submitButtons = document.querySelectorAll(".popup-fromsubmisition");
 
-popupForms.forEach((form) => {
-  form.addEventListener("input", () => {
-    let isValid = true;
-    form.querySelectorAll("input, select, textarea").forEach((element) => {
-      if (!element.checkValidity()) {
-        isValid = false;
-        return;
-      }
-    });
-    submitButtons.forEach((submitButton) => {
-      submitButton.disabled = !isValid;
-      submitButton.style.cursor = isValid ? "pointer" : "not-allowed";
-    });
-  });
-});
-const namepopup = document.querySelector(".namepopup");
-const lastnamepopup = document.querySelector(".lastnamepopup");
-const numberpopup = document.querySelector(".numberpopup");
-const emailpopup = document.querySelector(".emailpopup");
-const submitpopup = document.querySelector(".submitpopup");
-const regexpopup = {
-  Name: /^[a-zA-Z\s]+$/,
-  LastName: /^[a-zA-Z\s]+$/,
-  Number: /^\d{10}$/,
-  Email: /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,})$/,
-};
-
-submitpopup.addEventListener("click", function (event) {
-  event.preventDefault();
-  if (
-    regexpopup.Name.test(namepopup.value) &&
-    regexpopup.LastName.test(lastnamepopup.value) &&
-    regexpopup.Number.test(numberpopup.value) &&
-    regexpopup.Email.test(emailpopup.value)
-  ) {
-    alert(" from submit successfully");
-    namepopup.value = "";
-    lastnamepopup.value = "";
-    numberpopup.value = "";
-    emailpopup.value = "";
-  }
-});
-
-
-
-// popup form
-function validateForm() {
-  event.preventDefault();
-  var firstName = document.getElementById('popupfirstname').value.trim();
-  var lastName = document.getElementById('popuplastname').value.trim();
-  var email = document.getElementById('popupemail').value.trim();
-  var phone = document.getElementById('popupphone').value.trim();
-  var isValid = true;
-  if (isValid) {
-    clearForm();
-    openPopup();
-  }
-  return isValid;
-}
-
-function openPopup() {
-  Swal.fire({
-    icon: 'success',
-    title: 'Form submitted successfully!',
-    showConfirmButton: false,
-    timer: 1500
-  });
-}
-function clearForm() {
-  document.getElementById('myForm').reset();
-}
-
-// second
-// popup form
-function microvalidateForm() {
-  event.preventDefault();
-  var microfirstName = document.getElementById('popupfirstname').value.trim();
-  var microlastName = document.getElementById('popuplastname').value.trim();
-  var microemail = document.getElementById('popupemail').value.trim();
-  var microphone = document.getElementById('popupphone').value.trim();
-  var isValid = true;
-  if (isValid) {
-    clearForm();
-    openPopup();
-  }
-  return isValid;
-}
-
-function openPopup() {
-  Swal.fire({
-    icon: 'success',
-    title: 'Form submitted successfully!',
-    showConfirmButton: false,
-    timer: 1500
-  });
-}
-function clearForm() {
-  document.getElementById('myFormmicro').reset();
-}
 //========================how-it-works========================//
 const lottiePlayers = {
   company: {
@@ -645,33 +546,6 @@ setTimeout(() => {
 }, 1700);
 
 
-
-
-// ========================== form-validation ==========================
-function validateForm() {
-  event.preventDefault();
-  var firstName = document.getElementById('firstname').value.trim();
-  var lastName = document.getElementById('lastname').value.trim();
-  var email = document.getElementById('email').value.trim();
-  var phone = document.getElementById('phone').value.trim();
-  var isValid = true;
-  if (isValid) {
-    clearForm();
-    openPopup();
-  }
-  return isValid;
-}
-function openPopup() {
-  Swal.fire({
-    icon: 'success',
-    title: 'Form submitted successfully!',
-    showConfirmButton: false,
-    timer: 1500
-  });
-}
-function clearForm() {
-  document.getElementById('myForm').reset();
-}
 // ------------------micro-popup------------------
 function microvalidateForm() {
   event.preventDefault();
@@ -850,3 +724,49 @@ aristapopup.onclick = function (event) {
     aristaClosePopup();
   }
 }
+
+
+//=====================popup-js===================//
+document
+  .getElementById("pop1")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    this.reset();
+  });
+document
+  .getElementById("pop2")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    this.reset();
+  });
+
+document
+  .getElementById("pop3")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    this.reset();
+  });
+document
+  .getElementById("pop4")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    this.reset();
+  });
+document
+  .getElementById("pop5")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    this.reset();
+  });
+document
+  .getElementById("pop6")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    this.reset();
+  });
+document
+  .getElementById("pop7")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    this.reset();
+  });
