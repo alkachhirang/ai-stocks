@@ -2419,13 +2419,14 @@ numberinput-header .numberinput-header[type="number"] {
 }
 
 @media (max-width: 767.9px) {
+
     .verification_position {
         top: 275px;
         right: 100px;
     }
 
     .investing_position {
-        bottom: 65px;
+        bottom: 109px;
         left: 127px;
     }
 
@@ -2922,9 +2923,22 @@ numberinput-header .numberinput-header[type="number"] {
         max-width: 247px;
         max-height: 208px;
     }
+
+    .trade_timeline::after {
+        /* Adjust as needed */
+        width: 0;
+        /* Adjust as needed */
+        height: 0;
+    
+    }
 }
 
 @media (min-width: 992px) {
+    .border_Statistics {
+        width: 270px;
+        height: 270px;
+    }
+
     .nividia-bottomellipse {
         width: 346px;
         height: 346px;
@@ -3050,6 +3064,32 @@ numberinput-header .numberinput-header[type="number"] {
         border-radius: 15px;
         max-width: 528px;
     }
+
+    .vedio {
+        margin: 0 12px;
+    }
+
+    .max-w-lg-626 {
+        max-width: 626px;
+    }
+
+    .mt_0 {
+        margin-top: 0;
+    }
+
+    .man-profile-card {
+        min-width: 367px;
+    }
+
+    .max-w-lg-388 {
+        max-width: 388px;
+    }
+
+    .trade_timeline::after {
+        width: 1px;
+        /* Adjust as needed */
+        height: 60%;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -3065,10 +3105,6 @@ numberinput-header .numberinput-header[type="number"] {
 
     .mw_lg_397 {
         max-width: 397px;
-    }
-
-    .man-profile-card {
-        min-width: 367px;
     }
 
     .mw_814 {
@@ -3105,29 +3141,6 @@ numberinput-header .numberinput-header[type="number"] {
     .pt_Statistics {
         padding-top: 80px;
     }
-
-    .border_Statistics {
-        width: 270px;
-        height: 270px;
-    }
-
-    .max-w-lg-388 {
-        max-width: 388px;
-    }
-
-    .vedio {
-        margin: 0 12px;
-    }
-
-    .mt_0 {
-        margin-top: 0;
-    }
-
-
-    .max-w-lg-626 {
-        max-width: 626px;
-    }
-
 
 }
 
