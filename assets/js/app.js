@@ -611,3 +611,18 @@ document
     event.preventDefault();
     this.reset();
   });
+// lottie animation
+var animation = lottie.loadAnimation({
+  container: document.getElementById('lottie-animation'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: './assets/json/1_6.json'
+});
+animation.addEventListener('DOMLoaded', function () {
+  var svgElement = animation.renderer.svgElement;
+  var stopElements = svgElement.querySelectorAll('stop');
+  for (var i = 0; i < stopElements.length; i++) {
+    stopElements[i].setAttribute('stop-color', '#26C7E8');
+  }
+});
