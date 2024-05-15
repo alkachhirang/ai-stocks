@@ -2485,7 +2485,7 @@ numberinput-header .numberinput-header[type="number"] {
         /*=============line-height=========== */
         --lh-xsm: 21px !important;
         --lh-sm: 22px !important;
-        --lh-md: 19px !important;
+        --lh-md: 20px !important;
         --lh-2md: 25px !important;
         --lh-2xl: 28px !important;
         --lh-4xl: 31px !important;
@@ -2651,7 +2651,7 @@ numberinput-header .numberinput-header[type="number"] {
     }
 
     .bgpopup {
-        padding: 83px 30px 84px 30px !important;
+        padding: 40px 25px 40px 25px !important;
         width: 100%;
         max-width: 320px !important;
     }
