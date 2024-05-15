@@ -214,18 +214,18 @@ var closeButton = document.getElementById("closePopup");
 var popup = document.getElementById("popup");
 
 openButton.onclick = function () {
-  popup.style.display = "block";
+  popup.style.scale = "1";
   document.body.style.overflow = "hidden";
 };
 
 closeButton.onclick = function () {
-  popup.style.display = "none";
+  popup.style.scale = "0";
   document.body.style.overflow = "";
 };
 
 popup.onclick = function (event) {
   if (event.target == popup) {
-    popup.style.display = "none";
+    popup.style.scale = "0";
     document.body.style.overflow = "";
   }
 };
@@ -235,18 +235,18 @@ var closeButton2 = document.getElementById("closePopup2");
 var popup2 = document.getElementById("popup2");
 
 openButton2.onclick = function () {
-  popup2.style.display = "block";
+  popup2.style.scale = "1";
   document.body.style.overflow = "hidden";
 };
 
 closeButton2.onclick = function () {
-  popup2.style.display = "none";
+  popup2.style.scale = "0";
   document.body.style.overflow = "";
 };
 
 popup2.onclick = function (event) {
   if (event.target == popup2) {
-    popup2.style.display = "none";
+    popup2.style.scale = "0";
     document.body.style.overflow = "";
   }
 };
@@ -256,18 +256,18 @@ var closeButton3 = document.getElementById("closePopup3");
 var popup3 = document.getElementById("popup3");
 
 openButton3.onclick = function () {
-  popup3.style.display = "block";
+  popup3.style.scale = "1";
   document.body.style.overflow = "hidden";
 };
 
 closeButton3.onclick = function () {
-  popup3.style.display = "none";
+  popup3.style.scale = "0";
   document.body.style.overflow = "";
 };
 
 popup3.onclick = function (event) {
   if (event.target == popup3) {
-    popup3.style.display = "none";
+    popup3.style.scale = "0";
     document.body.style.overflow = "";
   }
 };
@@ -277,18 +277,18 @@ var closeButton4 = document.getElementById("closePopup4");
 var popup4 = document.getElementById("popup4");
 
 openButton4.onclick = function () {
-  popup4.style.display = "block";
+  popup4.style.scale = "1";
   document.body.style.overflow = "hidden";
 };
 
 closeButton4.onclick = function () {
-  popup4.style.display = "none";
+  popup4.style.scale = "0";
   document.body.style.overflow = "";
 };
 
 popup4.onclick = function (event) {
   if (event.target == popup4) {
-    popup4.style.display = "none";
+    popup4.style.scale = "0";
     document.body.style.overflow = "";
   }
 };
@@ -299,18 +299,18 @@ var closeButton5 = document.getElementById("closePopup5");
 var popup5 = document.getElementById("popup5");
 
 openButton5.onclick = function () {
-  popup5.style.display = "block";
+  popup5.style.scale = "1";
   document.body.style.overflow = "hidden";
 };
 
 closeButton5.onclick = function () {
-  popup5.style.display = "none";
+  popup5.style.scale = "0";
   document.body.style.overflow = "";
 };
 
 popup5.onclick = function (event) {
   if (event.target == popup5) {
-    popup5.style.display = "none";
+    popup5.style.scale = "0";
     document.body.style.overflow = "";
   }
 };
@@ -321,18 +321,18 @@ var closeButton6 = document.getElementById("closePopup6");
 var popup6 = document.getElementById("popup6");
 
 openButton6.onclick = function () {
-  popup6.style.display = "block";
+  popup6.style.scale = "1";
   document.body.style.overflow = "hidden";
 };
 
 closeButton6.onclick = function () {
-  popup6.style.display = "none";
+  popup6.style.scale = "0";
   document.body.style.overflow = "";
 };
 
 popup6.onclick = function (event) {
   if (event.target == popup6) {
-    popup6.style.display = "none";
+    popup6.style.scale = "0";
     document.body.style.overflow = "";
   }
 };
@@ -343,18 +343,18 @@ var closeButton7 = document.getElementById("closePopup7");
 var popup7 = document.getElementById("popup7");
 
 openButton7.onclick = function () {
-  popup7.style.display = "block";
+  popup7.style.scale = "1";
   document.body.style.overflow = "hidden";
 };
 
 closeButton7.onclick = function () {
-  popup7.style.display = "none";
+  popup7.style.scale = "0";
   document.body.style.overflow = "";
 };
 
 popup7.onclick = function (event) {
   if (event.target == popup7) {
-    popup7.style.display = "none";
+    popup7.style.scale = "0";
     document.body.style.overflow = "";
   }
 };
@@ -470,10 +470,10 @@ const changeLottiePlayer = (value) => {
       .querySelector(".trade_line_first")
       .classList.add("tradeLinetransitionFirst");
     document
-      .querySelector(".trade_line_second")
+      .querySelector(".trade_line_4th")
       .classList.remove("tradeLinetransitionFirst");
     document
-      .querySelector(".trade_line_second")
+      .querySelector(".trade_line_4th")
       .classList.remove("tradeLineSecondAfter");
     document
       .querySelector(".trade_timeline")
@@ -489,7 +489,7 @@ const changeLottiePlayer = (value) => {
       .querySelector(".trade_line_first")
       .classList.add("tradeLineSecondAfter");
     document
-      .querySelector(".trade_line_second")
+      .querySelector(".trade_line_4th")
       .classList.add("tradeLinetransitionFirst");
     document
       .querySelector(".trade_line_first")
@@ -509,7 +509,7 @@ const changeLottiePlayer = (value) => {
       .querySelector(".trade_line_first")
       .classList.remove("tradeLineSecondAfter");
     document
-      .querySelector(".trade_line_second")
+      .querySelector(".trade_line_4th")
       .classList.remove("tradeLinetransitionFirst");
   } else {
     document
@@ -567,31 +567,6 @@ function openPopup() {
 function clearForm() {
   document.getElementById('microForm').reset();
 }
-
-// ----------------Nvidia-------------
-var openButton = document.getElementById("openPopup");
-var closeButton = document.getElementById("closePopup");
-var popup = document.getElementById("popup");
-var popupContent = document.querySelector(".popup-content");
-openButton.onclick = function () {
-  popup.style.display = "flex";
-  document.body.style.overflow = "hidden";
-}
-function closePopup() {
-  popup.style.display = "none";
-  document.body.style.overflow = "";
-}
-
-closeButton.onclick = function () {
-  closePopup();
-}
-popup.onclick = function (event) {
-  if (event.target == popup) {
-    closePopup();
-  }
-}
-
-
 //=====================popup-js===================//
 document
   .getElementById("pop1")

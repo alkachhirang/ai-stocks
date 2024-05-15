@@ -694,9 +694,10 @@
 
 /* Popup container / */
 .popup {
-    display: none;
+    scale: 0;
     position: fixed;
     top: 0;
+    transition: .2s linear;
     left: 0;
     width: 100%;
     height: 100%;
