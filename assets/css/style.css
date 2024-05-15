@@ -124,8 +124,9 @@
     border-radius: 12px;
     outline: unset;
 }
-.bgpopup::-webkit-scrollbar{
-    display:none;
+
+.bgpopup::-webkit-scrollbar {
+    display: none;
 }
 
 .c-gray {
@@ -2002,8 +2003,8 @@
 }
 
 .px_6 {
-    padding-right: 6px ;
-    padding-left: 6px ;
+    padding-right: 6px;
+    padding-left: 6px;
 }
 
 .gradient_text {
@@ -2597,6 +2598,10 @@ numberinput-header .numberinput-header[type="number"] {
     .max-sm-fs-10 {
         font-size: 10px !important;
     }
+
+    .max-lh-15 {
+        line-height: 15px !important;
+    }
 }
 
 @media (max-width:520px) {
@@ -2604,7 +2609,6 @@ numberinput-header .numberinput-header[type="number"] {
         top: 260px;
         right: 52px;
     }
-
 }
 
 @media (max-width:480.98px) {
