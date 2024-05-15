@@ -223,7 +223,7 @@ closeButton.onclick = function () {
   document.body.style.overflow = "";
 };
 
-window.onclick = function (event) {
+popup.onclick = function (event) {
   if (event.target == popup) {
     popup.style.display = "none";
     document.body.style.overflow = "";
@@ -244,7 +244,7 @@ closeButton2.onclick = function () {
   document.body.style.overflow = "";
 };
 
-window.onclick = function (event) {
+popup2.onclick = function (event) {
   if (event.target == popup2) {
     popup2.style.display = "none";
     document.body.style.overflow = "";
@@ -265,7 +265,7 @@ closeButton3.onclick = function () {
   document.body.style.overflow = "";
 };
 
-window.onclick = function (event) {
+popup3.onclick = function (event) {
   if (event.target == popup3) {
     popup3.style.display = "none";
     document.body.style.overflow = "";
@@ -286,7 +286,7 @@ closeButton4.onclick = function () {
   document.body.style.overflow = "";
 };
 
-window.onclick = function (event) {
+popup4.onclick = function (event) {
   if (event.target == popup4) {
     popup4.style.display = "none";
     document.body.style.overflow = "";
@@ -308,7 +308,7 @@ closeButton5.onclick = function () {
   document.body.style.overflow = "";
 };
 
-window.onclick = function (event) {
+popup5.onclick = function (event) {
   if (event.target == popup5) {
     popup5.style.display = "none";
     document.body.style.overflow = "";
@@ -330,7 +330,7 @@ closeButton6.onclick = function () {
   document.body.style.overflow = "";
 };
 
-window.onclick = function (event) {
+popup6.onclick = function (event) {
   if (event.target == popup6) {
     popup6.style.display = "none";
     document.body.style.overflow = "";
@@ -352,16 +352,12 @@ closeButton7.onclick = function () {
   document.body.style.overflow = "";
 };
 
-window.onclick = function (event) {
+popup7.onclick = function (event) {
   if (event.target == popup7) {
     popup7.style.display = "none";
     document.body.style.overflow = "";
   }
 };
-
-//=============button not allow before fill==========
-const popupForms = document.querySelectorAll(".formpopup_form");
-const submitButtons = document.querySelectorAll(".popup-fromsubmisition");
 
 //========================how-it-works========================//
 const lottiePlayers = {
@@ -592,136 +588,6 @@ closeButton.onclick = function () {
 popup.onclick = function (event) {
   if (event.target == popup) {
     closePopup();
-  }
-}
-
-// ----------Microsoft-----------
-var openButton = document.getElementById("microsoftOpenPopup");
-var closeButton = document.getElementById("microClosePopup");
-var micropopup = document.getElementById("micropopup");
-var micropopupContent = document.querySelector(".micropopup-content");
-openButton.onclick = function () {
-  micropopup.style.display = "flex";
-  document.body.style.overflow = "hidden";
-}
-function microClosePopup() {
-  micropopup.style.display = "none";
-  document.body.style.overflow = "";
-}
-closeButton.onclick = function () {
-  microClosePopup();
-}
-micropopup.onclick = function (event) {
-  if (event.target == micropopup) {
-    microClosePopup();
-  }
-}
-
-// ------------------Amazon--------------
-var openButton = document.getElementById("AmazonOpenPopup");
-var closeButton = document.getElementById("amazonClosePopup");
-var amazonpopup = document.getElementById("amazonpopup");
-var amazonpopupContent = document.querySelector(".amazonpopup-content");
-openButton.onclick = function () {
-  amazonpopup.style.display = "flex";
-  document.body.style.overflow = "hidden";
-}
-function amazonClosePopup() {
-  amazonpopup.style.display = "none";
-  document.body.style.overflow = "";
-}
-closeButton.onclick = function () {
-  amazonClosePopup();
-}
-amazonpopup.onclick = function (event) {
-  if (event.target == amazonpopup) {
-    amazonClosePopup();
-  }
-}
-
-// -----------------Palantir----------------
-var openButton = document.getElementById("palantirOpenPopup");
-var closeButton = document.getElementById("palantirClosePopup");
-var palantirpopup = document.getElementById("palantirpopup");
-var palantirpopupContent = document.querySelector(".palantirpopup-content");
-openButton.onclick = function () {
-  palantirpopup.style.display = "flex";
-  document.body.style.overflow = "hidden";
-}
-function palantirClosePopup() {
-  palantirpopup.style.display = "none";
-  document.body.style.overflow = "";
-}
-closeButton.onclick = function () {
-  palantirClosePopup();
-}
-palantirpopup.onclick = function (event) {
-  if (event.target == palantirpopup) {
-    palantirClosePopup();
-  }
-}
-
-// ---------------------Cyber------------------------
-var openButton = document.getElementById("cyberOpenPopup");
-var closeButton = document.getElementById("cyberClosePopup");
-var cyberpopup = document.getElementById("cyberpopup");
-var cyberpopupContent = document.querySelector(".cyberpopup-content");
-openButton.onclick = function () {
-  cyberpopup.style.display = "flex";
-  document.body.style.overflow = "hidden";
-}
-function cyberClosePopup() {
-  cyberpopup.style.display = "none";
-  document.body.style.overflow = "";
-}
-closeButton.onclick = function () {
-  cyberClosePopup();
-}
-cyberpopup.onclick = function (event) {
-  if (event.target == cyberpopup) {
-    cyberClosePopup();
-  }
-}
-// --------------------------Robotic---------------------
-var openButton = document.getElementById("roboticOpenPopup");
-var closeButton = document.getElementById("roboticClosePopup");
-var roboticpopup = document.getElementById("roboticpopup");
-var roboticpopupContent = document.querySelector(".roboticpopup-content");
-openButton.onclick = function () {
-  roboticpopup.style.display = "flex";
-  document.body.style.overflow = "hidden";
-}
-function roboticClosePopup() {
-  roboticpopup.style.display = "none";
-  document.body.style.overflow = "";
-}
-closeButton.onclick = function () {
-  roboticClosePopup();
-}
-roboticpopup.onclick = function (event) {
-  if (event.target == roboticpopup) {
-    roboticClosePopup();
-  }
-}
-// -----------------Arista Networks-----------------
-var openButton = document.getElementById("aristaOpenPopup");
-var closeButton = document.getElementById("aristaClosePopup");
-var aristapopup = document.getElementById("aristapopup");
-var aristapopupContent = document.querySelector(".aristapopup-content");
-openButton.onclick = function () {
-  aristapopup.style.display = "flex";
-  document.body.style.overflow = "hidden";
-}
-function aristaClosePopup() {
-  aristapopup.style.display = "none";
-  document.body.style.overflow = "";
-}
-closeButton.onclick = function () {
-  aristaClosePopup();
-}
-aristapopup.onclick = function (event) {
-  if (event.target == aristapopup) {
-    aristaClosePopup();
   }
 }
 

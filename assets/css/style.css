@@ -124,6 +124,9 @@
     border-radius: 12px;
     outline: unset;
 }
+.bgpopup::-webkit-scrollbar{
+    display:none;
+}
 
 .c-gray {
     color: var(--c-gray);
@@ -663,6 +666,7 @@
 
 .white_bg_box {
     padding: 25px;
+    border-radius: 8px;
     max-width: 260px;
     max-height: 280px;
     width: 100%;
@@ -746,6 +750,7 @@
     background-image: url('/assets/images/webp/popup-bg.webp');
     background-position: center;
     background-size: cover;
+    height: fit-content !important;
     border: 1px solid #ffffff4d;
     padding: 98.5px 60px 83px;
     max-width: 1140px;
@@ -755,7 +760,7 @@
     max-height: 100vh;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 5px;
+    border-radius: 25px;
     width: 100%;
 }
 
@@ -792,6 +797,7 @@
 
 .blur_btn {
     padding: 17px 12.79px;
+    border-radius: 8px;
     z-index: 1;
     background: #ffffff21;
     backdrop-filter: blur(50px);
@@ -978,6 +984,10 @@
 .py-12 {
     padding-top: 12px;
     padding-bottom: 12px;
+}
+
+.z_5 {
+    z-index: 5 !important;
 }
 
 .mt-20 {
@@ -2161,7 +2171,7 @@
     max-width: 558px;
     padding: 12px;
     border-radius: 8px;
-    background-color: var(--black);
+    background-color: transparent;
     position: relative;
     z-index: 1;
 }
@@ -2198,6 +2208,7 @@
 }
 
 .backdrop {
+    background-color: #0C1A20;
     backdrop-filter: blur(20px);
 }
 
@@ -2384,6 +2395,8 @@ numberinput-header .numberinput-header[type="number"] {
     .bgpopup {
         padding: 55px 22px 38px 22px !important;
         max-width: 658px !important;
+        overflow-y: scroll !important;
+        max-height: 600px;
         width: 100%;
     }
 
@@ -3184,6 +3197,10 @@ numberinput-header .numberinput-header[type="number"] {
 }
 
 @media (min-width:1200px) {
+    .mt_133 {
+        padding-top: 133px;
+    }
+
     .bgpopup {
         padding: 65px 30px 65px 30px !important;
         max-width: 1000px !important;
