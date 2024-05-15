@@ -76,51 +76,6 @@
   max-width: 445px;
 }
 
-.stock_bubble-bg {
-  border-radius: 70% 30% 73% 27% / 43% 32% 68% 57%;
-  animation: stock_bubble_radious 7s linear infinite alternate;
-}
-.linear_bg {
-  background: linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
-}
-
-.stock_bubble-right_bg {
-  border-radius: 70% 30% 73% 27% / 43% 32% 68% 57%;
-  animation: stock_bubble_radious 7s linear infinite alternate;
-}
-
-@keyframes stock_bubble_radious {
-  25% {
-    border-radius: 48% 52% 18% 82% / 53% 46% 54% 47%;
-  }
-  50% {
-    border-radius: 20% 80% 18% 82% / 22% 31% 69% 78%;
-  }
-  75% {
-    border-radius: 20% 80% 73% 27% / 22% 59% 41% 78%;
-  }
-  100% {
-    border-radius: 70% 30% 73% 27% / 43% 59% 41% 57%;
-  }
-}
-.stock_bubble-left{
-   width: 280px !important;
-  height: 300px  !important;
-  position: absolute;
-  pointer-events: none !important;
-  top: 55%;
-  transform: translateY(-50%);
-  z-index: -1;
-}
- .stock_bubble-right {
-  width: 280px !important;
-  height: 300px  !important;
-  position: absolute;
-  pointer-events: none !important;
-  top: 55%;
-  transform: translateY(-50%);
-  z-index: -1;
-}
 .white_bg_box{
   padding: 25px;
   max-width: 260px;
@@ -150,14 +105,16 @@ linear-gradient(90deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
 
 /* Popup container / */
 .popup {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9;
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    /* margin-bottom: 76px; */
+    left: 0;
+    right: 0;
+    /* width: 100%;
+    height: 100%; */
+    z-index: 9;
 }
 .submitFooter_from[disabled]:hover::before {
     left: -25% !important;
@@ -196,7 +153,11 @@ z-index: -1;
   font-size: 20px;
   transition: all 300ms linear;
 }
-
+.numberremove::-webkit-outer-spin-button,
+.numberremove::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .bgpopup {
   background-image: url('/assets/images/webp/pink-bg-popup.webp');
   background-position: center;
@@ -206,6 +167,7 @@ z-index: -1;
   max-width: 1140px;
   position: absolute;
   top: 50%;
+  max-height: 100vh;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 5px;
@@ -256,6 +218,7 @@ z-index: -1;
     padding: 17px 12.79px;
     z-index: 1;
     background: #ffffff21;
+    border-radius: 8px;
     backdrop-filter: blur(50px);
     position: relative;
 }
@@ -375,6 +338,7 @@ left: -28%;
   top: 0;
   left: 0;
   right: 0;
+  border-radius: 8px;
   bottom: 0;
   border-radius: 8px;
   border: 1px solid transparent;
@@ -417,24 +381,7 @@ left: -28%;
         height: 236px;
       right: 22%;
 }
-  .stock_bubble-right {
- width: 360px !important;
-  height: 350px !important;
-  position: absolute;
-  pointer-events: none !important;
-  top: 55%;
-  transform: translateY(-50%);
-  z-index: -1;
-  }
-  .stock_bubble-left{
-   width: 360px !important;
-  height: 350px  !important;
-  position: absolute;
-  pointer-events: none !important;
-  top: 55%;
-  transform: translateY(-50%);
-  z-index: -1;
-}
+ 
   .white_bg_box{
   padding: 30px;
   max-width: 335px;
@@ -527,25 +474,7 @@ left: -28%;
   width: 100%;
   background: white;
 }
-.stock_bubble-left{
-   width: 460px !important;
-  height: 421px  !important;
-  position: absolute;
-  pointer-events: none !important;
-  top: 55%;
-  left: -20%;
-  transform: translateY(-50%);
-  z-index: -1;
-}
- .stock_bubble-right {
-  width: 461px !important;
-  height: 421px !important;
-  position: absolute;
-  pointer-events: none !important;
-  top: 55%;
-  transform: translateY(-50%);
-  z-index: -1;
-}
+
 .popup_form {
   padding: 30px;
   background: #ffffff;
@@ -570,13 +499,20 @@ left: -28%;
     max-width: 690px !important;
     padding: 30px !important;
     overflow-y: scroll !important;
-    height: 630px !important;
     width: 100%;
   }
   .stock_rate_right {
     position: absolute;
-    bottom: -22%;
+    bottom: -15%;
     right: -26%;
+}
+.blur_pink_btn {
+    padding: 10px 12.79px;
+    z-index: 1;
+    background: #ffffff21;
+    border-radius: 8px;
+    backdrop-filter: blur(50px);
+    position: relative;
 }
 }
 @media (max-width:576px) {
@@ -597,8 +533,10 @@ left: -28%;
     padding: 12px;
     z-index: 1;
     background: #ffffff21;
+    border-radius: 8px;
     backdrop-filter: blur(50px);
     position: relative;
+    border-radius: 8px;
 }
 .stock_rate_left{
   position: absolute;
@@ -607,7 +545,7 @@ left: -28%;
 }
     .stock_rate_right {
         position: absolute;
-        bottom: -14%;
+        bottom: -18%;
         right: 0;
     }
     .rate-arrow{
@@ -619,6 +557,7 @@ left: -28%;
 .bgpopup{
           padding: 40px 16px 40px 16px !important;
 }
+.w-49{width: 49px;}
 }
 @media (max-width:400px) {
   .bgpopup {
