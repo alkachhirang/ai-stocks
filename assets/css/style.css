@@ -3202,6 +3202,10 @@ numberinput-header .numberinput-header[type="number"] {
 }
 
 @media (min-width:1200px) {
+    .average_gap {
+        gap: 32px;
+    }
+
     .mt_133 {
         padding-top: 133px;
     }
